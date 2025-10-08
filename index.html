@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPORTS EVENT | PH TIME</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <link rel="sports-stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>SPORTS EVENT</h1>
+  <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
+
+  <div class="card">
+    <input type="text" id="searchBar" placeholder="🔍 Search match..." />
+    <div id="channelList" class="channel-grid"></div>
+  </div>
+
+  <div id="videoContainer">
+    <button id="closeBtn" onclick="closeVideo()">Close</button>
+    <video id="videoPlayer" controls autoplay playsinline></video>
+  </div>
+
+  <script src="sports-script.js"></script>
+</body>
+</html>
