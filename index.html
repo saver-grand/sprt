@@ -1,3 +1,280 @@
-<script>
-document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cscript%20src%3D%22https%3A//fpyf8.com/88/tag.min.js%22%20data-zone%3D%22176778%22%20async%20data-cfasync%3D%22false%22%3E%3C/script%3E%0A%20%20%3Cmeta%20name%3D%22monetag%22%20content%3D%22bb520e2f73fb944a81f31361323d7c5e%22%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%20/%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%20/%3E%0A%20%20%3Ctitle%3ESPORTS%20EVENT%20%7C%20PH%20TIME%3C/title%3E%0A%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/hls.js@latest%22%3E%3C/script%3E%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22style.css%22%20/%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%3Ch1%3ESPORTS%20EVENT%3C/h1%3E%0A%20%20%3Cdiv%20id%3D%22phTime%22%3E%uD83C%uDDF5%uD83C%uDDED%20Philippine%20Time%3A%20--%3A--%3A--%3C/div%3E%0A%0A%20%20%3Cdiv%20class%3D%22card%22%3E%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22searchBar%22%20placeholder%3D%22%uD83D%uDD0D%20Search%20match...%22%20/%3E%0A%20%20%20%20%3Cdiv%20id%3D%22channelList%22%20class%3D%22channel-grid%22%3E%3C/div%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cdiv%20id%3D%22videoContainer%22%3E%0A%20%20%20%20%3Cbutton%20id%3D%22closeBtn%22%20onclick%3D%22closeVideo%28%29%22%3EClose%3C/button%3E%0A%20%20%20%20%3Cvideo%20id%3D%22videoPlayer%22%20controls%20autoplay%20playsinline%3E%3C/video%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cscript%20src%3D%22script.js%22%3E%3C/script%3E%0A%3C/body%3E%0A%3C/html%3E%0A'));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPORTS EVENT | PH TIME</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    :root {
+      --bg-dark: #0b0b0b;
+      --bg-card: #151515;
+      --text-main: #e0ffe0;
+      --accent: #00ff99;
+      --warning: #ff4444;
+      --shadow-glow: rgba(0, 255, 153, 0.4);
+      --hover-glow: rgba(0, 255, 153, 0.7);
+      --input-bg: #1d1d1d;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 1rem;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--shadow-glow);
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+
+    #phTime {
+      font-size: 1rem;
+      color: #b3ffb3;
+      text-shadow: 0 0 6px var(--hover-glow);
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 15px;
+      box-shadow: 0 0 20px var(--shadow-glow);
+      padding: 1rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    #searchBar {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      background: var(--input-bg);
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      outline: none;
+    }
+
+    #searchBar:focus {
+      box-shadow: 0 0 10px var(--hover-glow);
+    }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .channel-box {
+      background: #111;
+      border-radius: 12px;
+      padding: 0.6rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 255, 153, 0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .channel-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--hover-glow);
+    }
+
+    .channel-box img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 6px;
+      filter: brightness(1.1);
+    }
+
+    .channel-box h3 {
+      font-size: 0.85rem;
+      color: #ccffcc;
+      margin: 4px 0;
+    }
+
+    .countdown {
+      font-size: 0.75rem;
+      margin-top: 3px;
+      color: #ffcc66;
+      font-weight: 500;
+    }
+
+    #videoContainer {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #videoPlayer {
+      width: 90vw;
+      max-height: 90vh;
+      border-radius: 12px;
+      border: none;
+      background: black;
+    }
+
+    #closeBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #000;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--hover-glow);
+      transition: background 0.3s ease;
+    }
+
+    #closeBtn:hover {
+      background: #00ffaa;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      #searchBar { font-size: 0.9rem; }
+      .channel-box img { width: 45px; height: 45px; }
+      .channel-box h3 { font-size: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>SPORTS EVENT</h1>
+  <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
+
+  <div class="card">
+    <input type="text" id="searchBar" placeholder="🔍 Search match..." />
+    <div id="channelList" class="channel-grid"></div>
+  </div>
+
+  <div id="videoContainer">
+    <button id="closeBtn" onclick="closeVideo()">Close</button>
+    <video id="videoPlayer" controls autoplay playsinline></video>
+  </div>
+
+  <script>
+    let hls;
+    const channels = [
+      { title: "Timberwolves vs Knicks", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+      { title: "Pistons vs Bucks", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" },
+      { title: "Hornets vs Thunder", time: "08:00", url: "https://live-pull.w02uat.com/live/LIV764027813860777984.m3u8" },
+      { title: "Cavaliers vs Bulls", time: "08:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+      { title: "Loong-Lions vs Clippers", time: "10:30", url: "https://live-pull.w02uat.com/live/LIV763160652403306496.m3u8" }
+    ];
+
+    const logoUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
+
+    // Render all channels
+    function renderChannels(list) {
+      const container = document.getElementById("channelList");
+      container.innerHTML = list.map((ch, i) => `
+        <div class="channel-box" onclick="playChannel('${ch.url}')">
+          <img src="${logoUrl}" alt="${ch.title}">
+          <h3>${ch.title}</h3>
+          <div id="timer-${i}" class="countdown">Loading...</div>
+        </div>
+      `).join("");
+    }
+
+    // Countdown updater
+    function updateCountdowns() {
+      const now = new Date();
+      const phTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+      document.getElementById("phTime").textContent =
+        "🇵🇭 Philippine Time: " + phTime.toLocaleTimeString();
+
+      channels.forEach((ch, i) => {
+        const el = document.getElementById(`timer-${i}`);
+        if (!el) return;
+
+        const target = new Date(phTime);
+        const [h, m] = ch.time.split(":").map(Number);
+        target.setHours(h, m, 0, 0);
+
+        const diff = target - phTime;
+        if (diff <= 0) {
+          el.textContent = "LIVE NOW 🟢";
+          el.style.color = "var(--accent)";
+        } else if (diff <= 5 * 60 * 1000) {
+          el.textContent = "Starting Soon 🔴";
+          el.style.color = "var(--warning)";
+        } else {
+          const hrs = Math.floor(diff / 3600000);
+          const mins = Math.floor((diff % 3600000) / 60000);
+          const secs = Math.floor((diff % 60000) / 1000);
+          el.textContent = `Starts in ${hrs}h ${mins}m ${secs}s`;
+          el.style.color = "#ffcc66";
+        }
+      });
+    }
+
+    // Video player logic
+    function playChannel(url) {
+      const container = document.getElementById("videoContainer");
+      const video = document.getElementById("videoPlayer");
+      container.style.display = "flex";
+
+      if (hls) hls.destroy();
+      video.pause();
+      video.removeAttribute("src");
+      video.load();
+
+      if (Hls.isSupported()) {
+        hls = new Hls({ maxBufferLength: 30 });
+        hls.loadSource(url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        video.src = url;
+        video.addEventListener("loadedmetadata", () => video.play());
+      } else {
+        alert("This stream format is not supported by your browser.");
+      }
+    }
+
+    function closeVideo() {
+      const video = document.getElementById("videoPlayer");
+      document.getElementById("videoContainer").style.display = "none";
+      video.pause();
+      video.removeAttribute("src");
+      if (hls) hls.destroy();
+    }
+
+    // Search filter
+    document.getElementById("searchBar").addEventListener("input", e => {
+      const q = e.target.value.toLowerCase();
+      renderChannels(channels.filter(c => c.title.toLowerCase().includes(q)));
+    });
+
+    // Initialize page
+    window.addEventListener("load", () => {
+      renderChannels(channels);
+      updateCountdowns();
+      setInterval(updateCountdowns, 1000);
+    });
+  </script>
+</body>
+</html>
