@@ -3,7 +3,7 @@ const channels = [
   { title: "Timberwolves vs Knicks", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
   { title: "Pistons vs Bucks", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" },
   { title: "Hornets vs Thunder", time: "08:00", url: "https://live-pull.w02uat.com/live/LIV764027813860777984.m3u8" },
-  { title: "Cavaliers vs Bulls", time: "8:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+  { title: "Cavaliers vs Bulls", time: "08:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
   { title: "Loong-Lions vs Clippers", time: "10:30", url: "https://live-pull.w02uat.com/live/LIV763160652403306496.m3u8" }
 ];
 
