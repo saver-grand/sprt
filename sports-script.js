@@ -1,10 +1,10 @@
 let hls;
 const channels = [
-  { title: "San Antonio Spurs vs Miami Heat", time: "07:00", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
-  { title: "Boston Celtics vs Memphis Grizzlies", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" },
-  { title: "Utah Jazz vs Houston Rockets", time: "08:00", url: "https://live-pull.w02uat.com/live/LIV764027813860777984.m3u8" },
-  { title: "Portland Trail Blazers @ Golden State Warriors", time: "10:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
-  { title: "Toronto Raptors vs Sacramento Kings", time: "10:00", url: "https://live-pull.w02uat.com/live/LIV763160652403306496.m3u8" }
+  { title: "Timberwolves vs Knicks", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+  { title: "Pistons vs Bucks", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" },
+  { title: "Hornets vs Thunder", time: "08:00", url: "https://live-pull.w02uat.com/live/LIV764027813860777984.m3u8" },
+  { title: "Cavaliers vs Bulls", time: "8:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+  { title: "Loong-Lions vs Clippers", time: "10:00", url: "https://live-pull.w02uat.com/live/LIV763160652403306496.m3u8" }
 ];
 
 const logos = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
