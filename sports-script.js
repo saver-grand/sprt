@@ -1,36 +1,63 @@
 let hls;
+
 const channels = [
-  { title: "Houston Rockets vs Oklahoma City Thunder", date: "2025-10-20", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
-  { title: "Golden State Warriors vs Los Angeles Lakers", date: "2025-10-20", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" }
+  {
+    title: "Houston Rockets vs Oklahoma City Thunder",
+    date: "2025-10-20",
+    time: "07:30",
+    url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8"
+  },
+  {
+    title: "Golden State Warriors vs Los Angeles Lakers",
+    date: "2025-10-20",
+    time: "10:00",
+    url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8"
+  }
 ];
 
-const logos = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
+const logos =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
 
 // Render channels
 function renderChannels(list) {
   const container = document.getElementById("channelList");
-  container.innerHTML = list.map((ch, i) => `
-    <div class="channel-box" onclick="playChannel('${ch.url}')">
-      <img src="${logos}" alt="${ch.title}">
-      <h3>${ch.title}</h3>
-      <small class="game-date">📅 ${ch.date} — ${ch.time} PH</small>
-      <div id="timer-${i}" class="countdown">Loading...</div>
-    </div>
-  `).join("");
+  container.innerHTML = list
+    .map(
+      (ch, i) => `
+      <div class="channel-box" onclick="playChannel('${ch.url}')">
+        <img src="${logos}" alt="${ch.title}">
+        <h3>${ch.title}</h3>
+        <small class="game-date">📅 ${ch.date} — ${ch.time} PH</small>
+        <div id="timer-${i}" class="countdown">Loading...</div>
+      </div>
+    `
+    )
+    .join("");
 }
 
 // Countdown logic
 function updateCountdowns() {
   const now = new Date();
+  // Convert to Philippine time (Asia/Manila)
   const phTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Manila" }));
-  document.getElementById("phTime").textContent =
-    "🇵🇭 Philippine Time: " + phTime.toLocaleTimeString("en-US", { hour12: true });
+
+  // Update PH Time display
+  const timeDisplay = document.getElementById("phTime");
+  if (timeDisplay) {
+    timeDisplay.textContent =
+      "🇵🇭 Philippine Time: " +
+      phTime.toLocaleTimeString("en-US", { hour12: true, hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  }
 
   channels.forEach((ch, i) => {
     const el = document.getElementById(`timer-${i}`);
     if (!el) return;
 
-    const target = new Date(`${ch.date}T${ch.time}:00+08:00`); // PH time base
+    // Properly build target time (as PH time)
+    const [hour, minute] = ch.time.split(":").map(Number);
+    const [year, month, day] = ch.date.split("-").map(Number);
+    const target = new Date(Date.UTC(year, month - 1, day, hour - 8, minute)); // UTC correction for PH (+8)
+
     const diff = target - phTime;
 
     if (diff <= 0) {
@@ -45,7 +72,6 @@ function updateCountdowns() {
     const mins = Math.floor((totalSeconds % 3600) / 60);
     const secs = totalSeconds % 60;
 
-    // Smart display
     if (diff <= 5 * 60 * 1000) {
       el.textContent = "Starting Soon 🔴";
       el.style.color = "#ff4444";
@@ -89,9 +115,9 @@ function closeVideo() {
 }
 
 // Search filter
-document.getElementById("searchBar").addEventListener("input", e => {
+document.getElementById("searchBar").addEventListener("input", (e) => {
   const q = e.target.value.toLowerCase();
-  renderChannels(channels.filter(c => c.title.toLowerCase().includes(q)));
+  renderChannels(channels.filter((c) => c.title.toLowerCase().includes(q)));
 });
 
 // Init
