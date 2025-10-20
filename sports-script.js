@@ -3,13 +3,13 @@ let hls;
 const channels = [
   {
     title: "Houston Rockets vs Oklahoma City Thunder",
-    date: "2025-10-20",
+    date: "2025-10-21",
     time: "07:30",
     url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Golden State Warriors vs Los Angeles Lakers",
-    date: "2025-10-20",
+    date: "2025-10-21",
     time: "10:00",
     url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8"
   }
