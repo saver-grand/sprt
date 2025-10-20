@@ -1,10 +1,7 @@
 let hls;
 const channels = [
-  { title: "Timberwolves vs Knicks", date: "2025-10-09", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
-  { title: "Pistons vs Bucks", date: "2025-10-09", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" },
-  { title: "Hornets vs Thunder", date: "2025-10-09", time: "08:00", url: "https://live-pull.w02uat.com/live/LIV764027813860777984.m3u8" },
-  { title: "Cavaliers vs Bulls", date: "2025-10-09", time: "08:00", url: "https://e5.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
-  { title: "Loong-Lions vs Clippers", date: "2025-10-09", time: "10:30", url: "https://live-pull.w02uat.com/live/LIV763160652403306496.m3u8" }
+  { title: "Houston Rockets vs Oklahoma City Thunder", date: "2025-10-20", time: "07:30", url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8" },
+  { title: "Golden State Warriors vs Los Angeles Lakers", date: "2025-10-20", time: "08:00", url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8" }
 ];
 
 const logos = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
