@@ -2,16 +2,34 @@ let hls;
 
 const channels = [
   {
-    title: "Houston Rockets vs Oklahoma City Thunder",
-    date: "2025-10-21",
-    time: "07:30",
-    url: "https://e3.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8"
+    title: "Chicago Bulls vs Orlando Magic",
+    date: "2025-10-26",
+    time: "06:30",
+    url: "https://v1.thetvapp.to/hls/NBA04/tracks-v1a1/mono.m3u8?token=PMGUFatJchZACzfyN9WurA&expires=1761430840&user_id=cG5wNUQ5ajNocm4yeXBUdG5Vd3dtRm90QVJSaGlCNDdUZ1RtekplWA=="
   },
   {
-    title: "Golden State Warriors vs Los Angeles Lakers",
-    date: "2025-10-21",
-    time: "10:00",
-    url: "https://e3.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8"
+    title: "Oklahoma City Thunder vs Atlanta Hawks",
+    date: "2025-10-26",
+    time: "7:00",
+    url: "https://v5.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8?token=0SVOSyKum9nH5uAU5PltEw&expires=1761431020&user_id=cG5wNUQ5ajNocm4yeXBUdG5Vd3dtRm90QVJSaGlCNDdUZ1RtekplWA=="
+  },
+  {
+    title: "Charlotte Hornets vs Philadelphia 76ers",
+    date: "2025-10-26",
+    time: "07:30",
+    url: "https://e2.thetvapp.to/hls/NBA13/tracks-v1a1/mono.m3u8?token=m1rDSxBGfHVoocT1bj3htQ&expires=1761431157&user_id=cG5wNUQ5ajNocm4yeXBUdG5Vd3dtRm90QVJSaGlCNDdUZ1RtekplWA=="
+  },
+  {
+    title: "Indiana Pacers vs Memphis Grizzlies",
+    date: "2025-10-26",
+    time: "08:00",
+    url: "https://v15.thetvapp.to/hls/NBA23/tracks-v1a1/mono.m3u8?token=zegCE0wRageF-MBYK3nqYQ&expires=1761431237&user_id=cG5wNUQ5ajNocm4yeXBUdG5Vd3dtRm90QVJSaGlCNDdUZ1RtekplWA=="
+  },
+  {
+    title: "Phoenix Suns vs Denver Nuggets",
+    date: "2025-10-26",
+    time: "09:00",
+    url: "https://v8.thetvapp.to/hls/NBA18/tracks-v1a1/mono.m3u8?token=6pkor8b9vo7aTw__TtmhIg&expires=1761431308&user_id=cG5wNUQ5ajNocm4yeXBUdG5Vd3dtRm90QVJSaGlCNDdUZ1RtekplWA=="
   }
 ];
 
