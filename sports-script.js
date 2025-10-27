@@ -17,7 +17,7 @@ const channels = [
     title: "Atlanta Hawks vs Chicago Bulls",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA03/tracks-v1a1/mono.m3u8"
+    url: "https://e3.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Brooklyn Nets vs Houston Rockets",
