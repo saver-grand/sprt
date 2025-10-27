@@ -5,13 +5,13 @@ const channels = [
     title: "Cleveland Cavaliers vs Detroit Pistons",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://e1.thetvapp.to/hls/NBA01/tracks-v1a1/mono.m3u8"
+    url: "https://nami.videobss.com/live/hd-en-2-3865399.m3u8"
   },
   {
     title: "Orlando Magic vs Philadelphia 76ers",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://e1.thetvapp.to/hls/NBA02/tracks-v1a1/mono.m3u8"
+    url: "https://nami.videobss.com/live/hd-en-2-3866224.m3u8"
   },
   {
     title: "Atlanta Hawks vs Chicago Bulls",
