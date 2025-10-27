@@ -17,19 +17,19 @@ const channels = [
     title: "Atlanta Hawks vs Chicago Bulls",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e3.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8"
+    url: "https://e2.thetvapp.to/hls/NBA04/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Brooklyn Nets vs Houston Rockets",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA04/tracks-v1a1/mono.m3u8"
+    url: "https://e1.thetvapp.to/hls/NBA25/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Boston Celtics vs New Orleans Pelicans",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA05/tracks-v1a1/mono.m3u8"
+    url: "https://e3.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Toronto Raptors vs San Antonio Spurs",
@@ -41,7 +41,7 @@ const channels = [
     title: "Oklahoma City Thunder vs Dallas Mavericks",
     date: "2025-10-27",
     time: "08:30",
-    url: "https://e1.thetvapp.to/hls/NBA07/tracks-v1a1/mono.m3u8"
+    url: "https://e1.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Phoenix Suns vs Utah Jazz",
@@ -53,7 +53,7 @@ const channels = [
     title: "Denver Nuggets vs Minnesota Timberwolves",
     date: "2025-10-27",
     time: "09:30",
-    url: "https://e1.thetvapp.to/hls/NBA09/tracks-v1a1/mono.m3u8"
+    url: "https://e1.thetvapp.to/hls/NBA26/tracks-v1a1/mono.m3u8"
   },
   {
     title: "Memphis Grizzlies vs Golden State Warriors",
