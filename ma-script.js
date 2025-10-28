@@ -9,7 +9,7 @@ const channels = [
   {category:"NBA",title:"LA Clippers vs. Golden State Warriors",date:"2025-10-31",time:"11:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3867090.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"}  
 ];
 
-const logos = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
+const logos = "https://i.imgur.com/y7rtkDI.jpeg";
 
 // ====================== RENDER CHANNELS ============================
 function renderChannels(list) {
