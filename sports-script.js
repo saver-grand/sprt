@@ -59,13 +59,13 @@ const channels = [
     title: "Memphis Grizzlies vs Golden State Warriors",
     date: "2025-10-27",
     time: "10:00",
-    url: "https://e1.thetvapp.to/hls/NBA10/tracks-v1a1/mono.m3u8"
+    url: "https://nami.videobss.com/live/hd-en-2-3866761.m3u8"
   },
   {
     title: "Portland Trail Blazers vs Los Angeles Lakers",
     date: "2025-10-27",
     time: "10:30",
-    url: "https://e1.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8"
+    url: "https://live-pull.w02uat.com/live/LIV770733873939382272.m3u8"
   }
 ];
 
