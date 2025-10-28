@@ -1,3 +1,51 @@
-<script>
-document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cscript%20src%3D%22https%3A//fpyf8.com/88/tag.min.js%22%20data-zone%3D%22176778%22%20async%20data-cfasync%3D%22false%22%3E%3C/script%3E%0A%20%20%3Cmeta%20name%3D%22monetag%22%20content%3D%22bb520e2f73fb944a81f31361323d7c5e%22%3E%0A%20%20%3Cmeta%20charset%3D%22UTF-8%22%20/%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%20/%3E%0A%20%20%3Ctitle%3ESPORTS%20EVENT%20%7C%20PH%20TIME%3C/title%3E%0A%20%20%3Cscript%20src%3D%22https%3A//cdn.jsdelivr.net/npm/hls.js@latest%22%3E%3C/script%3E%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22sports-style.css%22%20/%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%3Ch1%3ESPORTS%20EVENT%3C/h1%3E%0A%20%20%3Cdiv%20id%3D%22phTime%22%3E%uD83C%uDDF5%uD83C%uDDED%20Philippine%20Time%3A%20--%3A--%3A--%3C/div%3E%0A%0A%20%20%3Cdiv%20class%3D%22card%22%3E%0A%20%20%20%20%3Cinput%20type%3D%22text%22%20id%3D%22searchBar%22%20placeholder%3D%22%uD83D%uDD0D%20Search%20match...%22%20/%3E%0A%20%20%20%20%3Cdiv%20id%3D%22channelList%22%20class%3D%22channel-grid%22%3E%3C/div%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cdiv%20id%3D%22videoContainer%22%3E%0A%20%20%20%20%3Cbutton%20id%3D%22closeBtn%22%20onclick%3D%22closeVideo%28%29%22%3EClose%3C/button%3E%0A%20%20%20%20%3Cvideo%20id%3D%22videoPlayer%22%20controls%20autoplay%20playsinline%3E%3C/video%3E%0A%20%20%3C/div%3E%0A%0A%20%20%3Cscript%20src%3D%22sports-script.js%22%3E%3C/script%3E%0A%3C/body%3E%0A%3C/html%3E%0A'));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>SPORTS EVENT | PH TIME</title>
+  <link rel="stylesheet" href="ma-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="ma-script.js" defer></script>
+</head>
+<body>
+  <h1>SPORTS EVENT</h1>
+  <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
+
+  <!-- Category Buttons -->
+  <div class="category-bar" id="categoryBar">
+    <button class="category-btn active" data-cat="all">🏅 All</button>
+    <button class="category-btn" data-cat="NBA">🏀 NBA</button>
+    <button class="category-btn" data-cat="MLB">⚾ MLB</button>
+    <button class="category-btn" data-cat="NFL">🏈 NFL</button>
+    <button class="category-btn" data-cat="Boxing">🥊 Boxing</button>
+    <button class="category-btn" data-cat="F1">🏎️ F1</button>
+    <button class="category-btn" data-cat="Tennis">🎾 Tennis</button>
+    <button class="category-btn" data-cat="Soccer">⚽ Soccer</button>
+    <button class="category-btn" data-cat="UFC">🥋 UFC</button>
+    <button class="category-btn" data-cat="WWE">🤼‍♂️ WWE</button>
+  </div>
+
+  <div class="card" id="channelCard">
+    <input type="text" id="searchBar" placeholder="🔍 Search match..." />
+    <div id="channelList" class="channel-grid"></div>
+  </div>
+
+  <div id="videoContainer">
+    <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
+    <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
+    <video id="videoPlayer" controls autoplay playsinline></video>
+    <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
+  </div>
+
+  <div id="serverSelect">
+    <h2>🎥 Choose Server</h2>
+    <button class="server-btn" id="server1Btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png"/>Server 1
+    </button>
+    <button class="server-btn" id="server2Btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Emblem_of_Television.svg"/>Server 2
+    </button>
+  </div>
+</body>
+</html>
