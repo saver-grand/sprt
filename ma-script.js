@@ -2,14 +2,14 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"NBA",title:"Philadelphia 76ers vs. Washington Wizards",date:"2025-10-29",time:"07:00 AM",server1:"https://e1.thetvapp.to/hls/NBA07/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"NBA",title:"Charlotte Hornets vs. Miami Heat",date:"2025-10-29",time:"07:30 AM",server1:"https://e1.thetvapp.to/hls/NBA13/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
-  {category:"NBA",title:"New York Knicks vs. Milwaukee Bucks",date:"2025-10-29",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/NBA08/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
-  {category:"NBA",title:"Sacramento Kings vs. Oklahoma City Thunder",date:"2025-10-29",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
-  {category:"NBA",title:"LA Clippers vs. Golden State Warriors",date:"2025-10-29",time:"11:00 AM",server1:"https://e1.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
-  {category:"Soccer",title:"Lecce vs Napoli",date:"2025-10-29",time:"01:30 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch9.php"},
-  {category:"Soccer",title:"Atalanta vs AC Milan",date:"2025-10-29",time:"03:45 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch9.php"},
-  {category:"MLB",title:"Toronto Blue Jays vs Los Angeles Dodgers",date:"2025-10-29",time:"08:00 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch15.php"}
+  {category:"NBA",title:"🏀 Philadelphia 76ers vs. Washington Wizards",date:"2025-10-29",time:"07:00 AM",server1:"https://e1.thetvapp.to/hls/NBA07/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"NBA",title:"🏀 Charlotte Hornets vs. Miami Heat",date:"2025-10-29",time:"07:30 AM",server1:"https://e1.thetvapp.to/hls/NBA13/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"NBA",title:"🏀 New York Knicks vs. Milwaukee Bucks",date:"2025-10-29",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/NBA08/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
+  {category:"NBA",title:"🏀 Sacramento Kings vs. Oklahoma City Thunder",date:"2025-10-29",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"NBA",title:"🏀 LA Clippers vs. Golden State Warriors",date:"2025-10-29",time:"11:00 AM",server1:"https://e1.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
+  {category:"Soccer",title:"⚽ Lecce vs Napoli",date:"2025-10-29",time:"01:30 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch9.php"},
+  {category:"Soccer",title:"⚽ Atalanta vs AC Milan",date:"2025-10-29",time:"03:45 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch9.php"},
+  {category:"MLB",title:"⚾ Toronto Blue Jays vs Los Angeles Dodgers",date:"2025-10-29",time:"08:00 AM",server1:"down",server2:"https://streamcenter.pro/embed/ch15.php"}
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
