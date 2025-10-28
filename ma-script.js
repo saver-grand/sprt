@@ -2,16 +2,11 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"NBA",title:"Cleveland Cavaliers vs Detroit Pistons",date:"2025-10-29",time:"07:00 AM",server1:"https://shorten.is/Id5mx",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"NBA",title:"Orlando Magic vs Philadelphia 76ers",date:"2025-10-29",time:"07:30 AM",server1:"https://shorten.is/Id5mx?.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
-  {category:"Boxing",title:"Canelo Alvarez vs Benavidez",date:"2025-10-30",time:"09:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866761.m3u8",server2:"https://streamcenter.pro/embed/ch80.php"},
-  {category:"F1",title:"Monaco Grand Prix - Main Race",date:"2025-10-30",time:"08:30 PM",server1:"https://e1.thetvapp.to/hls/F1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch90.php"},
-  {category:"Tennis",title:"Wimbledon Finals 2025",date:"2025-10-31",time:"07:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3867090.m3u8",server2:"https://streamcenter.pro/embed/ch91.php"},
-  {category:"MLB",title:"Yankees vs Red Sox",date:"2025-10-29",time:"08:00 PM",server1:"https://e1.thetvapp.to/hls/MLB1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch70.php"},
-  {category:"NFL",title:"Cowboys vs 49ers",date:"2025-11-01",time:"09:00 AM",server1:"https://e1.thetvapp.to/hls/NFL1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
-  {category:"Soccer",title:"Real Madrid vs Barcelona",date:"2025-10-30",time:"03:00 AM",server1:"https://e2.thetvapp.to/hls/Soccer1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch72.php"},
-  {category:"UFC",title:"UFC 312: Main Card",date:"2025-10-31",time:"10:00 AM",server1:"https://e2.thetvapp.to/hls/UFC1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch73.php"},
-  {category:"WWE",title:"WWE SmackDown Live",date:"2025-11-02",time:"08:00 AM",server1:"https://e2.thetvapp.to/hls/WWE1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch74.php"}
+  {category:"NBA",title:"Philadelphia 76ers vs. Washington Wizards",date:"2025-10-29",time:"07:00 AM",server1:"https://shorten.is/Id5mx",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"NBA",title:"Charlotte Hornets vs. Miami Heat",date:"2025-10-29",time:"07:30 AM",server1:"https://shorten.is/Id5mx?.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"NBA",title:"New York Knicks vs. Milwaukee Bucks",date:"2025-10-29",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866761.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
+  {category:"NBA",title:"Sacramento Kings vs. Oklahoma City Thunder",date:"2025-10-30",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/F1/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"NBA",title:"LA Clippers vs. Golden State Warriors",date:"2025-10-31",time:"11:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3867090.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"}  
 ];
 
 const logos = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
