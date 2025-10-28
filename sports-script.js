@@ -5,13 +5,13 @@ const channels = [
     title: "Cleveland Cavaliers vs Detroit Pistons",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3865399.m3u8"
+    url: "https://shorten.is/Id5mx"
   },
   {
     title: "Orlando Magic vs Philadelphia 76ers",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3866224.m3u8"
+    url: "https://shorten.is/Id5mx?.m3u8"
   },
   {
     title: "Atlanta Hawks vs Chicago Bulls",
@@ -65,7 +65,7 @@ const channels = [
     title: "Portland Trail Blazers vs Los Angeles Lakers",
     date: "2025-10-27",
     time: "10:30",
-    url: "https://live-pull.w02uat.com/live/LIV770733873939382272.m3u8"
+    url: "https://nami.videobss.com/live/hd-en-2-3867090.m3u8"
   }
 ];
 
