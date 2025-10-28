@@ -47,7 +47,7 @@ const channels = [
     title: "Phoenix Suns vs Utah Jazz",
     date: "2025-10-27",
     time: "09:00",
-    url: "https://e1.thetvapp.to/hls/NBA08/tracks-v1a1/mono.m3u8"
+    url: "https://nami.videobss.com/live/hd-en-2-3866871.m3u8"
   },
   {
     title: "Denver Nuggets vs Minnesota Timberwolves",
