@@ -2,72 +2,37 @@ let hls;
 
 const channels = [
   {
-    title: "Cleveland Cavaliers vs Detroit Pistons",
+    title: "Philadelphia 76ers vs. Washington Wizards",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://shorten.is/Id5mx"
+    url: "https://e1.thetvapp.to/hls/NBA07/tracks-v1a1/mono.m3u8"
   },
   {
-    title: "Orlando Magic vs Philadelphia 76ers",
+    title: "Charlotte Hornets vs. Miami Heat",
     date: "2025-10-27",
     time: "07:00",
-    url: "https://shorten.is/Id5mx?.m3u8"
+    url: "https://e1.thetvapp.to/hls/NBA13/tracks-v1a1/mono.m3u8"
   },
   {
-    title: "Atlanta Hawks vs Chicago Bulls",
+    title: "New York Knicks vs. Milwaukee Bucks",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e2.thetvapp.to/hls/NBA04/tracks-v1a1/mono.m3u8"
+    url: "https://e2.thetvapp.to/hls/NBA08/tracks-v1a1/mono.m3u8"
   },
   {
-    title: "Brooklyn Nets vs Houston Rockets",
+    title: "Sacramento Kings vs. Oklahoma City Thunder",
     date: "2025-10-27",
     time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA25/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "Boston Celtics vs New Orleans Pelicans",
-    date: "2025-10-27",
-    time: "08:00",
-    url: "https://e3.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "Toronto Raptors vs San Antonio Spurs",
-    date: "2025-10-27",
-    time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA06/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "Oklahoma City Thunder vs Dallas Mavericks",
-    date: "2025-10-27",
-    time: "08:30",
     url: "https://e1.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8"
   },
   {
-    title: "Phoenix Suns vs Utah Jazz",
+    title: "LA Clippers vs. Golden State Warriors",
     date: "2025-10-27",
-    time: "09:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3866871.m3u8"
-  },
-  {
-    title: "Denver Nuggets vs Minnesota Timberwolves",
-    date: "2025-10-27",
-    time: "09:30",
-    url: "https://e1.thetvapp.to/hls/NBA26/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "Memphis Grizzlies vs Golden State Warriors",
-    date: "2025-10-27",
-    time: "10:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3866761.m3u8"
-  },
-  {
-    title: "Portland Trail Blazers vs Los Angeles Lakers",
-    date: "2025-10-27",
-    time: "10:30",
-    url: "https://nami.videobss.com/live/hd-en-2-3867090.m3u8"
+    time: "08:00",
+    url: "https://e3.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8"
   }
 ];
+
 
 const logos =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDu-D6tpUgnxurH9_AkBQ6a9TzVVpBfNE0VJArNbaWwsFTAEddxVTgHs&s=10";
