@@ -1,1 +1,151 @@
-const _0x23460f=_0x4b63;(function(_0x102ffe,_0x3c8871){const _0x269d89=_0x4b63,_0x54cdc3=_0x102ffe();while(!![]){try{const _0x2a30ec=-parseInt(_0x269d89(0x154))/0x1*(-parseInt(_0x269d89(0x122))/0x2)+parseInt(_0x269d89(0x14d))/0x3+parseInt(_0x269d89(0x15e))/0x4+parseInt(_0x269d89(0x15d))/0x5*(parseInt(_0x269d89(0x115))/0x6)+-parseInt(_0x269d89(0x10a))/0x7+parseInt(_0x269d89(0x168))/0x8+-parseInt(_0x269d89(0x133))/0x9;if(_0x2a30ec===_0x3c8871)break;else _0x54cdc3['push'](_0x54cdc3['shift']());}catch(_0x34881b){_0x54cdc3['push'](_0x54cdc3['shift']());}}}(_0x82ed,0x5ab10));let hls,selectedURLs={},activeCategory=_0x23460f(0x123);const channels=[{'category':'NBA','title':_0x23460f(0x12b),'date':_0x23460f(0x113),'time':'06:30\x20AM','server1':'https://s.rocketdns.info:443/live/xmltv/02a162774b/214173.m3u8','server2':_0x23460f(0x149)},{'category':_0x23460f(0x166),'title':_0x23460f(0x156),'date':_0x23460f(0x113),'time':_0x23460f(0x14c),'server1':'https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8','server2':_0x23460f(0x16c)},{'category':'NBA','title':_0x23460f(0x16b),'date':_0x23460f(0x113),'time':_0x23460f(0x14c),'server1':_0x23460f(0x16a),'server2':_0x23460f(0x126)},{'category':_0x23460f(0x166),'title':_0x23460f(0x13d),'date':_0x23460f(0x113),'time':'07:30\x20AM','server1':_0x23460f(0x145),'server2':_0x23460f(0x155)},{'category':_0x23460f(0x166),'title':_0x23460f(0x11d),'date':_0x23460f(0x113),'time':'8:00\x20AM','server1':_0x23460f(0x169),'server2':'https://streamcenter.pro/embed/ch69.php'},{'category':'NBA','title':_0x23460f(0x163),'date':'2025-10-30','time':'08:00\x20AM','server1':_0x23460f(0x12d),'server2':'https://streamcenter.pro/embed/ch70.php'},{'category':_0x23460f(0x166),'title':_0x23460f(0x15b),'date':_0x23460f(0x113),'time':'08:30\x20AM','server1':_0x23460f(0x108),'server2':'https://streamcenter.pro/embed/ch71.php'},{'category':'NBA','title':'🏀\x20Portland\x20Trail\x20Blazers\x20vs.\x20Utah\x20Jazz','date':_0x23460f(0x113),'time':_0x23460f(0x14b),'server1':'https://s.rocketdns.info:443/live/xmltv/02a162774b/214179.m3u8','server2':_0x23460f(0x127)},{'category':'NBA','title':_0x23460f(0x157),'date':_0x23460f(0x113),'time':_0x23460f(0x14b),'server1':'https://s.rocketdns.info:443/live/xmltv/02a162774b/214172.m3u8','server2':_0x23460f(0x11b)},{'category':_0x23460f(0x166),'title':_0x23460f(0x144),'date':_0x23460f(0x113),'time':_0x23460f(0x12f),'server1':_0x23460f(0x143),'server2':_0x23460f(0x130)}],logos=_0x23460f(0x10f);function renderChannels(_0x2e10fc){const _0x52d70d=_0x23460f,_0x46302c=document[_0x52d70d(0x13f)]('channelList');if(_0x2e10fc[_0x52d70d(0x10d)]===0x0){_0x46302c['innerHTML']=_0x52d70d(0x116);return;}_0x46302c[_0x52d70d(0x15f)]=_0x2e10fc[_0x52d70d(0x120)]((_0x18c37a,_0x2a0e08)=>'\x0a\x20\x20\x20\x20<div\x20class=\x22channel-box\x22\x20onclick=\x27showServerSelect('+JSON[_0x52d70d(0x151)](_0x18c37a)+_0x52d70d(0x132)+logos+_0x52d70d(0x11e)+_0x18c37a['title']+'</h3>\x0a\x20\x20\x20\x20\x20\x20<small>🏷️\x20'+_0x18c37a['category']+'</small><br>\x0a\x20\x20\x20\x20\x20\x20<small>📅\x20'+_0x18c37a[_0x52d70d(0x14f)]+'\x20-\x20'+_0x18c37a['time']+'\x20PH</small>\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22timer-'+_0x2a0e08+_0x52d70d(0x161))[_0x52d70d(0x128)](''),startCountdown(_0x2e10fc);}function startCountdown(_0x4dca19){function _0x2e1bb7(_0xd1622d,_0x5ecae8){const _0x3b31ba=_0x4b63,[_0x1e65ce,_0x57e8b8]=_0x5ecae8[_0x3b31ba(0x152)]('\x20');let [_0x13d32a,_0x3560d9]=_0x1e65ce[_0x3b31ba(0x152)](':')[_0x3b31ba(0x120)](Number);if(_0x57e8b8[_0x3b31ba(0x15c)]()==='PM'&&_0x13d32a<0xc)_0x13d32a+=0xc;if(_0x57e8b8[_0x3b31ba(0x15c)]()==='AM'&&_0x13d32a===0xc)_0x13d32a=0x0;return new Date(_0xd1622d+'T'+String(_0x13d32a)[_0x3b31ba(0x150)](0x2,'0')+':'+String(_0x3560d9)['padStart'](0x2,'0')+':00+08:00');}function _0x2bbf4d(){const _0x22b82b=_0x4b63,_0x48a019=new Date(new Date()['toLocaleString'](_0x22b82b(0x146),{'timeZone':_0x22b82b(0x153)}));_0x4dca19[_0x22b82b(0x165)]((_0x4120df,_0x2717a1)=>{const _0x1fa186=_0x22b82b,_0x44d209=_0x2e1bb7(_0x4120df[_0x1fa186(0x14f)],_0x4120df[_0x1fa186(0x141)]),_0x1b2720=_0x44d209-_0x48a019,_0x3ff06d=document[_0x1fa186(0x13f)](_0x1fa186(0x142)+_0x2717a1);if(!_0x3ff06d)return;if(_0x1b2720<=0x0)_0x3ff06d[_0x1fa186(0x14a)]=_0x1fa186(0x162),_0x3ff06d[_0x1fa186(0x14e)][_0x1fa186(0x139)]=_0x1fa186(0x158);else{const _0x5a422e=Math[_0x1fa186(0x110)](_0x1b2720/0x36ee80),_0x59a930=Math[_0x1fa186(0x110)](_0x1b2720%0x36ee80/0xea60),_0x514690=Math[_0x1fa186(0x110)](_0x1b2720%0xea60/0x3e8);_0x3ff06d[_0x1fa186(0x14a)]=_0x1fa186(0x121)+_0x5a422e+'h\x20'+_0x59a930+'m\x20'+_0x514690+'s',_0x3ff06d['style'][_0x1fa186(0x139)]=_0x1fa186(0x131);}});}_0x2bbf4d(),setInterval(_0x2bbf4d,0x3e8);}function filterChannels(){const _0x2a88df=_0x23460f,_0x414b1c=document[_0x2a88df(0x13f)]('searchBar')[_0x2a88df(0x12e)][_0x2a88df(0x15a)]();renderChannels(channels[_0x2a88df(0x135)](_0x11199e=>(activeCategory===_0x2a88df(0x123)||_0x11199e[_0x2a88df(0x140)]===activeCategory)&&_0x11199e['title'][_0x2a88df(0x15a)]()['includes'](_0x414b1c)));}document[_0x23460f(0x13f)](_0x23460f(0x119))[_0x23460f(0x11f)](_0x23460f(0x13e),filterChannels),document[_0x23460f(0x13c)](_0x23460f(0x136))[_0x23460f(0x165)](_0x35bf94=>{const _0x4d0983=_0x23460f;_0x35bf94[_0x4d0983(0x11f)](_0x4d0983(0x164),()=>{const _0x31ad33=_0x4d0983;document[_0x31ad33(0x13c)]('.category-btn')[_0x31ad33(0x165)](_0x67a43f=>_0x67a43f['classList'][_0x31ad33(0x129)](_0x31ad33(0x148))),_0x35bf94['classList']['add']('active'),activeCategory=_0x35bf94[_0x31ad33(0x11c)](_0x31ad33(0x16d)),filterChannels();});});function showServerSelect(_0x598616){const _0x16638b=_0x23460f;selectedURLs=_0x598616,document[_0x16638b(0x13f)](_0x16638b(0x10e))[_0x16638b(0x14e)][_0x16638b(0x167)]=_0x16638b(0x109);}document[_0x23460f(0x13f)](_0x23460f(0x118))[_0x23460f(0x124)]=()=>{const _0x3eb50b=_0x23460f;document[_0x3eb50b(0x13f)](_0x3eb50b(0x10e))[_0x3eb50b(0x14e)]['display']='none',playChannel(selectedURLs[_0x3eb50b(0x125)]);},document[_0x23460f(0x13f)]('server2Btn')[_0x23460f(0x124)]=()=>{const _0x1ac653=_0x23460f;document[_0x1ac653(0x13f)](_0x1ac653(0x10e))[_0x1ac653(0x14e)]['display']='none',playIframe(selectedURLs[_0x1ac653(0x137)]);};function playChannel(_0x475100){const _0x26deef=_0x23460f,_0x9d828=document['getElementById'](_0x26deef(0x11a)),_0x1a61c0=document[_0x26deef(0x13f)]('videoPlayer'),_0x34339a=document[_0x26deef(0x13f)]('iframePlayer');_0x9d828[_0x26deef(0x14e)][_0x26deef(0x167)]=_0x26deef(0x109),_0x34339a[_0x26deef(0x14e)][_0x26deef(0x167)]='none',_0x1a61c0[_0x26deef(0x14e)][_0x26deef(0x167)]=_0x26deef(0x112),document[_0x26deef(0x13f)](_0x26deef(0x138))[_0x26deef(0x14e)]['display']='none';if(hls)hls[_0x26deef(0x13a)]();if(Hls[_0x26deef(0x10c)]())hls=new Hls(),hls[_0x26deef(0x159)](_0x475100),hls['attachMedia'](_0x1a61c0),hls['on'](Hls[_0x26deef(0x114)][_0x26deef(0x13b)],()=>_0x1a61c0[_0x26deef(0x147)]());else _0x1a61c0[_0x26deef(0x134)]=_0x475100;}function playIframe(_0x5cc76d){const _0x504439=_0x23460f,_0x85e344=document[_0x504439(0x13f)](_0x504439(0x11a)),_0x681f8b=document['getElementById'](_0x504439(0x12c)),_0x53d1a7=document[_0x504439(0x13f)](_0x504439(0x160));_0x85e344[_0x504439(0x14e)][_0x504439(0x167)]=_0x504439(0x109),_0x681f8b[_0x504439(0x14e)][_0x504439(0x167)]=_0x504439(0x10b),_0x53d1a7[_0x504439(0x14e)]['display']=_0x504439(0x112),document[_0x504439(0x13f)]('channelCard')[_0x504439(0x14e)][_0x504439(0x167)]=_0x504439(0x10b),_0x53d1a7['src']=_0x5cc76d;}function _0x4b63(_0x1b0cfd,_0x1fda87){const _0x82ed95=_0x82ed();return _0x4b63=function(_0x4b639a,_0x2ba1c5){_0x4b639a=_0x4b639a-0x108;let _0x5698a3=_0x82ed95[_0x4b639a];return _0x5698a3;},_0x4b63(_0x1b0cfd,_0x1fda87);}function closeVideo(){const _0x34a4cd=_0x23460f;document[_0x34a4cd(0x13f)](_0x34a4cd(0x11a))[_0x34a4cd(0x14e)][_0x34a4cd(0x167)]=_0x34a4cd(0x10b),document[_0x34a4cd(0x13f)](_0x34a4cd(0x138))[_0x34a4cd(0x14e)]['display']=_0x34a4cd(0x112),document[_0x34a4cd(0x13f)](_0x34a4cd(0x12c))['pause'](),document[_0x34a4cd(0x13f)](_0x34a4cd(0x160))[_0x34a4cd(0x134)]='';}function _0x82ed(){const _0xbb3352=['Asia/Manila','5wZsHdf','https://streamcenter.pro/embed/ch68.php','🏀\x20Cleveland\x20Cavaliers\x20vs.\x20Boston\x20Celtics','🏀\x20Los\x20Angeles\x20Lakers\x20vs.\x20Minnesota\x20Timberwolves','limegreen','loadSource','toLowerCase','🏀\x20New\x20Orleans\x20Pelicans\x20vs.\x20Denver\x20Nuggets','toUpperCase','8985FpIHGA','1970760thIzRL','innerHTML','iframePlayer','\x22\x20class=\x22countdown\x22>Loading...</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20','🟢\x20LIVE\x20NOW','🏀\x20Indiana\x20Pacers\x20vs.\x20Dallas\x20Mavericks','click','forEach','NBA','display','1838872dXPtet','https://s.rocketdns.info:443/live/xmltv/02a162774b/214176.m3u8','https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8','🏀\x20Orlando\x20Magic\x20vs.\x20Detroit\x20Pistons','https://streamcenter.pro/embed/ch66.php','data-cat','https://s.rocketdns.info:443/live/xmltv/02a162774b/214178.m3u8','flex','2645643QjThrH','none','isSupported','length','serverSelect','https://i.imgur.com/y7rtkDI.jpeg','floor','phTime','block','2025-10-30','Events','1020guXcwX','<p\x20style=\x27text-align:center;color:#f55;\x27>No\x20matches\x20found</p>','toLocaleTimeString','server1Btn','searchBar','videoContainer','https://streamcenter.pro/embed/ch73.php','getAttribute','🏀\x20Sacramento\x20Kings\x20vs.\x20Chicago\x20Bulls','\x22\x20alt=\x22logo\x22>\x0a\x20\x20\x20\x20\x20\x20<h3>','addEventListener','map','⏳\x20Starts\x20in\x20','265414UDumLy','all','onclick','server1','https://streamcenter.pro/embed/ch67.php','https://streamcenter.pro/embed/ch72.php','join','remove','🇵🇭\x20Philippine\x20Time:\x20','🏀\x20Houston\x20Rockets\x20vs.\x20Toronto\x20Raptors','videoPlayer','https://s.rocketdns.info:443/live/xmltv/02a162774b/214177.m3u8','value','10:00\x20AM','https://streamcenter.pro/embed/ch74.php','#ffcc66',')\x27>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22','11888460DsnEhP','src','filter','.category-btn','server2','channelCard','color','destroy','MANIFEST_PARSED','querySelectorAll','🏀\x20Atlanta\x20Hawks\x20vs.\x20Brooklyn\x20Nets','input','getElementById','category','time','timer-','https://s.rocketdns.info:443/live/xmltv/02a162774b/214180.m3u8','🏀\x20Memphis\x20Grizzlies\x20vs.\x20Phoenix\x20Suns','https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8','en-US','play','active','https://streamcenter.pro/embed/ch65.php','textContent','09:00\x20AM','07:00\x20AM','1136361VDqSnD','style','date','padStart','stringify','split'];_0x82ed=function(){return _0xbb3352;};return _0x82ed();}function toggleList(){const _0x31c5ef=_0x23460f,_0x23474b=document[_0x31c5ef(0x13f)]('channelCard');_0x23474b[_0x31c5ef(0x14e)][_0x31c5ef(0x167)]=_0x23474b[_0x31c5ef(0x14e)][_0x31c5ef(0x167)]===_0x31c5ef(0x10b)?_0x31c5ef(0x112):_0x31c5ef(0x10b);}function updateTime(){const _0x461be5=_0x23460f,_0x4fa840=new Date(),_0x2f37cb=new Date(_0x4fa840['toLocaleString'](_0x461be5(0x146),{'timeZone':_0x461be5(0x153)}));document[_0x461be5(0x13f)](_0x461be5(0x111))[_0x461be5(0x14a)]=_0x461be5(0x12a)+_0x2f37cb[_0x461be5(0x117)]();}setInterval(updateTime,0x3e8),updateTime(),renderChannels(channels);
+let hls, selectedURLs = {}, activeCategory = "all";
+
+// ====================== CHANNEL LIST ============================
+const channels = [
+  {category:"NBA",title:"🏀 Houston Rockets vs. Toronto Raptors",date:"2025-10-30",time:"06:30 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866742.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"NBA",title:"🏀 Cleveland Cavaliers vs. Boston Celtics",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"NBA",title:"🏀 Orlando Magic vs. Detroit Pistons",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
+  {category:"NBA",title:"🏀 Atlanta Hawks vs. Brooklyn Nets",date:"2025-10-30",time:"07:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"NBA",title:"🏀 Sacramento Kings vs. Chicago Bulls",date:"2025-10-30",time:"8:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214176.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
+  {category:"NBA",title:"🏀 Indiana Pacers vs. Dallas Mavericks",date:"2025-10-30",time:"08:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214177.m3u8",server2:"https://streamcenter.pro/embed/ch70.php"},
+  {category:"NBA",title:"🏀 New Orleans Pelicans vs. Denver Nuggets",date:"2025-10-30",time:"08:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214178.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
+  {category:"NBA",title:"🏀 Portland Trail Blazers vs. Utah Jazz",date:"2025-10-30",time:"09:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214179.m3u8",server2:"https://streamcenter.pro/embed/ch72.php"},
+  {category:"NBA",title:"🏀 Los Angeles Lakers vs. Minnesota Timberwolves",date:"2025-10-30",time:"09:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214172.m3u8",server2:"https://streamcenter.pro/embed/ch73.php"},
+  {category:"NBA",title:"🏀 Memphis Grizzlies vs. Phoenix Suns",date:"2025-10-30",time:"10:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214180.m3u8",server2:"https://streamcenter.pro/embed/ch74.php"},
+];
+
+const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+
+// ====================== RENDER CHANNELS ============================
+function renderChannels(list) {
+  const container = document.getElementById("channelList");
+  if (list.length === 0) {
+    container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
+    return;
+  }
+  container.innerHTML = list.map((ch, i) => `
+    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
+      <img src="${logos}" alt="logo">
+      <h3>${ch.title}</h3>
+      <small>🏷️ ${ch.category}</small><br>
+      <small>📅 ${ch.date} - ${ch.time} PH</small>
+      <div id="timer-${i}" class="countdown">Loading...</div>
+    </div>
+  `).join("");
+  startCountdown(list);
+}
+
+// ====================== COUNTDOWN ============================
+function startCountdown(list) {
+  function parseTime(date, time) {
+    const [t, period] = time.split(" ");
+    let [hours, minutes] = t.split(":").map(Number);
+    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+    return new Date(`${date}T${String(hours).padStart(2,"0")}:${String(minutes).padStart(2,"0")}:00+08:00`);
+  }
+
+  function update() {
+    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone:"Asia/Manila" }));
+    list.forEach((ch, i) => {
+      const target = parseTime(ch.date, ch.time);
+      const diff = target - nowPH;
+      const el = document.getElementById(`timer-${i}`);
+      if (!el) return;
+      if (diff <= 0) {
+        el.textContent = "🟢 LIVE NOW";
+        el.style.color = "limegreen";
+      } else {
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
+        el.style.color = "#ffcc66";
+      }
+    });
+  }
+
+  update();
+  setInterval(update, 1000);
+}
+
+// ====================== CATEGORY + SEARCH ============================
+function filterChannels() {
+  const search = document.getElementById("searchBar").value.toLowerCase();
+  renderChannels(channels.filter(c =>
+    (activeCategory === "all" || c.category === activeCategory) &&
+    c.title.toLowerCase().includes(search)
+  ));
+}
+
+document.getElementById("searchBar").addEventListener("input", filterChannels);
+document.querySelectorAll(".category-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeCategory = btn.getAttribute("data-cat");
+    filterChannels();
+  });
+});
+
+// ====================== SERVER SELECTION ============================
+function showServerSelect(ch) {
+  selectedURLs = ch;
+  document.getElementById("serverSelect").style.display = "flex";
+}
+document.getElementById("server1Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playChannel(selectedURLs.server1);
+};
+document.getElementById("server2Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playIframe(selectedURLs.server2);
+};
+
+// ====================== PLAYER CONTROL ============================
+function playChannel(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+  c.style.display = "flex"; i.style.display = "none"; v.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+  if (hls) hls.destroy();
+  if (Hls.isSupported()) {
+    hls = new Hls(); hls.loadSource(url); hls.attachMedia(v);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
+  } else v.src = url;
+}
+
+function playIframe(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+  c.style.display = "flex"; v.style.display = "none"; i.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+  i.src = url;
+}
+
+function closeVideo() {
+  document.getElementById("videoContainer").style.display = "none";
+  document.getElementById("channelCard").style.display = "block";
+  document.getElementById("videoPlayer").pause();
+  document.getElementById("iframePlayer").src = "";
+}
+
+function toggleList() {
+  const c = document.getElementById("channelCard");
+  c.style.display = c.style.display === "none" ? "block" : "none";
+}
+
+// ====================== PHILIPPINE TIME CLOCK ============================
+function updateTime() {
+  const now = new Date();
+  const ph = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+  document.getElementById("phTime").textContent =
+    "🇵🇭 Philippine Time: " + ph.toLocaleTimeString();
+}
+setInterval(updateTime, 1000);
+updateTime();
+
+// ====================== INIT ============================
+renderChannels(channels);
