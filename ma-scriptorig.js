@@ -2,7 +2,7 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"NBA",title:"🏀 Houston Rockets vs. Toronto Raptors",date:"2025-10-30",time:"06:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214173.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"NBA",title:"🏀 Houston Rockets vs. Toronto Raptors",date:"2025-10-30",time:"06:30 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866742.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
   {category:"NBA",title:"🏀 Cleveland Cavaliers vs. Boston Celtics",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
   {category:"NBA",title:"🏀 Orlando Magic vs. Detroit Pistons",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
   {category:"NBA",title:"🏀 Atlanta Hawks vs. Brooklyn Nets",date:"2025-10-30",time:"07:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
