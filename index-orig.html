@@ -2,27 +2,53 @@
 <html lang="en">
 <head>
 
+  <script type='text/javascript' src='//pl27946908.effectivegatecpm.com/d0/5b/d6/d05bd6cd80f478dda3d3fc55749357cd.js'></script>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SPORTS EVENT | PH TIME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>MASPORTS</title>
+  <link rel="stylesheet" href="ma-style.css">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-  <link rel="stylesheet" href="sports-style.css" />
+  <script src="ma-script.js" defer></script>
 </head>
 <body>
-  <h1>SPORTS EVENT</h1>
+  <h1>MASPORTS</h1>
   <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
 
-  <div class="card">
+  <!-- Category Buttons -->
+  <div class="category-bar" id="categoryBar">
+    <button class="category-btn active" data-cat="all">🏅 All</button>
+    <button class="category-btn" data-cat="NBA">🏀 NBA</button>
+    <button class="category-btn" data-cat="MLB">⚾ MLB</button>
+    <button class="category-btn" data-cat="NFL">🏈 NFL</button>
+    <button class="category-btn" data-cat="Boxing">🥊 Boxing</button>
+    <button class="category-btn" data-cat="F1">🏎️ F1</button>
+    <button class="category-btn" data-cat="Tennis">🎾 Tennis</button>
+    <button class="category-btn" data-cat="Soccer">⚽ Soccer</button>
+    <button class="category-btn" data-cat="UFC">🥋 UFC</button>
+    <button class="category-btn" data-cat="WWE">🤼‍♂️ WWE</button>
+  </div>
+
+  <div class="card" id="channelCard">
     <input type="text" id="searchBar" placeholder="🔍 Search match..." />
     <div id="channelList" class="channel-grid"></div>
   </div>
 
   <div id="videoContainer">
-    <button id="closeBtn" onclick="closeVideo()">Close</button>
+    <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
+    <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
     <video id="videoPlayer" controls autoplay playsinline></video>
+    <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
   </div>
 
-  <script src="sports-script.js"></script>
+  <div id="serverSelect">
+    <h2>🎥 Choose Server</h2>
+    <button class="server-btn" id="server1Btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png"/>Server 1
+    </button>
+    <button class="server-btn" id="server2Btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Emblem_of_Television.svg"/>Server 2
+    </button>
+  </div>
 </body>
 </html>
-
