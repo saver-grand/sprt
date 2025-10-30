@@ -2,7 +2,7 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
- {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://honortvph.dpdns.org/nba1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+ {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://e1.thetvapp.to/hls/NBA02/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
   {category:"Basketball",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba2/index.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
   {category:"Basketball",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba3/index.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
   {category:"Basketball",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://honortvph.dpdns.org/nba4/index.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
