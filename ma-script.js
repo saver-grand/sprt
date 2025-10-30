@@ -2,10 +2,10 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"NBA",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866742.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"NBA",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866526.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
-  {category:"NBA",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866633.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
-  {category:"NBA",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"NBA",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://honortvph.dpdns.org/nba1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"NBA",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba2/index.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"NBA",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba3/index.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
+  {category:"NBA",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://honortvph.dpdns.org/nba4/index.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
