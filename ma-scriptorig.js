@@ -6,12 +6,12 @@ const channels = [
   {category:"NBA",title:"🏀 Cleveland Cavaliers vs. Boston Celtics",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
   {category:"NBA",title:"🏀 Orlando Magic vs. Detroit Pistons",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
   {category:"NBA",title:"🏀 Atlanta Hawks vs. Brooklyn Nets",date:"2025-10-30",time:"07:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
-  {category:"NBA",title:"🏀 Sacramento Kings vs. Chicago Bulls",date:"2025-10-30",time:"8:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214176.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
-  {category:"NBA",title:"🏀 Indiana Pacers vs. Dallas Mavericks",date:"2025-10-30",time:"08:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214177.m3u8",server2:"https://streamcenter.pro/embed/ch70.php"},
-  {category:"NBA",title:"🏀 New Orleans Pelicans vs. Denver Nuggets",date:"2025-10-30",time:"08:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214178.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
+  {category:"NBA",title:"🏀 Sacramento Kings vs. Chicago Bulls",date:"2025-10-30",time:"8:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866311.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
+  {category:"NBA",title:"🏀 Indiana Pacers vs. Dallas Mavericks",date:"2025-10-30",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866140.m3u8",server2:"https://streamcenter.pro/embed/ch70.php"},
+  {category:"NBA",title:"🏀 New Orleans Pelicans vs. Denver Nuggets",date:"2025-10-30",time:"08:30 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866204.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
   {category:"NBA",title:"🏀 Portland Trail Blazers vs. Utah Jazz",date:"2025-10-30",time:"09:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214179.m3u8",server2:"https://streamcenter.pro/embed/ch72.php"},
-  {category:"NBA",title:"🏀 Los Angeles Lakers vs. Minnesota Timberwolves",date:"2025-10-30",time:"09:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214172.m3u8",server2:"https://streamcenter.pro/embed/ch73.php"},
-  {category:"NBA",title:"🏀 Memphis Grizzlies vs. Phoenix Suns",date:"2025-10-30",time:"10:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214180.m3u8",server2:"https://streamcenter.pro/embed/ch74.php"},
+  {category:"NBA",title:"🏀 Los Angeles Lakers vs. Minnesota Timberwolves",date:"2025-10-30",time:"09:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866674.m3u8",server2:"https://streamcenter.pro/embed/ch73.php"},
+  {category:"NBA",title:"🏀 Memphis Grizzlies vs. Phoenix Suns",date:"2025-10-30",time:"10:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866567.m3u8",server2:"https://streamcenter.pro/embed/ch74.php"},
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
