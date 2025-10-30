@@ -3,7 +3,7 @@ let hls, selectedURLs = {}, activeCategory = "all";
 // ====================== CHANNEL LIST ============================
 const channels = [
   {category:"NBA",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866742.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"NBA",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:80 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866526.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"NBA",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866526.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
   {category:"NBA",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866633.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
   {category:"NBA",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
 ];
