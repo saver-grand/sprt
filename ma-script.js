@@ -2,16 +2,20 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://honortvph.dpdns.org/nba1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+ {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://honortvph.dpdns.org/nba1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
   {category:"Basketball",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba2/index.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
   {category:"Basketball",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba3/index.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
   {category:"Basketball",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://honortvph.dpdns.org/nba4/index.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
-  {category:"MLB",title:"⚾ Los Angeles Dodgers vs Toronto Blue Jays",date:"2025-11-02",time:"08:00 AM",server1:"https://honortvph.dpdns.org/nba5/index.m3u8",server2:"https://streamcenter.pro/embed/ch15.php"},
-  {category:"Soccer",title:"⚽ Cagliari vs Sassuolo",date:"2025-10-31",time:"01:30 AM",server1:"https://honortvph.dpdns.org/nba6/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},
-  {category:"Soccer",title:"⚽ Pisa vs Lazio",date:"2025-10-31",time:"03:00 AM",server1:"https://honortvph.dpdns.org/nba7/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
-  {category:"UFC/MMA",title:"🥋 Steve Garcia vs David Onama",date:"2025-11-02",time:"07:00 AM",server1:"https://honortvph.dpdns.org/nba8/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
-  {category:"Hockey",title:"🏑 Steve Garcia vs David Onama",date:"2025-11-02",time:"07:00 AM",server1:"https://honortvph.dpdns.org/nba8/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
-
+  {category:"MLB",title:"⚾ Los Angeles Dodgers vs Toronto Blue Jays",date:"2025-11-02",time:"08:00 AM",server1:"https://honortvph.dpdns.org/mlb1/index.m3u8",server2:"https://streamcenter.pro/embed/ch15.php"},
+  {category:"Soccer",title:"⚽ Cagliari vs Sassuolo",date:"2025-10-31",time:"01:30 AM",server1:"https://honortvph.dpdns.org/soccer1/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},
+  {category:"Soccer",title:"⚽ Pisa vs Lazio",date:"2025-10-31",time:"03:00 AM",server1:"https://honortvph.dpdns.org/soccer2/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
+  {category:"UFC/MMA",title:"🥋 Steve Garcia vs David Onama",date:"2025-11-02",time:"07:00 AM",server1:"https://honortvph.dpdns.org/ufc1/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
+  {category:"Hockey",title:"🏑 Buffalo Sabres vs Boston Bruins",date:"2025-10-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey1/index.m3u8",server2:"https://streamcenter.pro/embed/ch50.php"},  
+  {category:"Hockey",title:"🏑 Calgary Flames vs Ottawa Senators",date:"2025-11-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey2/index.m3u8",server2:"https://streamcenter.pro/embed/ch51.php"},  
+  {category:"Hockey",title:"🏑 Dallas Stars vs Tampa Bay Lightning",date:"2025-11-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey3/index.m3u8",server2:"https://streamcenter.pro/embed/ch52.php"},  
+  {category:"Hockey",title:"🏑 Nashville Predators vs Philadelphia Flyers",date:"2025-10-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey4/index.m3u8",server2:"https://streamcenter.pro/embed/ch53.php"},  
+  {category:"Hockey",title:"🏑 New York Islanders vs Carolina Hurricanes",date:"2025-10-31",time:"07:30 AM",server1:"https://honortvph.dpdns.org/hockey5/index.m3u8",server2:"https://streamcenter.pro/embed/ch54.php"},  
+ 
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
