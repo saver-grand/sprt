@@ -2,16 +2,20 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"NBA",title:"🏀 Houston Rockets vs. Toronto Raptors",date:"2025-10-30",time:"06:30 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866742.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"NBA",title:"🏀 Cleveland Cavaliers vs. Boston Celtics",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
-  {category:"NBA",title:"🏀 Orlando Magic vs. Detroit Pistons",date:"2025-10-30",time:"07:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
-  {category:"NBA",title:"🏀 Atlanta Hawks vs. Brooklyn Nets",date:"2025-10-30",time:"07:30 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
-  {category:"NBA",title:"🏀 Sacramento Kings vs. Chicago Bulls",date:"2025-10-30",time:"8:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866311.m3u8",server2:"https://streamcenter.pro/embed/ch69.php"},
-  {category:"NBA",title:"🏀 Indiana Pacers vs. Dallas Mavericks",date:"2025-10-30",time:"08:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866140.m3u8",server2:"https://streamcenter.pro/embed/ch70.php"},
-  {category:"NBA",title:"🏀 New Orleans Pelicans vs. Denver Nuggets",date:"2025-10-30",time:"08:30 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866204.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
-  {category:"NBA",title:"🏀 Portland Trail Blazers vs. Utah Jazz",date:"2025-10-30",time:"09:00 AM",server1:"https://s.rocketdns.info:443/live/xmltv/02a162774b/214179.m3u8",server2:"https://streamcenter.pro/embed/ch72.php"},
-  {category:"NBA",title:"🏀 Los Angeles Lakers vs. Minnesota Timberwolves",date:"2025-10-30",time:"09:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866674.m3u8",server2:"https://streamcenter.pro/embed/ch73.php"},
-  {category:"NBA",title:"🏀 Memphis Grizzlies vs. Phoenix Suns",date:"2025-10-30",time:"10:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866567.m3u8",server2:"https://streamcenter.pro/embed/ch74.php"},
+ {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866892.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
+  {category:"Basketball",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",server1:"https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866783.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=7ebb921583fe228e8019ca004b8d6cf6",server2:"https://streamcenter.pro/embed/ch66.php"},
+  {category:"Basketball",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",server1:"https://e4.thetvapp.to/hls/NBA20/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
+  {category:"Basketball",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",server1:"https://e4.thetvapp.to/hls/NBA10/tracks-v1a1/mono.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"MLB",title:"⚾ Los Angeles Dodgers vs Toronto Blue Jays",date:"2025-11-02",time:"08:00 AM",server1:"https://honortvph.dpdns.org/mlb1/index.m3u8",server2:"https://streamcenter.pro/embed/ch15.php"},
+  {category:"Soccer",title:"⚽ Cagliari vs Sassuolo",date:"2025-10-31",time:"01:30 AM",server1:"https://honortvph.dpdns.org/soccer1/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},
+  {category:"Soccer",title:"⚽ Pisa vs Lazio",date:"2025-10-31",time:"03:00 AM",server1:"https://honortvph.dpdns.org/soccer2/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
+  {category:"UFC/MMA",title:"🥋 Steve Garcia vs David Onama",date:"2025-11-02",time:"07:00 AM",server1:"https://honortvph.dpdns.org/ufc1/index.m3u8",server2:"https://streamcenter.pro/embed/ch9.php"},  
+  {category:"Hockey",title:"🏑 Buffalo Sabres vs Boston Bruins",date:"2025-10-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey1/index.m3u8",server2:"https://streamcenter.pro/embed/ch50.php"},  
+  {category:"Hockey",title:"🏑 Calgary Flames vs Ottawa Senators",date:"2025-11-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey2/index.m3u8",server2:"https://streamcenter.pro/embed/ch51.php"},  
+  {category:"Hockey",title:"🏑 Dallas Stars vs Tampa Bay Lightning",date:"2025-11-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey3/index.m3u8",server2:"https://streamcenter.pro/embed/ch52.php"},  
+  {category:"Hockey",title:"🏑 Nashville Predators vs Philadelphia Flyers",date:"2025-10-31",time:"07:00 AM",server1:"https://honortvph.dpdns.org/hockey4/index.m3u8",server2:"https://streamcenter.pro/embed/ch53.php"},  
+  {category:"Hockey",title:"🏑 New York Islanders vs Carolina Hurricanes",date:"2025-10-31",time:"07:30 AM",server1:"https://honortvph.dpdns.org/hockey5/index.m3u8",server2:"https://streamcenter.pro/embed/ch54.php"},  
+ 
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
