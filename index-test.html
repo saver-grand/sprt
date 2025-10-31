@@ -5,9 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>MASPORTS</title>
 
-  <link rel="stylesheet" href="ma-style-test.css">
+  <link rel="stylesheet" href="ma-style.css">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
-  <script src="ma-scriptorig.js" defer></script>
+  <script src="ma-script.js" defer></script>
+
+  <style>
+    /* 💠 Reposition category bar to top-left */
+    .category-bar {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      z-index: 1000;
+      background: rgba(0,0,0,0.7);
+      padding: 8px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,255,153,0.4);
+    }
+
+    .category-btn {
+      background: #111;
+      color: #00ff99;
+      border: 1px solid #00ff99;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .category-btn.active, .category-btn:hover {
+      background: #00ff99;
+      color: #000;
+      box-shadow: 0 0 10px #00ff99;
+    }
+
+    /* Adjust layout for smaller screens */
+    @media (max-width: 600px) {
+      .category-bar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: static;
+        justify-content: center;
+        background: none;
+        box-shadow: none;
+      }
+    }
+  </style>
 
   <!-- ✅ Safe Social Bar -->
   <script>
@@ -18,67 +64,26 @@
       document.body.appendChild(socialBar);
     });
   </script>
-
-  <style>
-    /* === Left Corner Category Bar === */
-    .category-bar {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      border-radius: 10px;
-      z-index: 999;
-    }
-
-    .category-btn {
-      color: #00ff99;
-      background: transparent;
-      border: 1px solid #00ff99;
-      border-radius: 8px;
-      padding: 5px 10px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    .category-btn.active, .category-btn:hover {
-      background: #00ff99;
-      color: #000;
-    }
-
-    h1 {
-      margin-top: 70px;
-      text-align: center;
-      color: #00ff99;
-    }
-
-    #phTime {
-      text-align: center;
-      margin-bottom: 15px;
-      color: #e0ffe0;
-    }
-
-    #serverSelect {
-      display: none; /* Hide extra server section */
-    }
-  </style>
 </head>
 
 <body>
   <h1>MASPORTS</h1>
-
-  <!-- Philippine Time Display -->
   <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
 
-  <!-- Category Buttons (Top Left Corner) -->
+  <!-- 📺 Category Bar (Now in top-left) -->
   <div class="category-bar" id="categoryBar">
     <button class="category-btn active" data-cat="all">🏅 All</button>
-    <button class="category-btn" data-cat="LiveTV">📡 Live TV</button>
-    <button class="category-btn" data-cat="Basketball">🏀 Basketball</button>
+    <button class="category-btn" data-cat="LiveTV">📺 Live TV</button>
+    <button class="category-btn" data-cat="BASKETBALL">🏀 Basketball</button>
+    <button class="category-btn" data-cat="MLB">⚾ MLB</button>
+    <button class="category-btn" data-cat="NFL">🏈 NFL</button>
     <button class="category-btn" data-cat="Boxing">🥊 Boxing</button>
+    <button class="category-btn" data-cat="F1">🏎️ F1</button>
+    <button class="category-btn" data-cat="Tennis">🎾 Tennis</button>
+    <button class="category-btn" data-cat="Soccer">⚽ Soccer</button>
+    <button class="category-btn" data-cat="UFC/MMA">🥋 UFC</button>
+    <button class="category-btn" data-cat="WWE">🤼‍♂️ WWE</button>
+    <button class="category-btn" data-cat="Hockey">🏑 Hockey</button>
   </div>
 
   <!-- Channel List -->
@@ -87,22 +92,32 @@
     <div id="channelList" class="channel-grid"></div>
   </div>
 
-  <!-- Video Player -->
+  <!-- Video Container -->
   <div id="videoContainer">
     <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
     <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
     <video id="videoPlayer" controls autoplay playsinline></video>
+    <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
   </div>
 
-  <!-- ✅ Popunder Ad (safe, one-time click) -->
+  <!-- Server Selector -->
+  <div id="serverSelect">
+    <h2>🎥 Choose Server</h2>
+    <button class="server-btn" id="server1Btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png" alt="Server 1"/>Server 1
+    </button>
+  </div>
+
+  <!-- ✅ Safe Popunder -->
   <script>
     const safePopunder = "https://www.effectivegatecpm.com/ez180t0y?key=f6b25b12ce9fb0a73e6d317929085a45";
     let adOpened = false;
+
     document.addEventListener("click", () => {
       if (!adOpened) {
         adOpened = true;
         window.open(safePopunder, "_blank");
-        console.log("Popunder opened safely.");
+        console.log("Popunder ad opened safely after user interaction.");
       }
     });
   </script>
