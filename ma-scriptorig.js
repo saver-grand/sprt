@@ -1,34 +1,26 @@
-
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {
-    category: "Basketball",
-    title: "🏀 Orlando Magic vs. Charlotte Hornets",
-    date: "2025-10-31",
-    time: "7:00 AM",
-    server1: "https://nami.videobss.com/live/hd-en-2-3866892.m3u8",
-    server2: "http://honortvph.totalh.net/nba.php?ch=cows",
-    server3: "http://honortvph.totalh.net/nba.php?ch=cows"
+  {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",
+    server1:"https://nami.videobss.com/live/hd-en-2-3866892.m3u8",
+    server2:"http://honortvph.totalh.net/nba.php?ch=cows",
+    server3:"http://honortvph.totalh.net/nba.php?ch=cows"
   },
-  {
-    category: "Basketball",
-    title: "🏀 Golden State Warriors vs. Milwaukee Bucks",
-    date: "2025-10-31",
-    time: "08:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866783.m3u8",
-    server2: "https://streamcenter.pro/embed/ch66.php",
-    server3: "http://honortvph.totalh.net/nba.php?ch=gsw"
+  {category:"Basketball",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",
+    server1:"https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866783.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=7ebb921583fe228e8019ca004b8d6cf6",
+    server2:"https://streamcenter.pro/embed/ch66.php",
+    server3:"http://honortvph.totalh.net/nba.php?ch=gsw"
   },
-  {
-    category: "Basketball",
-    title: "🏀 Washington Wizards vs. Oklahoma City Thunder",
-    date: "2025-10-31",
-    time: "08:00 AM",
-    server1: "https://e4.thetvapp.to/hls/NBA20/tracks-v1a1/mono.m3u8",
-    server2: "https://streamcenter.pro/embed/ch67.php",
-    server3: "http://honortvph.totalh.net/nba.php?ch=wiz"
+  {category:"Basketball",title:"🏀 Washington Wizards vs. Oklahoma City Thunder",date:"2025-10-31",time:"08:00 AM",
+    server1:"https://e4.thetvapp.to/hls/NBA20/tracks-v1a1/mono.m3u8",
+    server2:"https://streamcenter.pro/embed/ch67.php",
+    server3:"http://honortvph.totalh.net/nba.php?ch=wiz"
+  },
+  {category:"Basketball",title:"🏀 Miami Heat vs. San Antonio Spurs",date:"2025-10-31",time:"08:30 AM",
+    server1:"https://e4.thetvapp.to/hls/NBA10/tracks-v1a1/mono.m3u8",
+    server2:"https://streamcenter.pro/embed/ch68.php",
+    server3:"http://honortvph.totalh.net/nba.php?ch=mia"
   }
 ];
 
@@ -141,10 +133,7 @@ function playChannel(url) {
   if (Hls.isSupported()) {
     hls = new Hls(); hls.loadSource(url); hls.attachMedia(v);
     hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
-  } else {
-    v.src = url;
-    v.play();
-  }
+  } else v.src = url;
 }
 
 function playIframe(url) {
@@ -156,7 +145,7 @@ function playIframe(url) {
   i.src = url;
 }
 
-// 🆕 PHP stream handler (Server 3)
+// 🆕 Server 3 PHP handler
 function playPhpStream(url) {
   if (url.includes(".php?ch=")) {
     playIframe(url);
