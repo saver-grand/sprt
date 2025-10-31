@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
   <script src="ma-scriptorig.js" defer></script>
 
-  <!-- ✅ Safe Social Bar (loaded after full page load) -->
+  <!-- ✅ Safe Social Bar -->
   <script>
     window.addEventListener("load", () => {
       const socialBar = document.createElement("script");
@@ -18,6 +18,53 @@
       document.body.appendChild(socialBar);
     });
   </script>
+
+  <style>
+    /* === Left Corner Category Bar === */
+    .category-bar {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+
+    .category-btn {
+      color: #00ff99;
+      background: transparent;
+      border: 1px solid #00ff99;
+      border-radius: 8px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .category-btn.active, .category-btn:hover {
+      background: #00ff99;
+      color: #000;
+    }
+
+    h1 {
+      margin-top: 70px;
+      text-align: center;
+      color: #00ff99;
+    }
+
+    #phTime {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #e0ffe0;
+    }
+
+    #serverSelect {
+      display: none; /* Hide extra server section */
+    }
+  </style>
 </head>
 
 <body>
@@ -26,19 +73,12 @@
   <!-- Philippine Time Display -->
   <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
 
-  <!-- Category Bar -->
+  <!-- Category Buttons (Top Left Corner) -->
   <div class="category-bar" id="categoryBar">
     <button class="category-btn active" data-cat="all">🏅 All</button>
-    <button class="category-btn" data-cat="BASKETBALL">🏀 Basketball</button>
-    <button class="category-btn" data-cat="MLB">⚾ MLB</button>
-    <button class="category-btn" data-cat="NFL">🏈 NFL</button>
+    <button class="category-btn" data-cat="LiveTV">📡 Live TV</button>
+    <button class="category-btn" data-cat="Basketball">🏀 Basketball</button>
     <button class="category-btn" data-cat="Boxing">🥊 Boxing</button>
-    <button class="category-btn" data-cat="F1">🏎️ F1</button>
-    <button class="category-btn" data-cat="Tennis">🎾 Tennis</button>
-    <button class="category-btn" data-cat="Soccer">⚽ Soccer</button>
-    <button class="category-btn" data-cat="UFC/MMA">🥋 UFC</button>
-    <button class="category-btn" data-cat="WWE">🤼‍♂️ WWE</button>
-    <button class="category-btn" data-cat="Hockey">🏑 Hockey</button>
   </div>
 
   <!-- Channel List -->
@@ -47,44 +87,26 @@
     <div id="channelList" class="channel-grid"></div>
   </div>
 
-  <!-- Video Container -->
+  <!-- Video Player -->
   <div id="videoContainer">
     <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
     <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
     <video id="videoPlayer" controls autoplay playsinline></video>
-    <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
   </div>
 
-  <!-- Server Selector -->
-<!-- Server Selector -->
-<div id="serverSelect">
-  <h2>🎥 Choose Server</h2>
-  <button class="server-btn" id="server1Btn">
-    <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png" alt="Server 1"/>Server 1
-  </button>
-  <button class="server-btn" id="server2Btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Emblem_of_Television.svg" alt="Server 2"/>Server 2
-  </button>
-  <button class="server-btn" id="server3Btn">
-    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Server 3"/>Server 3
-  </button>
-</div>
-
-  <!-- ✅ Safe Popunder (opens only once after first click) -->
+  <!-- ✅ Popunder Ad (safe, one-time click) -->
   <script>
     const safePopunder = "https://www.effectivegatecpm.com/ez180t0y?key=f6b25b12ce9fb0a73e6d317929085a45";
     let adOpened = false;
-
     document.addEventListener("click", () => {
       if (!adOpened) {
         adOpened = true;
         window.open(safePopunder, "_blank");
-        console.log("Popunder ad opened safely after user interaction.");
+        console.log("Popunder opened safely.");
       }
     });
   </script>
 
-  <!-- ✅ Optional fallback banner (only if popunder blocked) -->
   <noscript>
     <a href="https://www.effectivegatecpm.com/ez180t0y?key=f6b25b12ce9fb0a73e6d317929085a45" target="_blank">
       <img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
