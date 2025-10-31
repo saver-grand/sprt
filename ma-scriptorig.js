@@ -1,11 +1,11 @@
-<script>
+
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
   {category:"Basketball",title:"🏀 Orlando Magic vs. Charlotte Hornets",date:"2025-10-31",time:"7:00 AM",
     server1:"https://nami.videobss.com/live/hd-en-2-3866892.m3u8",
-    server2:"http://honortvph.totalh.net/nba.php?ch=cows",
+    server2:"https://streamcenter.pro/embed/ch65.php",
     server3:"http://honortvph.totalh.net/nba.php?ch=cows"
   },
   {category:"Basketball",title:"🏀 Golden State Warriors vs. Milwaukee Bucks",date:"2025-10-31",time:"08:00 AM",
@@ -177,4 +177,4 @@ updateTime();
 
 // ====================== INIT ============================
 renderChannels(channels);
-</script>
+
