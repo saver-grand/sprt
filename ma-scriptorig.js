@@ -1,4 +1,4 @@
-
+// ====================== GLOBALS ============================
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
@@ -132,8 +132,9 @@ function playChannel(url) {
         i = document.getElementById("iframePlayer");
   c.style.display = "flex"; i.style.display = "none"; v.style.display = "block";
   if(hls) { hls.destroy(); hls = null; }
+
   if(Hls.isSupported()) {
-    hls = new Hls();
+    hls = new Hls({ maxBufferLength: 30 });
     hls.loadSource(url);
     hls.attachMedia(v);
     hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
@@ -147,15 +148,52 @@ function playIframe(url) {
   const c = document.getElementById("videoContainer"),
         v = document.getElementById("videoPlayer"),
         i = document.getElementById("iframePlayer");
-  c.style.display = "flex"; v.style.display = "none"; i.style.display = "block";
+  c.style.display = "flex"; 
+  v.style.display = "none"; 
+  i.style.display = "block";
   i.src = url;
 }
 
+// ====================== PHP STREAM (Server 3) ============================
 function playPhpStream(url) {
-  // Use iframe for PHP stream
-  playIframe(url);
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex"; 
+  v.style.display = "none"; 
+  i.style.display = "block";
+  i.src = url;
+
+  let iframeLoaded = false;
+
+  // ✅ Detect when iframe loads but is empty or blocked
+  i.onload = () => {
+    iframeLoaded = true;
+    try {
+      const html = i.contentWindow?.document?.body?.innerHTML || "";
+      if (html.trim().length < 50) throw new Error("Blocked or empty iframe");
+    } catch {
+      fallbackToNewTab(url);
+    }
+  };
+
+  // ⏳ Timeout fallback if iframe never loads
+  setTimeout(() => {
+    if (!iframeLoaded) fallbackToNewTab(url);
+  }, 6000);
 }
 
+function fallbackToNewTab(url) {
+  closeVideo();
+  try {
+    window.open(url, "_blank", "noopener,noreferrer");
+  } catch {
+    alert("Unable to open stream. Please check popup settings.");
+  }
+}
+
+// ====================== CLOSE PLAYER ============================
 function closeVideo() {
   const c = document.getElementById("videoContainer"),
         v = document.getElementById("videoPlayer"),
@@ -164,6 +202,7 @@ function closeVideo() {
   v.pause();
   v.src = "";
   i.src = "";
+  if(hls) { hls.destroy(); hls = null; }
 }
 
 // ====================== PHILIPPINE TIME CLOCK ============================
@@ -177,4 +216,3 @@ updateTime();
 
 // ====================== INIT ============================
 renderChannels(channels);
-
