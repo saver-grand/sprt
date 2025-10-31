@@ -1,3 +1,4 @@
+<script>
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
@@ -109,31 +110,37 @@ function showServerSelect(ch) {
   document.getElementById("server3Btn").style.display = ch.server3 ? "block" : "none";
 }
 
-document.getElementById("server1Btn").onclick = () => {
+document.getElementById("server1Btn").onclick =
+document.getElementById("server2Btn").onclick =
+document.getElementById("server3Btn").onclick = function(e) {
   document.getElementById("serverSelect").style.display = "none";
-  playChannel(selectedURLs.server1);
-};
-document.getElementById("server2Btn").onclick = () => {
-  document.getElementById("serverSelect").style.display = "none";
-  playIframe(selectedURLs.server2);
-};
-document.getElementById("server3Btn").onclick = () => {
-  document.getElementById("serverSelect").style.display = "none";
-  playPhpStream(selectedURLs.server3);
+  const key = e.target.id.replace("Btn","").toLowerCase(); // server1, server2, server3
+  playStream(selectedURLs[key]);
 };
 
 // ====================== PLAYER CONTROL ============================
+function playStream(url) {
+  if(!url) return;
+  if(url.endsWith(".m3u8")) return playChannel(url);
+  if(url.includes(".php?ch=")) return playPhpStream(url);
+  return playIframe(url);
+}
+
 function playChannel(url) {
   const c = document.getElementById("videoContainer"),
         v = document.getElementById("videoPlayer"),
         i = document.getElementById("iframePlayer");
   c.style.display = "flex"; i.style.display = "none"; v.style.display = "block";
-  document.getElementById("channelCard").style.display = "none";
-  if (hls) hls.destroy();
-  if (Hls.isSupported()) {
-    hls = new Hls(); hls.loadSource(url); hls.attachMedia(v);
+  if(hls) { hls.destroy(); hls = null; }
+  if(Hls.isSupported()) {
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(v);
     hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
-  } else v.src = url;
+  } else {
+    v.src = url;
+    v.play();
+  }
 }
 
 function playIframe(url) {
@@ -141,35 +148,33 @@ function playIframe(url) {
         v = document.getElementById("videoPlayer"),
         i = document.getElementById("iframePlayer");
   c.style.display = "flex"; v.style.display = "none"; i.style.display = "block";
-  document.getElementById("channelCard").style.display = "none";
   i.src = url;
 }
 
-// 🆕 Server 3 PHP handler
 function playPhpStream(url) {
-  if (url.includes(".php?ch=")) {
-    playIframe(url);
-  } else {
-    playChannel(url);
-  }
+  // Use iframe for PHP stream
+  playIframe(url);
 }
 
 function closeVideo() {
-  document.getElementById("videoContainer").style.display = "none";
-  document.getElementById("channelCard").style.display = "block";
-  document.getElementById("videoPlayer").pause();
-  document.getElementById("iframePlayer").src = "";
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+  c.style.display = "none";
+  v.pause();
+  v.src = "";
+  i.src = "";
 }
 
 // ====================== PHILIPPINE TIME CLOCK ============================
 function updateTime() {
   const now = new Date();
   const ph = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Manila" }));
-  document.getElementById("phTime").textContent =
-    "🇵🇭 Philippine Time: " + ph.toLocaleTimeString();
+  document.getElementById("phTime").textContent = "🇵🇭 Philippine Time: " + ph.toLocaleTimeString();
 }
 setInterval(updateTime, 1000);
 updateTime();
 
 // ====================== INIT ============================
 renderChannels(channels);
+</script>
