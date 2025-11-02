@@ -1,209 +1,163 @@
+// ====================== MASPORTS MAIN SCRIPT ======================
+let hls, selectedChannel = null;
+let activeCategory = "all";
 
-let hls, selectedURLs = {}, activeCategory = "all";
-
-// ====================== CHANNEL LIST ============================
+// ====================== CHANNEL LIST ==============================
 const channels = [
+  {
+    category: "Basketball",
+    title: "🏀 Orlando Magic vs. Charlotte Hornets",
+    date: "2025-10-31",
+    time: "7:00 AM",
+    server1: "https://nami.videobss.com/live/hd-en-2-3866892.m3u8",
+    server2: "http://honortvph.totalh.net/nba.php?ch=cows"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 Milwaukee Bucks vs. Chicago Bulls",
+    date: "2025-10-31",
+    time: "9:00 AM",
+    server1: "https://nami.videobss.com/live/hd-en-1-3866895.m3u8",
+    server2: "http://honortvph.totalh.net/nba.php?ch=buks"
+  },
+  {
+    category: "Soccer",
+    title: "⚽ Premier League Live",
+    date: "2025-10-31",
+    time: "10:00 PM",
+    server1: "https://sports.example.com/epl.m3u8",
+    server2: "https://honortvph.totalh.net/epl.php"
   }
-    category: "Basketball",
-    title: "🏀 New Orleans Pelicans vs Oklahoma City Thunder",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba1/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch65.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Philadelphia 76ers vs Brooklyn Nets",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba2/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch66.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Utah Jazz vs Charlotte Hornets",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba3/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch67.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Atlanta Hawks vs Cleveland Cavaliers",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba4/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch68.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Memphis Grizzlies vs Toronto Raptors",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba5/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch69.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Chicago Bulls vs New York Knicks",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba6/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch70.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 San Antonio Spurs vs. Phoenix Suns",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba7/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch71.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 Miami Heat vs. Los Angeles Lakers",
-    date: "2025-11-03",
-    time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba8/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch72.php"
-  },
 ];
 
-const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+// ====================== DOM ELEMENTS ==============================
+const categoryBar = document.getElementById("categoryBar");
+const channelList = document.getElementById("channelList");
+const searchBar = document.getElementById("searchBar");
+const videoContainer = document.getElementById("videoContainer");
+const videoPlayer = document.getElementById("videoPlayer");
+const iframePlayer = document.getElementById("iframePlayer");
+const loadingSpinner = document.getElementById("loadingSpinner");
+const serverSelect = document.getElementById("serverSelect");
+const server1Btn = document.getElementById("server1Btn");
+const server2Btn = document.getElementById("server2Btn");
 
-// ====================== RENDER CHANNELS ============================
-function renderChannels(list) {
-  const container = document.getElementById("channelList");
-  if (list.length === 0) {
-    container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
+// ====================== CHANNEL RENDER ============================
+function renderChannels() {
+  const searchQuery = searchBar.value.toLowerCase();
+  channelList.innerHTML = "";
+
+  const filtered = channels.filter(ch => {
+    const matchCategory = activeCategory === "all" || ch.category === activeCategory;
+    const matchSearch = ch.title.toLowerCase().includes(searchQuery);
+    return matchCategory && matchSearch;
+  });
+
+  if (filtered.length === 0) {
+    channelList.innerHTML = `<p style="text-align:center;">No matches found.</p>`;
     return;
   }
-  container.innerHTML = list.map((ch, i) => `
-    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
-      <img src="${logos}" alt="logo">
-      <h3>${ch.title}</h3>
-      <small>🏷️ ${ch.category}</small><br>
-      <small>📅 ${ch.date} - ${ch.time}</small>
-      <div id="timer-${i}" class="countdown">Loading...</div>
-    </div>
-  `).join("");
-  startCountdown(list);
-}
 
-// ====================== COUNTDOWN ============================
-function startCountdown(list) {
-  function parseTime(date, time) {
-    const [t, period] = time.split(" ");
-    let [hours, minutes] = t.split(":").map(Number);
-    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
-    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
-    return new Date(`${date}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00+08:00`);
-  }
-
-  function update() {
-    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" }));
-    list.forEach((ch, i) => {
-      const target = parseTime(ch.date, ch.time);
-      const diff = target - nowPH;
-      const el = document.getElementById(`timer-${i}`);
-      if (!el) return;
-      if (diff <= 0) {
-        el.textContent = "🟢 LIVE NOW";
-        el.style.color = "limegreen";
-      } else {
-        const h = Math.floor(diff / 3600000);
-        const m = Math.floor((diff % 3600000) / 60000);
-        const s = Math.floor((diff % 60000) / 1000);
-        el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
-        el.style.color = "#ffcc66";
-      }
-    });
-  }
-
-  update();
-  setInterval(update, 1000);
-}
-
-// ====================== CATEGORY + SEARCH ============================
-function filterChannels() {
-  const search = document.getElementById("searchBar").value.toLowerCase();
-  renderChannels(channels.filter(c =>
-    (activeCategory === "all" || c.category === activeCategory) &&
-    c.title.toLowerCase().includes(search)
-  ));
-}
-
-document.getElementById("searchBar").addEventListener("input", filterChannels);
-document.querySelectorAll(".category-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    activeCategory = btn.getAttribute("data-cat");
-    filterChannels();
+  filtered.forEach(ch => {
+    const div = document.createElement("div");
+    div.className = "channel-box";
+    div.innerHTML = `
+      <img src="https://i.imgur.com/Bk5D8Fh.png" alt="icon"/>
+      <div>${ch.title}</div>
+      <div style="font-size:0.85rem;opacity:0.8;">${ch.category}</div>
+    `;
+    div.onclick = () => openServerSelect(ch);
+    channelList.appendChild(div);
   });
+}
+
+// ====================== CATEGORY SELECTION ========================
+categoryBar.addEventListener("click", e => {
+  if (!e.target.classList.contains("category-btn")) return;
+
+  document.querySelectorAll(".category-btn").forEach(btn => btn.classList.remove("active"));
+  e.target.classList.add("active");
+
+  activeCategory = e.target.dataset.cat;
+  renderChannels();
 });
 
-// ====================== SERVER SELECTION ============================
-function showServerSelect(ch) {
-  selectedURLs = ch;
-  document.getElementById("serverSelect").style.display = "flex";
+// ====================== SEARCH FUNCTION ==========================
+searchBar.addEventListener("input", renderChannels);
+
+// ====================== OPEN SERVER SELECT =======================
+function openServerSelect(ch) {
+  selectedChannel = ch;
+  serverSelect.style.display = "flex";
+  videoContainer.style.display = "none";
 }
 
-document.getElementById("server1Btn").onclick = () => {
-  document.getElementById("serverSelect").style.display = "none";
-  playChannel(selectedURLs.server1);
-};
+// ====================== SERVER SELECTION HANDLER =================
+server1Btn.addEventListener("click", () => {
+  playStream(selectedChannel.server1);
+});
+server2Btn.addEventListener("click", () => {
+  playStream(selectedChannel.server2);
+});
 
-document.getElementById("server2Btn").onclick = () => {
-  document.getElementById("serverSelect").style.display = "none";
-  playIframe(selectedURLs.server2);
-};
+// ====================== PLAY STREAM ==============================
+function playStream(url) {
+  serverSelect.style.display = "none";
+  videoContainer.style.display = "flex";
+  loadingSpinner.style.display = "block";
+  iframePlayer.style.display = "none";
+  videoPlayer.style.display = "none";
 
-// ====================== PLAYER CONTROL ============================
-function playChannel(url) {
-  const c = document.getElementById("videoContainer"),
-        v = document.getElementById("videoPlayer"),
-        i = document.getElementById("iframePlayer");
+  if (hls) {
+    hls.destroy();
+    hls = null;
+  }
 
-  c.style.display = "flex";
-  i.style.display = "none";
-  v.style.display = "block";
-  document.getElementById("channelCard").style.display = "none";
+  setTimeout(() => {
+    loadingSpinner.style.display = "none";
+    if (url.includes(".php") || url.includes("iframe")) {
+      iframePlayer.src = url;
+      iframePlayer.style.display = "block";
+    } else if (url.endsWith(".m3u8")) {
+      if (Hls.isSupported()) {
+        hls = new Hls();
+        hls.loadSource(url);
+        hls.attachMedia(videoPlayer);
+        videoPlayer.style.display = "block";
+      } else if (videoPlayer.canPlayType("application/vnd.apple.mpegurl")) {
+        videoPlayer.src = url;
+        videoPlayer.style.display = "block";
+      } else {
+        alert("Your browser does not support HLS playback.");
+      }
+    } else {
+      window.open(url, "_blank");
+    }
+  }, 800);
+}
 
-  if (hls) hls.destroy();
-  if (Hls.isSupported()) {
-    hls = new Hls();
-    hls.loadSource(url);
-    hls.attachMedia(v);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
+// ====================== CLOSE VIDEO ==============================
+function closeVideo() {
+  if (hls) {
+    hls.destroy();
+    hls = null;
+  }
+  videoPlayer.pause();
+  videoPlayer.removeAttribute("src");
+  iframePlayer.removeAttribute("src");
+  videoContainer.style.display = "none";
+}
+
+// ====================== TOGGLE CHANNEL LIST ======================
+function toggleList() {
+  if (channelList.style.display === "none") {
+    channelList.style.display = "grid";
   } else {
-    v.src = url;
+    channelList.style.display = "none";
   }
 }
 
-function playIframe(url) {
-  const c = document.getElementById("videoContainer"),
-        v = document.getElementById("videoPlayer"),
-        i = document.getElementById("iframePlayer");
-
-  c.style.display = "flex";
-  v.style.display = "none";
-  i.style.display = "block";
-  document.getElementById("channelCard").style.display = "none";
-  i.src = url;
-}
-
-function closeVideo() {
-  document.getElementById("videoContainer").style.display = "none";
-  document.getElementById("channelCard").style.display = "block";
-  document.getElementById("videoPlayer").pause();
-  document.getElementById("iframePlayer").src = "";
-}
-
-function toggleList() {
-  const c = document.getElementById("channelCard");
-  c.style.display = c.style.display === "none" ? "block" : "none";
-}
-
-// ====================== INIT ============================
-renderChannels(channels);
+// ====================== INITIAL LOAD =============================
+window.addEventListener("DOMContentLoaded", () => {
+  renderChannels();
+});
