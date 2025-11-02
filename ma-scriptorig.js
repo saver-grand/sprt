@@ -306,7 +306,7 @@ const channels = [
     server1: "https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8",
     server2: ""
   },
-  }
+  {
     category: "Basketball",
     title: "🏀 New Orleans Pelicans vs Oklahoma City Thunder",
     date: "2025-11-03",
