@@ -26,9 +26,6 @@
 <body>
   <h1>MASPORTS</h1>
 
-  <!-- Philippine Time Display -->
-  <div id="phTime">🇵🇭 Philippine Time: --:--:--</div>
-
   <!-- Category Bar -->
   <div class="category-bar" id="categoryBar">
     <button class="category-btn active" data-cat="all">🏅 All</button>
@@ -113,20 +110,10 @@
     </a>
   </noscript>
 
-  <!-- ✅ Live Philippine Time Updater -->
-  <script>
-    function updatePHTime() {
-      const now = new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila" });
-      document.getElementById("phTime").textContent = "🇵🇭 Philippine Time: " + now;
-    }
-    setInterval(updatePHTime, 1000);
-    updatePHTime();
-  </script>
-
   <!-- ✅ Performance Debug Log -->
   <script>
     window.addEventListener('load', () => {
-      console.log("✅ MASPORTS (Monetag Final Edition) loaded in", performance.now().toFixed(1), "ms");
+      console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms");
     });
   </script>
 
