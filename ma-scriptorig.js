@@ -4,22 +4,6 @@ let hls, selectedURLs = {}, activeCategory = "all";
 const channels = [
     {
     category: "Live TV",
-    title: "📰 Newsmax",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "📰 CNN",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://d1vnr7amzbx49s.cloudfront.net/index_1.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
     title: "📺 ABC East",
     date: "2025-11-03",
     time: "24/7",
