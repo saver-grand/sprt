@@ -2,7 +2,7 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"Basketball",title:"🏀 Dallas Mavericks vs. Detroit Pistons",date:"2025-11-31",time:"10:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866310.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
+  {category:"Basketball",title:"🏀 Dallas Mavericks vs. Detroit Pistons",date:"2025-11-02",time:"10:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866310.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
