@@ -1,1 +1,152 @@
-function _0x51f5(){const _0x386ffe=['</h3>\x0a\x20\x20\x20\x20\x20\x20<small>🏷️\x20','getAttribute','🏀\x20Dallas\x20Mavericks\x20vs.\x20Detroit\x20Pistons','style','floor','join','server2','4634163BTdhdu','textContent','2025-11-02','none','channelCard','all','color','toLocaleString','45YiiSvz','src','filter','🟢\x20LIVE\x20NOW','server2Btn','getElementById','toLowerCase','server1Btn','\x22\x20class=\x22countdown\x22>Loading...</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20','iframePlayer','category','time','input','padStart','stringify','addEventListener','phTime','active','split','.category-btn','10dkQYly','forEach','classList','videoPlayer','server1','length','\x20-\x20','toUpperCase','10:00\x20AM','Events','destroy','display','22215611sVwpbg','videoContainer','toLocaleTimeString','#ffcc66','667426CwdvAh','attachMedia','9HJvrFq','685182nTGWmX','searchBar','onclick','date','Asia/Manila','en-US','data-cat','play','serverSelect','9658628wJbnAm','\x22\x20alt=\x22logo\x22>\x0a\x20\x20\x20\x20\x20\x20<h3>','channelList','click','1xvtqTr','\x0a\x20\x20\x20\x20<div\x20class=\x22channel-box\x22\x20onclick=\x27showServerSelect(','loadSource','block','157288hWMHTK','flex','map','limegreen','<p\x20style=\x27text-align:center;color:#f55;\x27>No\x20matches\x20found</p>','2072240UfCndi','Basketball','title','innerHTML','value'];_0x51f5=function(){return _0x386ffe;};return _0x51f5();}const _0x5546fe=_0x5c00;(function(_0x5a4012,_0x2afb4b){const _0x24720e=_0x5c00,_0x19067c=_0x5a4012();while(!![]){try{const _0x1afd52=-parseInt(_0x24720e(0x183))/0x1*(parseInt(_0x24720e(0x173))/0x2)+-parseInt(_0x24720e('0x147'))/0x3+parseInt(_0x24720e('0x18c'))/0x4+-parseInt(_0x24720e(0x14f))/0x5*(parseInt(_0x24720e(0x176))/0x6)+parseInt(_0x24720e('0x17f'))/0x7+parseInt(_0x24720e('0x187'))/0x8*(-parseInt(_0x24720e(0x175))/0x9)+parseInt(_0x24720e('0x163'))/0xa*(parseInt(_0x24720e(0x16f))/0xb);if(_0x1afd52===_0x2afb4b)break;else _0x19067c['push'](_0x19067c['shift']());}catch(_0x7ba7d2){_0x19067c['push'](_0x19067c['shift']());}}}(_0x51f5,0xf216d));let hls,selectedURLs={},activeCategory=_0x5546fe('0x14c');const channels=[{'category':_0x5546fe(0x18d),'title':_0x5546fe(0x193),'date':_0x5546fe('0x149'),'time':_0x5546fe(0x16b),'server1':'https://nami.videobss.com/live/hd-en-2-3866310.m3u8','server2':'https://streamcenter.pro/embed/ch71.php'}],logos='https://i.imgur.com/y7rtkDI.jpeg';function renderChannels(_0x4a07ae){const _0xc5cdbd=_0x5546fe,_0x3e8585=document['getElementById'](_0xc5cdbd('0x181'));if(_0x4a07ae[_0xc5cdbd(0x168)]===0x0){_0x3e8585[_0xc5cdbd('0x18f')]=_0xc5cdbd(0x18b);return;}_0x3e8585['innerHTML']=_0x4a07ae['map']((_0x3034ef,_0x50d791)=>_0xc5cdbd('0x184')+JSON[_0xc5cdbd(0x15d)](_0x3034ef)+')\x27>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+logos+_0xc5cdbd('0x180')+_0x3034ef[_0xc5cdbd('0x18e')]+_0xc5cdbd(0x191)+_0x3034ef['category']+'</small><br>\x0a\x20\x20\x20\x20\x20\x20<small>📅\x20'+_0x3034ef['date']+_0xc5cdbd(0x169)+_0x3034ef[_0xc5cdbd('0x15a')]+'\x20PH</small>\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22timer-'+_0x50d791+_0xc5cdbd('0x157'))[_0xc5cdbd('0x196')](''),startCountdown(_0x4a07ae);}function startCountdown(_0x199ee2){function _0xf46ac4(_0x5ba317,_0x434196){const _0x4df4f6=_0x5c00,[_0x2696b4,_0x40913f]=_0x434196[_0x4df4f6('0x161')]('\x20');let [_0x484ce0,_0x148160]=_0x2696b4['split'](':')[_0x4df4f6(0x189)](Number);if(_0x40913f[_0x4df4f6('0x16a')]()==='PM'&&_0x484ce0<0xc)_0x484ce0+=0xc;if(_0x40913f[_0x4df4f6(0x16a)]()==='AM'&&_0x484ce0===0xc)_0x484ce0=0x0;return new Date(_0x5ba317+'T'+String(_0x484ce0)[_0x4df4f6('0x15c')](0x2,'0')+':'+String(_0x148160)['padStart'](0x2,'0')+':00+08:00');}function _0x5d63ec(){const _0x2dcfd4=_0x5c00,_0x54722a=new Date(new Date()['toLocaleString'](_0x2dcfd4(0x17b),{'timeZone':_0x2dcfd4('0x17a')}));_0x199ee2[_0x2dcfd4('0x164')]((_0x38d34c,_0x58781a)=>{const _0x23c72b=_0x2dcfd4,_0xd00196=_0xf46ac4(_0x38d34c[_0x23c72b(0x179)],_0x38d34c['time']),_0x51feb3=_0xd00196-_0x54722a,_0x175091=document[_0x23c72b('0x154')]('timer-'+_0x58781a);if(!_0x175091)return;if(_0x51feb3<=0x0)_0x175091[_0x23c72b('0x148')]=_0x23c72b(0x152),_0x175091['style'][_0x23c72b(0x14d)]=_0x23c72b('0x18a');else{const _0x108990=Math[_0x23c72b('0x195')](_0x51feb3/0x36ee80),_0x4597dd=Math[_0x23c72b('0x195')](_0x51feb3%0x36ee80/0xea60),_0x12fe19=Math[_0x23c72b('0x195')](_0x51feb3%0xea60/0x3e8);_0x175091[_0x23c72b('0x148')]='⏳\x20Starts\x20in\x20'+_0x108990+'h\x20'+_0x4597dd+'m\x20'+_0x12fe19+'s',_0x175091[_0x23c72b('0x194')][_0x23c72b('0x14d')]=_0x23c72b(0x172);}});}_0x5d63ec(),setInterval(_0x5d63ec,0x3e8);}function filterChannels(){const _0xc8ae31=_0x5546fe,_0x23e590=document[_0xc8ae31('0x154')](_0xc8ae31(0x177))[_0xc8ae31(0x190)][_0xc8ae31('0x155')]();renderChannels(channels[_0xc8ae31(0x151)](_0x45a2b1=>(activeCategory===_0xc8ae31(0x14c)||_0x45a2b1[_0xc8ae31(0x159)]===activeCategory)&&_0x45a2b1[_0xc8ae31(0x18e)][_0xc8ae31(0x155)]()['includes'](_0x23e590)));}document[_0x5546fe('0x154')](_0x5546fe('0x177'))[_0x5546fe('0x15e')](_0x5546fe(0x15b),filterChannels),document['querySelectorAll'](_0x5546fe(0x162))[_0x5546fe(0x164)](_0x4826e9=>{const _0x3fe313=_0x5546fe;_0x4826e9[_0x3fe313(0x15e)](_0x3fe313('0x182'),()=>{const _0x444de4=_0x3fe313;document['querySelectorAll'](_0x444de4(0x162))['forEach'](_0x5cdba4=>_0x5cdba4[_0x444de4('0x165')]['remove'](_0x444de4('0x160'))),_0x4826e9[_0x444de4('0x165')]['add'](_0x444de4('0x160')),activeCategory=_0x4826e9[_0x444de4('0x192')](_0x444de4('0x17c')),filterChannels();});});function showServerSelect(_0x4b7b51){const _0x2b027e=_0x5546fe;selectedURLs=_0x4b7b51,document[_0x2b027e(0x154)](_0x2b027e('0x17e'))[_0x2b027e('0x194')][_0x2b027e('0x16e')]=_0x2b027e(0x188);}document[_0x5546fe('0x154')](_0x5546fe(0x156))[_0x5546fe(0x178)]=()=>{const _0x4b2659=_0x5546fe;document[_0x4b2659(0x154)](_0x4b2659('0x17e'))['style'][_0x4b2659(0x16e)]=_0x4b2659(0x14a),playChannel(selectedURLs[_0x4b2659('0x167')]);},document['getElementById'](_0x5546fe(0x153))[_0x5546fe(0x178)]=()=>{const _0x1841fe=_0x5546fe;document[_0x1841fe(0x154)]('serverSelect')[_0x1841fe(0x194)]['display']=_0x1841fe('0x14a'),playIframe(selectedURLs[_0x1841fe('0x197')]);};function playChannel(_0x15d37b){const _0x33f4cd=_0x5546fe,_0x4ca9c9=document[_0x33f4cd('0x154')](_0x33f4cd('0x170')),_0x2a35ea=document[_0x33f4cd(0x154)](_0x33f4cd(0x166)),_0x3cbc2c=document['getElementById'](_0x33f4cd('0x158'));_0x4ca9c9[_0x33f4cd('0x194')][_0x33f4cd('0x16e')]=_0x33f4cd(0x188),_0x3cbc2c[_0x33f4cd('0x194')][_0x33f4cd('0x16e')]=_0x33f4cd('0x14a'),_0x2a35ea[_0x33f4cd(0x194)][_0x33f4cd('0x16e')]='block',document['getElementById'](_0x33f4cd('0x14b'))[_0x33f4cd('0x194')][_0x33f4cd('0x16e')]=_0x33f4cd(0x14a);if(hls)hls[_0x33f4cd(0x16d)]();if(Hls['isSupported']())hls=new Hls(),hls[_0x33f4cd('0x185')](_0x15d37b),hls[_0x33f4cd(0x174)](_0x2a35ea),hls['on'](Hls[_0x33f4cd(0x16c)]['MANIFEST_PARSED'],()=>_0x2a35ea[_0x33f4cd(0x17d)]());else _0x2a35ea[_0x33f4cd('0x150')]=_0x15d37b;}function playIframe(_0x69f65a){const _0x345efa=_0x5546fe,_0x1b8a57=document[_0x345efa('0x154')]('videoContainer'),_0x4f9423=document[_0x345efa('0x154')](_0x345efa(0x166)),_0x48d5e2=document[_0x345efa(0x154)]('iframePlayer');_0x1b8a57[_0x345efa(0x194)][_0x345efa('0x16e')]=_0x345efa(0x188),_0x4f9423['style'][_0x345efa('0x16e')]='none',_0x48d5e2[_0x345efa(0x194)][_0x345efa('0x16e')]=_0x345efa(0x186),document[_0x345efa('0x154')](_0x345efa(0x14b))[_0x345efa('0x194')][_0x345efa(0x16e)]=_0x345efa('0x14a'),_0x48d5e2[_0x345efa(0x150)]=_0x69f65a;}function closeVideo(){const _0x294bb1=_0x5546fe;document[_0x294bb1('0x154')](_0x294bb1(0x170))['style']['display']=_0x294bb1('0x14a'),document[_0x294bb1('0x154')](_0x294bb1('0x14b'))[_0x294bb1('0x194')][_0x294bb1('0x16e')]=_0x294bb1('0x186'),document[_0x294bb1('0x154')](_0x294bb1(0x166))['pause'](),document[_0x294bb1('0x154')](_0x294bb1(0x158))[_0x294bb1('0x150')]='';}function toggleList(){const _0x5e658d=_0x5546fe,_0x10876c=document[_0x5e658d(0x154)](_0x5e658d(0x14b));_0x10876c[_0x5e658d('0x194')][_0x5e658d(0x16e)]=_0x10876c['style'][_0x5e658d('0x16e')]===_0x5e658d('0x14a')?_0x5e658d('0x186'):_0x5e658d(0x14a);}function updateTime(){const _0x5b8bef=_0x5546fe,_0x3737e2=new Date(),_0x16d5fc=new Date(_0x3737e2[_0x5b8bef(0x14e)]('en-US',{'timeZone':_0x5b8bef(0x17a)}));document[_0x5b8bef(0x154)](_0x5b8bef(0x15f))['textContent']='🇵🇭\x20Philippine\x20Time:\x20'+_0x16d5fc[_0x5b8bef('0x171')]();}function _0x5c00(_0x58795d,_0x599483){const _0x51f59f=_0x51f5();return _0x5c00=function(_0x5c003b,_0x386e9f){_0x5c003b=_0x5c003b-0x147;let _0x1f9e9d=_0x51f59f[_0x5c003b];return _0x1f9e9d;},_0x5c00(_0x58795d,_0x599483);}setInterval(updateTime,0x3e8),updateTime(),renderChannels(channels);
+let hls, selectedURLs = {}, activeCategory = "all";
+
+// ====================== CHANNEL LIST ============================
+const channels = [
+  {
+    category: "Basketball",
+    title: "🏀 Dallas Mavericks vs. Detroit Pistons",
+    date: "2025-11-02",
+    time: "10:00 AM",
+    server1: "https://nami.videobss.com/live/hd-en-2-3866310.m3u8",
+    server2: "https://streamcenter.pro/embed/ch71.php"
+  },
+];
+
+const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+
+// ====================== RENDER CHANNELS ============================
+function renderChannels(list) {
+  const container = document.getElementById("channelList");
+  if (list.length === 0) {
+    container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
+    return;
+  }
+  container.innerHTML = list.map((ch, i) => `
+    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
+      <img src="${logos}" alt="logo">
+      <h3>${ch.title}</h3>
+      <small>🏷️ ${ch.category}</small><br>
+      <small>📅 ${ch.date} - ${ch.time}</small>
+      <div id="timer-${i}" class="countdown">Loading...</div>
+    </div>
+  `).join("");
+  startCountdown(list);
+}
+
+// ====================== COUNTDOWN ============================
+function startCountdown(list) {
+  function parseTime(date, time) {
+    const [t, period] = time.split(" ");
+    let [hours, minutes] = t.split(":").map(Number);
+    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+    return new Date(`${date}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00+08:00`);
+  }
+
+  function update() {
+    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+    list.forEach((ch, i) => {
+      const target = parseTime(ch.date, ch.time);
+      const diff = target - nowPH;
+      const el = document.getElementById(`timer-${i}`);
+      if (!el) return;
+      if (diff <= 0) {
+        el.textContent = "🟢 LIVE NOW";
+        el.style.color = "limegreen";
+      } else {
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
+        el.style.color = "#ffcc66";
+      }
+    });
+  }
+
+  update();
+  setInterval(update, 1000);
+}
+
+// ====================== CATEGORY + SEARCH ============================
+function filterChannels() {
+  const search = document.getElementById("searchBar").value.toLowerCase();
+  renderChannels(channels.filter(c =>
+    (activeCategory === "all" || c.category === activeCategory) &&
+    c.title.toLowerCase().includes(search)
+  ));
+}
+
+document.getElementById("searchBar").addEventListener("input", filterChannels);
+document.querySelectorAll(".category-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeCategory = btn.getAttribute("data-cat");
+    filterChannels();
+  });
+});
+
+// ====================== SERVER SELECTION ============================
+function showServerSelect(ch) {
+  selectedURLs = ch;
+  document.getElementById("serverSelect").style.display = "flex";
+}
+
+document.getElementById("server1Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playChannel(selectedURLs.server1);
+};
+
+document.getElementById("server2Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playIframe(selectedURLs.server2);
+};
+
+// ====================== PLAYER CONTROL ============================
+function playChannel(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex";
+  i.style.display = "none";
+  v.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+
+  if (hls) hls.destroy();
+  if (Hls.isSupported()) {
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(v);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
+  } else {
+    v.src = url;
+  }
+}
+
+function playIframe(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex";
+  v.style.display = "none";
+  i.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+  i.src = url;
+}
+
+function closeVideo() {
+  document.getElementById("videoContainer").style.display = "none";
+  document.getElementById("channelCard").style.display = "block";
+  document.getElementById("videoPlayer").pause();
+  document.getElementById("iframePlayer").src = "";
+}
+
+function toggleList() {
+  const c = document.getElementById("channelCard");
+  c.style.display = c.style.display === "none" ? "block" : "none";
+}
+
+// ====================== INIT ============================
+renderChannels(channels);
