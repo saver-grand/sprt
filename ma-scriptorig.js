@@ -295,7 +295,7 @@ const channels = [
     title: "🏀 New Orleans Pelicans vs Oklahoma City Thunder",
     date: "2025-11-03",
     time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba1/index.m3u8",
+    server1: "https://e1.thetvapp.to/hls/NBA27/tracks-v1a1/mono.m3u8",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
@@ -303,7 +303,7 @@ const channels = [
     title: "🏀 Philadelphia 76ers vs Brooklyn Nets",
     date: "2025-11-03",
     time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba2/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866525.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=495edf3eaade031f85b0231b62402",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
@@ -311,7 +311,7 @@ const channels = [
     title: "🏀 Utah Jazz vs Charlotte Hornets",
     date: "2025-11-03",
     time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba3/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866851.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fc0fa20c1e24e882ba152eba6",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 Atlanta Hawks vs Cleveland Cavaliers",
     date: "2025-11-03",
     time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba4/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866741.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=4a5fb999bd7c90df",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 Memphis Grizzlies vs Toronto Raptors",
     date: "2025-11-03",
     time: "10:00 AM",
-    server1: "https://honortvph.dpdns.org/nba5/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867072.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=47c1d934a939f0f3",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
