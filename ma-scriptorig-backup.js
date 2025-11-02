@@ -2,14 +2,7 @@ let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
 const channels = [
-  {category:"Basketball",title:"🏀 Atlanta Hawks vs. Indiana Pacers",date:"2025-11-31",time:"07:00 AM",server1:"https://e1.thetvapp.to/hls/NBA23/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch61.php"},
-  {category:"Basketball",title:"🏀 Boston Celtics vs. Philadelphia 76ers",date:"2025-11-31",time:"07:00 AM",server1:"https://e1.thetvapp.to/hls/NBA14/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch62.php"},
-  {category:"Basketball",title:"🏀 Toronto Raptors vs. Cleveland Cavaliers",date:"2025-11-31",time:"07:30 AM",server1:"https://e1.thetvapp.to/hls/NBA06/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch63.php"},
-  {category:"Basketball",title:"🏀 New York Knicks vs. Chicago Bulls",date:"2025-11-31",time:"08:00 AM",server1:"https://e1.thetvapp.to/hls/NBA08/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch64.php"},
-  {category:"Basketball",title:"🏀 Los Angeles Lakers vs. Memphis Grizzlies",date:"2025-11-31",time:"09:30 AM",server1:"https://e1.thetvapp.to/hls/NBA12/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch65.php"},
-  {category:"Basketball",title:"🏀 Denver Nuggets vs. Portland Trail Blazers",date:"2025-11-31",time:"10:00 AM",server1:"https://e1.thetvapp.to/hls/NBA26/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch66.php"},
-  {category:"Basketball",title:"🏀 Utah Jazz vs. Phoenix Suns",date:"2025-11-31",time:"10:00 AM",server1:"https://e1.thetvapp.to/hls/NBA05/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch67.php"},
-  {category:"Basketball",title:"🏀 New Orleans Pelicans vs. Los Angeles Clippers",date:"2025-11-31",time:"10:30 AM",server1:"https://e1.thetvapp.to/hls/NBA27/tracks-v1a1/index.m3u8",server2:"https://streamcenter.pro/embed/ch68.php"},
+  {category:"Basketball",title:"🏀 Dallas Mavericks vs. Detroit Pistons",date:"2025-11-31",time:"10:00 AM",server1:"https://nami.videobss.com/live/hd-en-2-3866310.m3u8",server2:"https://streamcenter.pro/embed/ch71.php"},
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
