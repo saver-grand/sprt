@@ -360,7 +360,15 @@ const channels = [
     date: "2025-11-04",
     time: "11:030 AM",
     server1: "https://honortvph.dpdns.org/nba7/index.m3u8",
-    server2: "https://streamcenter.pro/embed/ch71.php"
+    server2: "https://streamcenter.pro/embed/ch73.php"
+  },
+          {
+    category: "Basketball",
+    title: "🏀 PBA LIVE 🇵🇭",
+    date: "2025-11-04",
+    time: "11:030 AM",
+    server1: "https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8",
+    server2: ""
   },
 ];
 
