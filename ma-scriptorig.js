@@ -289,8 +289,18 @@ const channels = [
     time: "24/7",
     server1: "https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8",
     server2: ""
+        },
+  {
+      
+    category: "Basketball",
+    title: "🏎️ F1- Sky Sports F1",
+    date: "2025-11-05",
+    time: "8:30 AM",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
+    server2: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.ts"
   },
   {
+      
     category: "Basketball",
     title: "🏀 NBA- Milwaukee Bucks vs. Toronto Raptors",
     date: "2025-11-05",
