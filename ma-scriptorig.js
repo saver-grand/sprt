@@ -295,7 +295,7 @@ const channels = [
     title: "🏀 Minnesota Timberwolves vs. Brooklyn Nets",
     date: "2025-11-04",
     time: "8:00 AM",
-    server1: "https://e1.thetvapp.to/hls/NBA27/tracks-v1a1/mono.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
@@ -303,7 +303,7 @@ const channels = [
     title: "🏀 Milwaukee Bucks vs. Indiana Pacers",
     date: "2025-11-04",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866525.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=495edf3eaade031f85b0231b62402",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867088.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d08c1751e216ee94ce5dd9970c6004b",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
@@ -311,7 +311,7 @@ const channels = [
     title: "🏀 Utah Jazz vs. Boston Celtics",
     date: "2025-11-04",
     time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866851.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fc0fa20c1e24e882ba152eba6",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 Washington Wizards vs. New York Knicks",
     date: "2025-11-04",
     time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866741.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=4a5fb999bd7c90df",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866202.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9b5d0a509e5a708bcf8ed881b7707ed",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 Dallas Mavericks vs. Houston Rockets",
     date: "2025-11-04",
     time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867072.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=47c1d934a939f0f3",
+    server1: "https://honortvph.dpdns.org/nba5/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
