@@ -292,12 +292,12 @@ const channels = [
         },
   {
       
-    category: "F1",
+    category: "Racing",
     title: "🏎️ F1- Sky Sports F1",
     date: "2025-11-03",
     time: "24/7",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
-    server2: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.ts"
+    server2: ""
   },
   {
       
