@@ -295,7 +295,7 @@ const channels = [
     title: "🏀 Minnesota Timberwolves vs. Brooklyn Nets",
     date: "2025-11-04",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866094.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=805cb148624582cc7d2157a502fc0d52",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
