@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 Los Angeles Lakers vs. Portland Trail Blazers",
     date: "2025-11-04",
     time: "11:00 AM",
-    server1: "https://honortvph.dpdns.org/nba8/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866631.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f0f236a8ce26ad46d72e97ac8492850f",
     server2: "https://streamcenter.pro/embed/ch72.php"
   },
       {
