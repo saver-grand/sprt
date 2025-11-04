@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 Miami Heat vs. LA Clippers",
     date: "2025-11-04",
     time: "11:030 AM",
-    server1: "https://honortvph.dpdns.org/nba9/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866961.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=50b07527813aaedb7eb5830d437889ea",
     server2: "https://streamcenter.pro/embed/ch73.php"
   },
           {
