@@ -292,7 +292,7 @@ const channels = [
         },
   {
       
-    category: "Racing",
+    category: "F1",
     title: "🏎️ F1- Sky Sports F1",
     date: "2025-11-03",
     time: "24/7",
