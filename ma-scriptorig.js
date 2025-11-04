@@ -292,7 +292,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Milwaukee Bucks vs. Toronto Raptors",
+    title: "🏀 NBA- Milwaukee Bucks vs. Toronto Raptors",
     date: "2025-11-05",
     time: "8:30 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866094.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=805cb148624582cc7d2157a502fc0d52",
@@ -300,7 +300,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Orlando Magic vs. Atlanta Hawks",
+    title: "🏀 NBA- Orlando Magic vs. Atlanta Hawks",
     date: "2025-11-05",
     time: "9:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867088.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d08c1751e216ee94ce5dd9970c6004b",
@@ -308,7 +308,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Philadelphia 76ers vs. Chicago Bulls",
+    title: "🏀 NBA- Philadelphia 76ers vs. Chicago Bulls",
     date: "2025-11-05",
     time: "9:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
@@ -316,7 +316,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Charlotte Hornets vs. New Orleans Pelicans",
+    title: "🏀 NBA- Charlotte Hornets vs. New Orleans Pelicans",
     date: "2025-11-05",
     time: "9:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866202.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9b5d0a509e5a708bcf8ed881b7707ed",
@@ -324,7 +324,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Phoenix Suns vs. Golden State Warriors",
+    title: "🏀 NBA- Phoenix Suns vs. Golden State Warriors",
     date: "2025-11-05",
     time: "11:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866524.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=64c6ac7cdf98e5d4935f01141ad0b131",
@@ -332,7 +332,7 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 Oklahoma City Thunder vs. LA Clippers",
+    title: "🏀 NBA- Oklahoma City Thunder vs. LA Clippers",
     date: "2025-11-05",
     time: "12:00 PM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866416.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3dad2604cb1b18e485698ed7d187da9d",
@@ -340,12 +340,20 @@ const channels = [
   },
    {
     category: "Basketball",
-    title: "🏀 PBA LIVE 🇵🇭",
-    date: "2025-11-03",
-    time: "11:030 AM",
+    title: "🏀 PBA- Titan vs. Blackwater 🇵🇭",
+    date: "2025-11-05",
+    time: "5:15 PM",
     server1: "https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8",
     server2: ""
   },
+   {
+    category: "Basketball",
+    title: "🏀 PBA- Rain or Shine vs. Phoenix 🇵🇭",
+    date: "2025-11-05",
+    time: "7:30 PM",
+    server1: "https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8",
+    server2: ""
+  },    
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
