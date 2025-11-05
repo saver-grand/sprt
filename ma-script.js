@@ -344,7 +344,7 @@ const channels = [
     title: "🏀 NBA- Phoenix Suns vs. Golden State Warriors",
     date: "2025-11-05",
     time: "11:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866524.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=64c6ac7cdf98e5d4935f01141ad0b131",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866184.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=00987af053159c9637732a479b2c0c66",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
