@@ -352,7 +352,7 @@ const channels = [
     title: "🏀 NBA- Oklahoma City Thunder vs. LA Clippers",
     date: "2025-11-05",
     time: "12:00 PM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866416.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3dad2604cb1b18e485698ed7d187da9d",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866506.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ec9f9980cb38025ddce1593e7ed77203",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
    {
