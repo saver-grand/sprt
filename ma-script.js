@@ -320,7 +320,7 @@ const channels = [
     title: "🏀 NBA- Orlando Magic vs. Atlanta Hawks",
     date: "2025-11-05",
     time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867088.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d08c1751e216ee94ce5dd9970c6004b",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866076.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=4e8bc3d53f2f84474f73ff3d501274b5",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
@@ -328,7 +328,7 @@ const channels = [
     title: "🏀 NBA- Philadelphia 76ers vs. Chicago Bulls",
     date: "2025-11-05",
     time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867071.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f488cbec89c55c0d740abb1b62c70f52",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
@@ -336,7 +336,7 @@ const channels = [
     title: "🏀 NBA- Charlotte Hornets vs. New Orleans Pelicans",
     date: "2025-11-05",
     time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866202.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9b5d0a509e5a708bcf8ed881b7707ed",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866291.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ab0969b9bd354fb6e180acde9421be59",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
