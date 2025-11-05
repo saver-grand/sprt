@@ -312,7 +312,7 @@ const channels = [
     title: "🏀 NBA- Milwaukee Bucks vs. Toronto Raptors",
     date: "2025-11-05",
     time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866094.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=805cb148624582cc7d2157a502fc0d52",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866850.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b7af6b2a699893a7535b8030040861b7",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
