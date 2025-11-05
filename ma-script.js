@@ -1,1 +1,513 @@
-const _0x143d33=_0x557e;(function(_0x31790c,_0x5ed55b){const _0x5f5465=_0x557e,_0x52b418=_0x31790c();while(!![]){try{const _0x1915ca=parseInt(_0x5f5465('0x1d0'))/0x1+-parseInt(_0x5f5465(0x1ab))/0x2*(-parseInt(_0x5f5465('0x184'))/0x3)+-parseInt(_0x5f5465('0x1c3'))/0x4*(parseInt(_0x5f5465('0x172'))/0x5)+parseInt(_0x5f5465('0x1a1'))/0x6+parseInt(_0x5f5465('0x1a2'))/0x7*(parseInt(_0x5f5465(0x19e))/0x8)+-parseInt(_0x5f5465(0x157))/0x9+parseInt(_0x5f5465(0x1d1))/0xa*(-parseInt(_0x5f5465(0x194))/0xb);if(_0x1915ca===_0x5ed55b)break;else _0x52b418['push'](_0x52b418['shift']());}catch(_0x4767b6){_0x52b418['push'](_0x52b418['shift']());}}}(_0x1b58,0xe6900));let hls,selectedURLs={},activeCategory=_0x143d33('0x19f');const channels=[{'category':_0x143d33(0x18d),'title':_0x143d33(0x1c0),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33('0x164'),'server2':''},{'category':_0x143d33('0x18d'),'title':'🏈\x20ACC\x20Network','date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33(0x18b),'server2':''},{'category':'Live\x20TV','title':_0x143d33(0x189),'date':'2025-11-03','time':'24/7','server1':_0x143d33('0x192'),'server2':''},{'category':_0x143d33('0x18d'),'title':'🎬\x20AMC\x20Network','date':'2025-11-03','time':_0x143d33('0x171'),'server1':'https://fl1.moveonjoy.com/AMC_NETWORK/index.m3u8','server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33('0x1aa'),'date':_0x143d33(0x1b9),'time':_0x143d33(0x171),'server1':_0x143d33('0x17d'),'server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33('0x191'),'date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33(0x1bf),'server2':''},{'category':'Live\x20TV','title':_0x143d33('0x1a0'),'date':_0x143d33(0x1b9),'time':'24/7','server1':_0x143d33('0x166'),'server2':''},{'category':'Live\x20TV','title':'🌍\x20BBC\x20America','date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33('0x1ae'),'server2':''},{'category':'Live\x20TV','title':_0x143d33(0x14b),'date':'2025-11-03','time':'24/7','server1':'https://fl1.moveonjoy.com/BBC_WORLD_NEWS/index.m3u8','server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33(0x198),'date':_0x143d33(0x1b9),'time':'24/7','server1':_0x143d33('0x188'),'server2':''},{'category':_0x143d33(0x18d),'title':'🎶\x20BET\x20East','date':_0x143d33(0x1b9),'time':_0x143d33(0x171),'server1':_0x143d33('0x15b'),'server2':''},{'category':'Live\x20TV','title':_0x143d33(0x14c),'date':_0x143d33(0x1b9),'time':_0x143d33(0x171),'server1':_0x143d33('0x150'),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33('0x1da'),'date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33('0x1cb'),'server2':''},{'category':'Live\x20TV','title':'🎧\x20BET\x20Jams','date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':'https://fl1.moveonjoy.com/BET_Jams/index.m3u8','server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x1b2),'date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33(0x1bc),'server2':''},{'category':'Live\x20TV','title':_0x143d33('0x1d3'),'date':_0x143d33(0x1b9),'time':'24/7','server1':_0x143d33('0x19a'),'server2':''},{'category':_0x143d33('0x18d'),'title':'🏛️\x20C-SPAN','date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33(0x199),'server2':''},{'category':'Live\x20TV','title':'🏈\x20CBS\x20Sports\x20Network','date':_0x143d33(0x1b9),'time':_0x143d33(0x171),'server1':'https://fl1.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8','server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33(0x1b4),'date':_0x143d33('0x1b9'),'time':'24/7','server1':_0x143d33(0x153),'server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33(0x17e),'date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33(0x178),'server2':''},{'category':_0x143d33('0x18d'),'title':'😂\x20Comedy\x20Central','date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':'https://fl1.moveonjoy.com/Comedy_Central/index.m3u8','server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x1cf),'date':'2025-11-03','time':'24/7','server1':_0x143d33(0x1b3),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33('0x1a4'),'date':'2025-11-03','time':_0x143d33(0x171),'server1':_0x143d33(0x147),'server2':''},{'category':_0x143d33('0x18d'),'title':'🎬\x20E!\x20Entertainment\x20Television','date':'2025-11-03','time':_0x143d33(0x171),'server1':_0x143d33('0x1bb'),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x169),'date':'2025-11-03','time':_0x143d33(0x171),'server1':_0x143d33('0x193'),'server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33('0x18c'),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':'https://fl1.moveonjoy.com/INVESTIGATION_DISCOVERY/index.m3u8','server2':''},{'category':_0x143d33(0x18d),'title':'📡\x20ION\x20TV','date':_0x143d33(0x1b9),'time':'24/7','server1':'https://fl1.moveonjoy.com/ION_TV/index.m3u8','server2':''},{'category':'Live\x20TV','title':_0x143d33(0x1e0),'date':'2025-11-03','time':_0x143d33('0x171'),'server1':_0x143d33(0x1b1),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x18f),'date':_0x143d33(0x1b9),'time':_0x143d33('0x171'),'server1':_0x143d33(0x141),'server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33('0x146'),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33(0x19d),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33('0x1ad'),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33('0x156'),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x161),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33('0x1c6'),'server2':''},{'category':'Live\x20TV','title':_0x143d33(0x17c),'date':_0x143d33('0x1b9'),'time':_0x143d33(0x171),'server1':_0x143d33(0x177),'server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x16f),'date':_0x143d33(0x1b9),'time':_0x143d33('0x171'),'server1':'https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8','server2':''},{'category':_0x143d33(0x18d),'title':_0x143d33(0x187),'date':_0x143d33('0x1b9'),'time':_0x143d33('0x171'),'server1':_0x143d33(0x1d5),'server2':''},{'category':_0x143d33('0x18d'),'title':_0x143d33('0x1be'),'date':_0x143d33(0x1b9),'time':'24/7','server1':_0x143d33(0x1dd),'server2':''},{'category':_0x143d33('0x1ba'),'title':_0x143d33('0x16a'),'date':'2025-11-03','time':_0x143d33(0x171),'server1':'','server2':_0x143d33('0x155')},{'category':'F1','title':_0x143d33(0x1a5),'date':'2025-11-03','time':'24/7','server1':_0x143d33(0x174),'server2':_0x143d33(0x15c)},{'category':_0x143d33('0x182'),'title':_0x143d33(0x181),'date':'2025-11-05','time':_0x143d33(0x149),'server1':_0x143d33('0x151'),'server2':'https://streamcenter.pro/embed/ch65.php'},{'category':'Basketball','title':_0x143d33('0x1a7'),'date':_0x143d33('0x180'),'time':'9:00\x20AM','server1':'https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867088.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d08c1751e216ee94ce5dd9970c6004b','server2':_0x143d33(0x18a)},{'category':_0x143d33('0x182'),'title':'🏀\x20NBA-\x20Philadelphia\x2076ers\x20vs.\x20Chicago\x20Bulls','date':_0x143d33(0x180),'time':'9:00\x20AM','server1':_0x143d33('0x1c9'),'server2':'https://streamcenter.pro/embed/ch67.php'},{'category':_0x143d33(0x182),'title':_0x143d33(0x17b),'date':_0x143d33(0x180),'time':'9:00\x20AM','server1':_0x143d33(0x1cc),'server2':_0x143d33(0x15e)},{'category':_0x143d33(0x182),'title':_0x143d33('0x160'),'date':'2025-11-05','time':'11:00\x20AM','server1':_0x143d33('0x1cd'),'server2':_0x143d33('0x17a')},{'category':_0x143d33(0x182),'title':_0x143d33(0x1c2),'date':_0x143d33(0x180),'time':_0x143d33(0x1a8),'server1':'https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866416.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3dad2604cb1b18e485698ed7d187da9d','server2':_0x143d33('0x1b7')},{'category':_0x143d33(0x182),'title':_0x143d33(0x16b),'date':_0x143d33(0x180),'time':'5:15\x20PM','server1':_0x143d33(0x18e),'server2':''},{'category':_0x143d33(0x182),'title':'🏀\x20PBA-\x20Rain\x20or\x20Shine\x20vs.\x20Phoenix\x20🇵🇭','date':'2025-11-05','time':'7:30\x20PM','server1':_0x143d33(0x18e),'server2':''}],logos=_0x143d33('0x196');function renderChannels(_0xe315a){const _0x36523c=_0x143d33,_0x12d3c7=document[_0x36523c('0x1db')](_0x36523c(0x176));if(_0xe315a[_0x36523c(0x14f)]===0x0){_0x12d3c7[_0x36523c('0x15d')]=_0x36523c(0x195);return;}_0x12d3c7[_0x36523c(0x15d)]=_0xe315a['map']((_0x49a59d,_0x24ff78)=>'\x0a\x20\x20\x20\x20<div\x20class=\x22channel-box\x22\x20onclick=\x27showServerSelect('+JSON[_0x36523c(0x165)](_0x49a59d)+')\x27>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+logos+_0x36523c('0x1c4')+_0x49a59d['title']+'</h3>\x0a\x20\x20\x20\x20\x20\x20<small>🏷️\x20'+_0x49a59d[_0x36523c('0x1d2')]+_0x36523c('0x1c8')+_0x49a59d[_0x36523c(0x152)]+_0x36523c(0x1ac)+_0x49a59d[_0x36523c(0x162)]+'</small>\x0a\x20\x20\x20\x20\x20\x20<div\x20id=\x22timer-'+_0x24ff78+_0x36523c('0x148'))[_0x36523c('0x190')](''),startCountdown(_0xe315a);}function startCountdown(_0x3f0fb5){function _0x221c14(_0x4d2c98,_0x3e7a92){const _0x5da660=_0x557e,[_0x437c58,_0x26b50f]=_0x3e7a92[_0x5da660('0x19c')]('\x20');let [_0x1baf63,_0xf4cf]=_0x437c58[_0x5da660(0x19c)](':')[_0x5da660(0x158)](Number);if(_0x26b50f[_0x5da660('0x1c5')]()==='PM'&&_0x1baf63<0xc)_0x1baf63+=0xc;if(_0x26b50f[_0x5da660('0x1c5')]()==='AM'&&_0x1baf63===0xc)_0x1baf63=0x0;return new Date(_0x4d2c98+'T'+String(_0x1baf63)[_0x5da660('0x14a')](0x2,'0')+':'+String(_0xf4cf)[_0x5da660('0x14a')](0x2,'0')+_0x5da660('0x163'));}function _0x55eca4(){const _0x5bdb46=_0x557e,_0x528013=new Date(new Date()[_0x5bdb46('0x16e')]('en-US',{'timeZone':_0x5bdb46('0x1a3')}));_0x3f0fb5[_0x5bdb46(0x142)]((_0x322481,_0x2a41b6)=>{const _0x53e8c1=_0x5bdb46,_0x525a07=_0x221c14(_0x322481['date'],_0x322481[_0x53e8c1(0x162)]),_0x51d59c=_0x525a07-_0x528013,_0x124db3=document[_0x53e8c1('0x1db')]('timer-'+_0x2a41b6);if(!_0x124db3)return;if(_0x51d59c<=0x0)_0x124db3[_0x53e8c1('0x144')]='🟢\x20LIVE\x20NOW',_0x124db3[_0x53e8c1('0x1ca')][_0x53e8c1(0x143)]=_0x53e8c1('0x1af');else{const _0x4d09e3=Math[_0x53e8c1('0x1b8')](_0x51d59c/0x36ee80),_0x1dc823=Math[_0x53e8c1('0x1b8')](_0x51d59c%0x36ee80/0xea60),_0x2686a0=Math[_0x53e8c1('0x1b8')](_0x51d59c%0xea60/0x3e8);_0x124db3[_0x53e8c1('0x144')]=_0x53e8c1('0x1de')+_0x4d09e3+'h\x20'+_0x1dc823+'m\x20'+_0x2686a0+'s',_0x124db3[_0x53e8c1(0x1ca)]['color']=_0x53e8c1(0x14e);}});}_0x55eca4(),setInterval(_0x55eca4,0x3e8);}function _0x1b58(){const _0x3f696e=['padStart','🌍\x20BBC\x20World\x20News','💃\x20BET\x20Her','click','#ffcc66','length','https://fl1.moveonjoy.com/BET_HER/index.m3u8','https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866094.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=805cb148624582cc7d2157a502fc0d52','date','https://fl1.moveonjoy.com/CBSEAST/index.m3u8','remove','https://honortvph.totalh.net/watch.html?ch=wwe','https://fl1.moveonjoy.com/MOTOR_TREND/index.m3u8','6710544xbZnsF','map','add','active','https://fl1.moveonjoy.com/BET_EAST/index.m3u8','http://honortvph.totalh.net/emblem.php?ch=f1','innerHTML','https://streamcenter.pro/embed/ch68.php','none','🏀\x20NBA-\x20Phoenix\x20Suns\x20vs.\x20Golden\x20State\x20Warriors','📰\x20MSNBC','time',':00+08:00','https://fl1.moveonjoy.com/ABC_EAST/index.m3u8','stringify','https://fl1.moveonjoy.com/TNT/index.m3u8','input','videoPlayer','🍔\x20Food\x20Network','🤼\x20WWE','🏀\x20PBA-\x20Titan\x20vs.\x20Blackwater\x20🇵🇭','server2','toLowerCase','toLocaleString','🏈\x20NFL\x20Network','loadSource','24/7','127475adxTMi','title','https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8','videoContainer','channelList','https://fl1.moveonjoy.com/NEWS_NATION/index.m3u8','https://fl1.moveonjoy.com/CMT/index.m3u8','addEventListener','https://streamcenter.pro/embed/ch69.php','🏀\x20NBA-\x20Charlotte\x20Hornets\x20vs.\x20New\x20Orleans\x20Pelicans','🗞️\x20News\x20Nation','https://fl1.moveonjoy.com/American_Heroes_Channel/index.m3u8','🎸\x20CMT\x20(Country\x20Music\x20Television)','querySelectorAll','2025-11-05','🏀\x20NBA-\x20Milwaukee\x20Bucks\x20vs.\x20Toronto\x20Raptors','Basketball','filter','21nXMceo','value','serverSelect','🤼\x20WWE\x20Network','https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8','🐾\x20Animal\x20Planet','https://streamcenter.pro/embed/ch66.php','https://fl1.moveonjoy.com/ACC_NETWORK/index.m3u8','🕵️\x20Investigation\x20Discovery','Live\x20TV','https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8','📺\x20Me\x20TV','join','💃\x20Bravo','https://fl1.moveonjoy.com/Animal_Planet/index.m3u8','https://fl1.moveonjoy.com/FOOD_NETWORK/index.m3u8','11HNlPfm','<p\x20style=\x27text-align:center;color:#f55;\x27>No\x20matches\x20found</p>','https://i.imgur.com/y7rtkDI.jpeg','block','🏆\x20BeIN\x20Sports','https://fl1.moveonjoy.com/C-SPAN/index.m3u8','https://fl1.moveonjoy.com/BOOMERANG/index.m3u8','display','split','https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8','1774976DClDef','all','🔥\x20TNT','7199820jPhxbk','56MSMlXP','Asia/Manila','🦋\x20Discovery\x20Family\x20Channel','🏎️\x20F1-\x20Sky\x20Sports\x20F1','MANIFEST_PARSED','🏀\x20NBA-\x20Orlando\x20Magic\x20vs.\x20Atlanta\x20Hawks','12:00\x20PM','attachMedia','🎖️\x20American\x20Heroes\x20Channel','49738NtAnku','\x20-\x20','🏎️\x20Motor\x20Trend','https://fl1.moveonjoy.com/BBC_AMERICA/index.m3u8','limegreen','pause','https://fl1.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8','💼\x20Bloomberg\x20TV','https://fl1.moveonjoy.com/COOKING_CHANNEL/index.m3u8','📺\x20CBS\x20East','destroy','isSupported','https://streamcenter.pro/embed/ch70.php','floor','2025-11-03','WWE','https://fl1.moveonjoy.com/E_ENTERTAINMENT_TELEVISION/index.m3u8','https://fl1.moveonjoy.com/BLOOMBERG/index.m3u8','classList','🎬\x20Movie\x20Sphere','https://fl1.moveonjoy.com/BRAVO/index.m3u8','📺\x20ABC\x20East','src','🏀\x20NBA-\x20Oklahoma\x20City\x20Thunder\x20vs.\x20LA\x20Clippers','100TDdgrN','\x22\x20alt=\x22logo\x22>\x0a\x20\x20\x20\x20\x20\x20<h3>','toUpperCase','https://fl1.moveonjoy.com/MSNBC/index.m3u8','searchBar','</small><br>\x0a\x20\x20\x20\x20\x20\x20<small>📅\x20','https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d','style','https://fl1.moveonjoy.com/BET_SOUL/index.m3u8','https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866202.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9b5d0a509e5a708bcf8ed881b7707ed','https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866524.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=64c6ac7cdf98e5d4935f01141ad0b131','getAttribute','🍳\x20Cooking\x20Channel','1196678FBUAHu','20183320zrfTCq','category','🐰\x20Boomerang','includes','https://fl3.moveonjoy.com/WWE/index.m3u8','.category-btn','server1','channelCard','data-cat','🎤\x20BET\x20Soul','getElementById','server2Btn','https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8','⏳\x20Starts\x20in\x20','onclick','🎥\x20Lifetime\x20Movie\x20Network','play','flex','https://fl1.moveonjoy.com/ME_TV/index.m3u8','forEach','color','textContent','iframePlayer','⚾\x20MLB\x20Network','https://fl1.moveonjoy.com/DISCOVERY_FAMILY_CHANNEL/index.m3u8','\x22\x20class=\x22countdown\x22>Loading...</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20','8:30\x20AM'];_0x1b58=function(){return _0x3f696e;};return _0x1b58();}function filterChannels(){const _0x2436f2=_0x143d33,_0x58320b=document[_0x2436f2('0x1db')](_0x2436f2('0x1c7'))[_0x2436f2(0x185)]['toLowerCase']();renderChannels(channels[_0x2436f2(0x183)](_0x341d26=>(activeCategory==='all'||_0x341d26[_0x2436f2(0x1d2)]===activeCategory)&&_0x341d26[_0x2436f2(0x173)][_0x2436f2('0x16d')]()[_0x2436f2(0x1d4)](_0x58320b)));}document['getElementById']('searchBar')[_0x143d33('0x179')](_0x143d33('0x167'),filterChannels),document[_0x143d33('0x17f')]('.category-btn')[_0x143d33('0x142')](_0x2be2f0=>{const _0x5484a0=_0x143d33;_0x2be2f0[_0x5484a0('0x179')](_0x5484a0('0x14d'),()=>{const _0x1703c1=_0x5484a0;document[_0x1703c1('0x17f')](_0x1703c1(0x1d6))['forEach'](_0x1f141b=>_0x1f141b[_0x1703c1('0x1bd')][_0x1703c1(0x154)]('active')),_0x2be2f0[_0x1703c1(0x1bd)][_0x1703c1('0x159')](_0x1703c1(0x15a)),activeCategory=_0x2be2f0[_0x1703c1('0x1ce')](_0x1703c1(0x1d9)),filterChannels();});});function showServerSelect(_0x50938f){const _0x26f371=_0x143d33;selectedURLs=_0x50938f,document[_0x26f371(0x1db)](_0x26f371('0x186'))[_0x26f371('0x1ca')][_0x26f371('0x19b')]=_0x26f371('0x140');}document[_0x143d33(0x1db)]('server1Btn')[_0x143d33('0x1df')]=()=>{const _0x42072e=_0x143d33;document[_0x42072e(0x1db)](_0x42072e(0x186))[_0x42072e(0x1ca)][_0x42072e('0x19b')]=_0x42072e('0x15f'),playChannel(selectedURLs[_0x42072e('0x1d7')]);},document[_0x143d33('0x1db')](_0x143d33(0x1dc))[_0x143d33('0x1df')]=()=>{const _0x176bb9=_0x143d33;document[_0x176bb9('0x1db')](_0x176bb9(0x186))[_0x176bb9(0x1ca)][_0x176bb9(0x19b)]='none',playIframe(selectedURLs[_0x176bb9('0x16c')]);};function playChannel(_0x1b36c2){const _0x81ad02=_0x143d33,_0x136bb5=document['getElementById']('videoContainer'),_0x9fc881=document[_0x81ad02('0x1db')](_0x81ad02(0x168)),_0x3737e1=document[_0x81ad02('0x1db')](_0x81ad02(0x145));_0x136bb5['style'][_0x81ad02('0x19b')]=_0x81ad02(0x140),_0x3737e1[_0x81ad02(0x1ca)]['display']=_0x81ad02(0x15f),_0x9fc881[_0x81ad02(0x1ca)][_0x81ad02('0x19b')]=_0x81ad02(0x197),document[_0x81ad02('0x1db')](_0x81ad02(0x1d8))[_0x81ad02('0x1ca')]['display']=_0x81ad02('0x15f');if(hls)hls[_0x81ad02(0x1b5)]();Hls[_0x81ad02('0x1b6')]()?(hls=new Hls(),hls[_0x81ad02('0x170')](_0x1b36c2),hls[_0x81ad02(0x1a9)](_0x9fc881),hls['on'](Hls['Events'][_0x81ad02('0x1a6')],()=>_0x9fc881[_0x81ad02(0x13f)]())):_0x9fc881[_0x81ad02('0x1c1')]=_0x1b36c2;}function playIframe(_0x1b5c1e){const _0x2f097e=_0x143d33,_0x3e5b25=document[_0x2f097e('0x1db')](_0x2f097e('0x175')),_0x7d0fcf=document[_0x2f097e(0x1db)](_0x2f097e(0x168)),_0x33464d=document['getElementById'](_0x2f097e('0x145'));_0x3e5b25[_0x2f097e('0x1ca')]['display']='flex',_0x7d0fcf[_0x2f097e('0x1ca')][_0x2f097e('0x19b')]='none',_0x33464d[_0x2f097e('0x1ca')]['display']='block',document[_0x2f097e('0x1db')](_0x2f097e('0x1d8'))[_0x2f097e('0x1ca')][_0x2f097e('0x19b')]=_0x2f097e(0x15f),_0x33464d['src']=_0x1b5c1e;}function _0x557e(_0x37b925,_0x2e4d64){const _0x1b58db=_0x1b58();return _0x557e=function(_0x557e3c,_0x47fe7c){_0x557e3c=_0x557e3c-0x13f;let _0x5c7526=_0x1b58db[_0x557e3c];return _0x5c7526;},_0x557e(_0x37b925,_0x2e4d64);}function closeVideo(){const _0xc3529c=_0x143d33;document[_0xc3529c(0x1db)](_0xc3529c(0x175))[_0xc3529c('0x1ca')][_0xc3529c(0x19b)]=_0xc3529c('0x15f'),document[_0xc3529c('0x1db')](_0xc3529c('0x1d8'))[_0xc3529c('0x1ca')][_0xc3529c('0x19b')]=_0xc3529c('0x197'),document[_0xc3529c('0x1db')](_0xc3529c('0x168'))[_0xc3529c(0x1b0)](),document[_0xc3529c('0x1db')](_0xc3529c('0x145'))[_0xc3529c('0x1c1')]='';}function toggleList(){const _0x7e8f4=_0x143d33,_0x43240b=document[_0x7e8f4('0x1db')](_0x7e8f4(0x1d8));_0x43240b['style'][_0x7e8f4('0x19b')]=_0x43240b[_0x7e8f4(0x1ca)]['display']===_0x7e8f4('0x15f')?_0x7e8f4(0x197):_0x7e8f4('0x15f');}renderChannels(channels);
+let hls, selectedURLs = {}, activeCategory = "all";
+
+// ====================== CHANNEL LIST ============================
+const channels = [
+    {
+    category: "Live TV",
+    title: "📺 ABC East",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏈 ACC Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/ACC_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🐾 Animal Planet",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/Animal_Planet/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎬 AMC Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/AMC_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎖️ American Heroes Channel",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/American_Heroes_Channel/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "💃 Bravo",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BRAVO/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🔥 TNT",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/TNT/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🌍 BBC America",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BBC_AMERICA/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🌍 BBC World News",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BBC_WORLD_NEWS/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏆 BeIN Sports",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎶 BET East",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BET_EAST/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "💃 BET Her",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BET_HER/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎤 BET Soul",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BET_SOUL/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎧 BET Jams",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BET_Jams/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "💼 Bloomberg TV",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BLOOMBERG/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🐰 Boomerang",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/BOOMERANG/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏛️ C-SPAN",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/C-SPAN/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏈 CBS Sports Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "📺 CBS East",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/CBSEAST/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎸 CMT (Country Music Television)",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/CMT/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "😂 Comedy Central",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/Comedy_Central/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🍳 Cooking Channel",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/COOKING_CHANNEL/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🦋 Discovery Family Channel",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/DISCOVERY_FAMILY_CHANNEL/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎬 E! Entertainment Television",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/E_ENTERTAINMENT_TELEVISION/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🍔 Food Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/FOOD_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🕵️ Investigation Discovery",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/INVESTIGATION_DISCOVERY/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "📡 ION TV",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/ION_TV/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎥 Lifetime Movie Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "📺 Me TV",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/ME_TV/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "⚾ MLB Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏎️ Motor Trend",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/MOTOR_TREND/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "📰 MSNBC",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/MSNBC/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🗞️ News Nation",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/NEWS_NATION/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🏈 NFL Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🤼 WWE Network",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://fl3.moveonjoy.com/WWE/index.m3u8",
+    server2: ""
+  },
+  {
+    category: "Live TV",
+    title: "🎬 Movie Sphere",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8",
+    server2: ""
+        },
+  {
+      category: "WWE",
+    title: "🤼 WWE",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "",
+    server2: "https://honortvph.totalh.net/watch.html?ch=wwe"
+  },
+  {    
+    category: "F1",
+    title: "🏎️ F1- Sky Sports F1",
+    date: "2025-11-03",
+    time: "24/7",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
+    server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
+  },
+  {
+      
+    category: "Basketball",
+    title: "🏀 NBA- Milwaukee Bucks vs. Toronto Raptors",
+    date: "2025-11-05",
+    time: "8:30 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866850.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b7af6b2a699893a7535b8030040861b7",
+    server2: "https://streamcenter.pro/embed/ch65.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA- Orlando Magic vs. Atlanta Hawks",
+    date: "2025-11-05",
+    time: "9:00 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867088.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d08c1751e216ee94ce5dd9970c6004b",
+    server2: "https://streamcenter.pro/embed/ch66.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA- Philadelphia 76ers vs. Chicago Bulls",
+    date: "2025-11-05",
+    time: "9:00 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866309.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=03325089ef75f28fe5660287c084eb7d",
+    server2: "https://streamcenter.pro/embed/ch67.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA- Charlotte Hornets vs. New Orleans Pelicans",
+    date: "2025-11-05",
+    time: "9:00 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866202.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9b5d0a509e5a708bcf8ed881b7707ed",
+    server2: "https://streamcenter.pro/embed/ch68.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA- Phoenix Suns vs. Golden State Warriors",
+    date: "2025-11-05",
+    time: "11:00 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866524.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=64c6ac7cdf98e5d4935f01141ad0b131",
+    server2: "https://streamcenter.pro/embed/ch69.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA- Oklahoma City Thunder vs. LA Clippers",
+    date: "2025-11-05",
+    time: "12:00 PM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866416.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3dad2604cb1b18e485698ed7d187da9d",
+    server2: "https://streamcenter.pro/embed/ch70.php"
+  },
+   {
+    category: "Basketball",
+    title: "🏀 PBA- Titan vs. Blackwater 🇵🇭",
+    date: "2025-11-05",
+    time: "5:15 PM",
+    server1: "https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8",
+    server2: ""
+  },
+   {
+    category: "Basketball",
+    title: "🏀 PBA- Rain or Shine vs. Phoenix 🇵🇭",
+    date: "2025-11-05",
+    time: "7:30 PM",
+    server1: "https://one1-o1u3.onrender.com/stream/pba/pba/master.m3u8",
+    server2: ""
+  },    
+];
+
+const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+
+// ====================== RENDER CHANNELS ============================
+function renderChannels(list) {
+  const container = document.getElementById("channelList");
+  if (list.length === 0) {
+    container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
+    return;
+  }
+  container.innerHTML = list.map((ch, i) => `
+    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
+      <img src="${logos}" alt="logo">
+      <h3>${ch.title}</h3>
+      <small>🏷️ ${ch.category}</small><br>
+      <small>📅 ${ch.date} - ${ch.time}</small>
+      <div id="timer-${i}" class="countdown">Loading...</div>
+    </div>
+  `).join("");
+  startCountdown(list);
+}
+
+// ====================== COUNTDOWN ============================
+function startCountdown(list) {
+  function parseTime(date, time) {
+    const [t, period] = time.split(" ");
+    let [hours, minutes] = t.split(":").map(Number);
+    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+    return new Date(`${date}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00+08:00`);
+  }
+
+  function update() {
+    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+    list.forEach((ch, i) => {
+      const target = parseTime(ch.date, ch.time);
+      const diff = target - nowPH;
+      const el = document.getElementById(`timer-${i}`);
+      if (!el) return;
+      if (diff <= 0) {
+        el.textContent = "🟢 LIVE NOW";
+        el.style.color = "limegreen";
+      } else {
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
+        el.style.color = "#ffcc66";
+      }
+    });
+  }
+
+  update();
+  setInterval(update, 1000);
+}
+
+// ====================== CATEGORY + SEARCH ============================
+function filterChannels() {
+  const search = document.getElementById("searchBar").value.toLowerCase();
+  renderChannels(channels.filter(c =>
+    (activeCategory === "all" || c.category === activeCategory) &&
+    c.title.toLowerCase().includes(search)
+  ));
+}
+
+document.getElementById("searchBar").addEventListener("input", filterChannels);
+document.querySelectorAll(".category-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeCategory = btn.getAttribute("data-cat");
+    filterChannels();
+  });
+});
+
+// ====================== SERVER SELECTION ============================
+function showServerSelect(ch) {
+  selectedURLs = ch;
+  document.getElementById("serverSelect").style.display = "flex";
+}
+
+document.getElementById("server1Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playChannel(selectedURLs.server1);
+};
+
+document.getElementById("server2Btn").onclick = () => {
+  document.getElementById("serverSelect").style.display = "none";
+  playIframe(selectedURLs.server2);
+};
+
+// ====================== PLAYER CONTROL ============================
+function playChannel(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex";
+  i.style.display = "none";
+  v.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+
+  if (hls) hls.destroy();
+  if (Hls.isSupported()) {
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(v);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
+  } else {
+    v.src = url;
+  }
+}
+
+function playIframe(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex";
+  v.style.display = "none";
+  i.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+  i.src = url;
+}
+
+function closeVideo() {
+  document.getElementById("videoContainer").style.display = "none";
+  document.getElementById("channelCard").style.display = "block";
+  document.getElementById("videoPlayer").pause();
+  document.getElementById("iframePlayer").src = "";
+}
+
+function toggleList() {
+  const c = document.getElementById("channelCard");
+  c.style.display = c.style.display === "none" ? "block" : "none";
+}
+
+// ====================== INIT ============================
+renderChannels(channels);
