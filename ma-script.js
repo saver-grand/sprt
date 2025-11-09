@@ -310,64 +310,64 @@ const channels = [
       
     category: "Basketball",
     title: "🏀 NBA- Dallas Mavericks vs. Washington Wizards",
-    date: "2025-11-08",
-    time: "7:00 PM",
+    date: "2025-11-09",
+    time: "8:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866097.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b66b706583107bb8df20b994fc0e359e",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Toronto Raptors vs. Philadelphia 76ers",
-    date: "2025-11-08",
-    time: "7:30 PM",
+    date: "2025-11-09",
+    time: "8:30 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867091.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=46d15ba60b4ec146ad207d50c5a69538",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Los Angeles Lakers vs. Atlanta Hawks",
-    date: "2025-11-08",
-    time: "8:00 PM",
-    server1: "",
+    date: "2025-11-09",
+    time: "9:00 AM",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866312.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1c547ddf4d11622439b6e4167955f9f0",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Chicago Bulls vs. Cleveland Cavaliers",
-    date: "2025-11-08",
-    time: "8:30 PM",
+    date: "2025-11-09",
+    time: "9:00 AM",
     server1: "",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Portland Trail Blazers vs. Miami Heat",
-    date: "2025-11-08",
-    time: "9:00 PM",
+    date: "2025-11-09",
+    time: "9:00 AM",
     server1: "",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- New Orleans Pelicans vs. San Antonio Spurs",
-    date: "2025-11-08",
-    time: "9:30 PM",
+    date: "2025-11-09",
+    time: "9:00 AM",
     server1: "",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Indiana Pacers vs. Denver Nuggets",
-    date: "2025-11-08",
-    time: "10:00 PM",
+    date: "2025-11-09",
+    time: "10:00 AM",
     server1: "",
     server2: "https://streamcenter.pro/embed/ch71.php"
   },
   {
     category: "Basketball",
     title: "🏀 NBA- Phoenix Suns vs. LA Clippers",
-    date: "2025-11-08",
-    time: "10:30 PM",
+    date: "2025-11-09",
+    time: "11:30 AM",
     server1: "",
     server2: "https://streamcenter.pro/embed/ch72.php"
   },
