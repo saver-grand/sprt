@@ -307,70 +307,61 @@ const channels = [
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
   {
-      
     category: "Basketball",
-    title: "🏀 NBA- Dallas Mavericks vs. Washington Wizards",
-    date: "2025-11-09",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866097.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b66b706583107bb8df20b994fc0e359e",
+    title: "🏀 NBA - Houston Rockets vs. Milwaukee Bucks",
+    date: "2025-11-10",
+    time: "4:30 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- Toronto Raptors vs. Philadelphia 76ers",
-    date: "2025-11-09",
-    time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867091.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=46d15ba60b4ec146ad207d50c5a69538",
+    title: "🏀 NBA - Brooklyn Nets vs. New York Knicks",
+    date: "2025-11-10",
+    time: "7:00 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- Los Angeles Lakers vs. Atlanta Hawks",
-    date: "2025-11-09",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866312.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1c547ddf4d11622439b6e4167955f9f0",
+    title: "🏀 NBA - Boston Celtics vs. Orlando Magic",
+    date: "2025-11-10",
+    time: "7:00 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba3/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- Chicago Bulls vs. Cleveland Cavaliers",
-    date: "2025-11-09",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866205.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a21cc0ba1f37ec3acb9836262d9733fa",
+    title: "🏀 NBA - Oklahoma City Thunder vs. Memphis Grizzlies",
+    date: "2025-11-10",
+    time: "7:00 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba4/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- Portland Trail Blazers vs. Miami Heat",
-    date: "2025-11-09",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866527.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fd75e452382d79f5dcde0ff4667900fe",
+    title: "🏀 NBA - Detroit Pistons vs. Philadelphia 76ers",
+    date: "2025-11-10",
+    time: "8:30 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba5/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- New Orleans Pelicans vs. San Antonio Spurs",
-    date: "2025-11-09",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866419.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e6077ef449e12b51904f55640fbf7f10",
+    title: "🏀 NBA - Indiana Pacers vs. Golden State Warriors",
+    date: "2025-11-10",
+    time: "9:30 AM",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba6/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA- Indiana Pacers vs. Denver Nuggets",
-    date: "2025-11-09",
+    title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
+    date: "2025-11-10",
     time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866743.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=5b4c7fa0ba2ff85d311765d12bec5f80",
+    server1: "https://streams.honortvph.totalh.net/stream/live/nba7/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch71.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA- Phoenix Suns vs. LA Clippers",
-    date: "2025-11-09",
-    time: "11:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866634.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f1f26909108552834f38a9b9fae5891a",
-    server2: "https://streamcenter.pro/embed/ch72.php"
-  },
+  }      
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
