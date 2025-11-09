@@ -320,7 +320,7 @@ const channels = [
     title: "🏀 NBA- Toronto Raptors vs. Philadelphia 76ers",
     date: "2025-11-08",
     time: "7:30 PM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867091.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=46d15ba60b4ec146ad207d50c5a69538",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
