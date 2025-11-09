@@ -368,7 +368,7 @@ const channels = [
     title: "🏀 NBA- Phoenix Suns vs. LA Clippers",
     date: "2025-11-09",
     time: "11:30 AM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866634.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f1f26909108552834f38a9b9fae5891a",
     server2: "https://streamcenter.pro/embed/ch72.php"
   },
 ];
