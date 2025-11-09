@@ -336,7 +336,7 @@ const channels = [
     title: "🏀 NBA- Chicago Bulls vs. Cleveland Cavaliers",
     date: "2025-11-09",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866205.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a21cc0ba1f37ec3acb9836262d9733fa",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
@@ -344,7 +344,7 @@ const channels = [
     title: "🏀 NBA- Portland Trail Blazers vs. Miami Heat",
     date: "2025-11-09",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866527.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fd75e452382d79f5dcde0ff4667900fe",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
@@ -352,7 +352,7 @@ const channels = [
     title: "🏀 NBA- New Orleans Pelicans vs. San Antonio Spurs",
     date: "2025-11-09",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866419.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e6077ef449e12b51904f55640fbf7f10",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
