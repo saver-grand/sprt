@@ -312,7 +312,7 @@ const channels = [
     title: "🏀 NBA- Dallas Mavericks vs. Washington Wizards",
     date: "2025-11-08",
     time: "7:00 PM",
-    server1: "",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866097.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b66b706583107bb8df20b994fc0e359e",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
