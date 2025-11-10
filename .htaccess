@@ -1,0 +1,8 @@
+# Block direct access to these files
+<FilesMatch "^(index\.html|ma-style\.css|ma-script\.js)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow PHP to handle requests
+DirectoryIndex index.php
