@@ -3,7 +3,7 @@
 
 $file = $_GET['file'] ?? '';
 
-$allowed = ['index.html', 'style.css', 'script.js'];
+$allowed = ['index.html', 'ma-style.css', 'ma-script.js'];
 $path = __DIR__ . '/protected/' . basename($file);
 
 if (in_array($file, $allowed) && file_exists($path)) {
