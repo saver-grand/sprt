@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Indiana Pacers vs. Golden State Warriors",
     date: "2025-11-10",
     time: "9:30 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba6/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866186.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=13f1f0f2318a28471d86a24371423b52",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
     date: "2025-11-10",
     time: "10:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba7/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866508.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0a646596f29cd316d154bf74f4e2e0cf",
     server2: "https://streamcenter.pro/embed/ch71.php"
   }      
 ];
