@@ -306,62 +306,78 @@ const channels = [
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
-  {
+{
     category: "Basketball",
-    title: "🏀 NBA - Houston Rockets vs. Milwaukee Bucks",
+    title: "🏀 NBA - Los Angeles Lakers vs. Charlotte Hornets",
     date: "2025-11-10",
-    time: "4:30 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    time: "8:00 AM",
+    server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Brooklyn Nets vs. New York Knicks",
+    title: "🏀 NBA - Washington Wizards vs. Detroit Pistons",
     date: "2025-11-10",
-    time: "7:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    time: "8:00 AM",
+    server1: "https://gg.poocloud.in/nba_detroitpistons/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Boston Celtics vs. Orlando Magic",
+    title: "🏀 NBA - Portland Trail Blazers vs. Orlando Magic",
     date: "2025-11-10",
-    time: "7:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba3/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    time: "8:00 AM",
+    server1: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Oklahoma City Thunder vs. Memphis Grizzlies",
+    title: "🏀 NBA - Cleveland Cavaliers vs. Miami Heat",
     date: "2025-11-10",
-    time: "7:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba4/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    time: "8:30 AM",
+    server1: "https://gg.poocloud.in/nba_miamiheat/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Detroit Pistons vs. Philadelphia 76ers",
+    title: "🏀 NBA - San Antonio Spurs vs. Chicago Bulls",
     date: "2025-11-10",
-    time: "8:30 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/live/nba5/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    time: "9:00 AM",
+    server1: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Indiana Pacers vs. Golden State Warriors",
+    title: "🏀 NBA - Milwaukee Bucks vs. Dallas Mavericks",
     date: "2025-11-10",
     time: "9:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866186.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=13f1f0f2318a28471d86a24371423b52",
+    server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
+    title: "🏀 NBA - New Orleans Pelicans vs. Phoenix Suns",
     date: "2025-11-10",
     time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866508.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0a646596f29cd316d154bf74f4e2e0cf",
+    server1: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch71.php"
-  }      
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Minnesota Timberwolves vs. Utah Jazz",
+    date: "2025-11-10",
+    time: "10:00 AM",
+    server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
+    server2: "https://streamcenter.pro/embed/ch72.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Atlanta Hawks vs. LA Clippers",
+    date: "2025-11-10",
+    time: "11:30 AM",
+    server1: "https://gg.poocloud.in/nba_laclippers/index.m3u8",
+    server2: "https://streamcenter.pro/embed/ch73.php"
+  }
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
