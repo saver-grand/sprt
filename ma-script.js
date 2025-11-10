@@ -309,7 +309,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Los Angeles Lakers vs. Charlotte Hornets",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "8:00 AM",
     server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch65.php"
@@ -317,7 +317,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Washington Wizards vs. Detroit Pistons",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "8:00 AM",
     server1: "https://gg.poocloud.in/nba_detroitpistons/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch66.php"
@@ -325,7 +325,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Portland Trail Blazers vs. Orlando Magic",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "8:00 AM",
     server1: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch67.php"
@@ -333,7 +333,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Cleveland Cavaliers vs. Miami Heat",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "8:30 AM",
     server1: "https://gg.poocloud.in/nba_miamiheat/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch68.php"
@@ -341,7 +341,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - San Antonio Spurs vs. Chicago Bulls",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "9:00 AM",
     server1: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch69.php"
@@ -349,7 +349,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Milwaukee Bucks vs. Dallas Mavericks",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "9:30 AM",
     server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch70.php"
@@ -357,7 +357,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - New Orleans Pelicans vs. Phoenix Suns",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "10:00 AM",
     server1: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch71.php"
@@ -365,7 +365,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Minnesota Timberwolves vs. Utah Jazz",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "10:00 AM",
     server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch72.php"
@@ -373,7 +373,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Atlanta Hawks vs. LA Clippers",
-    date: "2025-11-10",
+    date: "2025-11-11",
     time: "11:30 AM",
     server1: "https://gg.poocloud.in/nba_laclippers/index.m3u8",
     server2: "https://streamcenter.pro/embed/ch73.php"
