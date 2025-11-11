@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Milwaukee Bucks vs. Dallas Mavericks",
     date: "2025-11-11",
     time: "9:30 AM",
-    server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866058.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f423a18babbc877e186c67dd2ce4c101",
     server2: "https://streamcenter.pro/embed/ch70.php"
   },
   {
