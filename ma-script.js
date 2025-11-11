@@ -311,7 +311,7 @@ const channels = [
     title: "🏀 NBA - Los Angeles Lakers vs. Charlotte Hornets",
     date: "2025-11-11",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866400.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=334ddf84b0ee1395d00efde872902949",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Detroit Pistons",
     date: "2025-11-11",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_detroitpistons/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866724.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=355657b84a2484b7289330f90b28bc31",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Portland Trail Blazers vs. Orlando Magic",
     date: "2025-11-11",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866615.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9af9bd63dcd28ba01deafa4b80ee4f41",
     server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
