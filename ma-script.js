@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Minnesota Timberwolves vs. Utah Jazz",
     date: "2025-11-11",
     time: "10:00 AM",
-    server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866273.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=65db5d2e8901bd98bbfc2b4b37b32927",
     server2: "https://streamcenter.pro/embed/ch72.php"
   },
   {
