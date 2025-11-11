@@ -375,7 +375,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. LA Clippers",
     date: "2025-11-11",
     time: "11:30 AM",
-    server1: "https://gg.poocloud.in/nba_laclippers/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866166.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b8b6c9a698bd830c3f1a03c10c6cbbde",
     server2: "https://streamcenter.pro/embed/ch73.php"
   }
 ];
