@@ -309,7 +309,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Toronto Raptors vs. Brooklyn Nets",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba1/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch1.php"
@@ -317,7 +317,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Memphis Grizzlies vs. New York Knicks",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba2/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch2.php"
@@ -325,7 +325,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Boston Celtics vs. Philadelphia 76ers",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "9:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba3/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch3.php"
@@ -333,7 +333,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Golden State Warriors vs. Oklahoma City Thunder",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "9:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba4/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch4.php"
@@ -341,7 +341,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Indiana Pacers vs. Utah Jazz",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "10:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba5/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch5.php"
@@ -349,7 +349,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Denver Nuggets vs. Sacramento Kings",
-    date: "2025-11-11",
+    date: "2025-11-12",
     time: "10:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba6/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.pro/embed/ch6.php"
