@@ -312,7 +312,7 @@ const channels = [
     date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba1/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "nheight="0" marginwidth="0" src="https://embednow.top/embed/nba/11-11-2025/tor-bkn"
+    server2: "https://embednow.top/embed/nba/11-11-2025/tor-bkn",
   },
   {
     category: "Basketball",
