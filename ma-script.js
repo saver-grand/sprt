@@ -343,7 +343,7 @@ const channels = [
     title: "🏀 NBA - San Antonio Spurs vs. Chicago Bulls",
     date: "2025-11-11",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866833.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a5b54ba554c995a7f72586572782af56",
     server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
