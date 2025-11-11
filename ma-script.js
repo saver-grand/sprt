@@ -312,7 +312,7 @@ const channels = [
     date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba1/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch1.php"
+    server2: "nheight="0" marginwidth="0" src="https://embednow.top/embed/nba/11-11-2025/tor-bkn"
   },
   {
     category: "Basketball",
@@ -320,7 +320,7 @@ const channels = [
     date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba2/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch2.php"
+    server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
     category: "Basketball",
@@ -328,7 +328,7 @@ const channels = [
     date: "2025-11-12",
     time: "9:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba3/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch3.php"
+    server2: "https://streamcenter.pro/embed/ch67.php"
   },
   {
     category: "Basketball",
@@ -336,7 +336,7 @@ const channels = [
     date: "2025-11-12",
     time: "9:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba4/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch4.php"
+    server2: "https://streamcenter.pro/embed/ch68.php"
   },
   {
     category: "Basketball",
@@ -344,7 +344,7 @@ const channels = [
     date: "2025-11-12",
     time: "10:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba5/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch5.php"
+    server2: "https://streamcenter.pro/embed/ch69.php"
   },
   {
     category: "Basketball",
@@ -352,7 +352,7 @@ const channels = [
     date: "2025-11-12",
     time: "10:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba6/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://streamcenter.pro/embed/ch6.php"
+    server2: "https://streamcenter.pro/embed/ch70.php"
   }
 ];
 
