@@ -309,7 +309,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Milwaukee Bucks vs. Charlotte Hornets",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "8:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/mil-cha",
@@ -317,7 +317,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Chicago Bulls vs. Detroit Pistons",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "8:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/chi-det",
@@ -325,7 +325,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Orlando Magic vs. New York Knicks",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "8:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/orl-nyk",
@@ -333,7 +333,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Memphis Grizzlies vs. Boston Celtics",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "8:30 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/mem-bos",
@@ -341,7 +341,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Cleveland Cavaliers vs. Miami Heat",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "8:30 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/cle-mia",
@@ -349,7 +349,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Washington Wizards vs. Houston Rockets",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "9:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/was-hou",
@@ -357,7 +357,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Portland Trail Blazers vs. New Orleans Pelicans",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "9:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/por-nop",
@@ -365,7 +365,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Golden State Warriors vs. San Antonio Spurs",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "9:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/gsw-sas",
@@ -373,7 +373,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Phoenix Suns vs. Dallas Mavericks",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "9:30 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/phx-dal",
@@ -381,7 +381,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Los Angeles Lakers vs. Oklahoma City Thunder",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "10:30 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/lal-okc",
@@ -389,7 +389,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Atlanta Hawks vs. Sacramento Kings",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "11:00 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/atl-sac",
@@ -397,7 +397,7 @@ const channels = [
   {
     category: "Basketball",
     title: "🏀 NBA - Denver Nuggets vs. LA Clippers",
-    date: "2025-11-12",
+    date: "2025-11-13",
     time: "11:30 AM",
     server1: "https://honotvph.42web.io/masports.php?id=nba12",
     server2: "https://ppvs.su/live/nba/11-12-2025/den-lac",
