@@ -311,7 +311,7 @@ const channels = [
     title: "🏀 NBA - Toronto Raptors vs. Brooklyn Nets",
     date: "2025-11-12",
     time: "8:30 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba1/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866486.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=203086f34e92c5b20df8a34f656b6415",
     server2: "https://embednow.top/embed/nba/11-11-2025/tor-bkn",
   },
   {
@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Memphis Grizzlies vs. New York Knicks",
     date: "2025-11-12",
     time: "8:30 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba2/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866379.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=5041cab8a4358a5ee4a5984c76bd0b5e",
     server2: "https://embednow.top/embed/nba/11-11-2025/mem-nyk"
   },
   {
