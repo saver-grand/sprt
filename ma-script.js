@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Boston Celtics vs. Philadelphia 76ers",
     date: "2025-11-12",
     time: "9:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba3/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866399.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=399bc0c2abf242a3fa64de080ca81655",
     server2: "https://embednow.top/embed/nba/11-11-2025/bos-phi"
   },
   {
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Golden State Warriors vs. Oklahoma City Thunder",
     date: "2025-11-12",
     time: "9:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba4/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866399.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=399bc0c2abf242a3fa64de080ca81655",
     server2: "https://embednow.top/embed/nba/11-11-2025/gsw-okc"
   },
   {
