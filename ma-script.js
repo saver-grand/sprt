@@ -343,14 +343,14 @@ const channels = [
     title: "🏀 NBA - Indiana Pacers vs. Utah Jazz",
     date: "2025-11-12",
     time: "10:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba5/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866614.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=acc89d84be6b213412369aca184c7ee1",
     server2: "https://embednow.top/embed/nba/11-11-2025/ind-uta"
   },
   {
     category: "Basketball",
     title: "🏀 NBA - Denver Nuggets vs. Sacramento Kings",
     date: "2025-11-12",
-    time: "10:00 AM",
+    time: "12:00 AM",
     server1: "https://streams.honortvph.totalh.net/stream/sports/nba6/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://embednow.top/embed/nba/11-11-2025/den-sac"
   }
