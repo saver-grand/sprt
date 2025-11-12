@@ -312,7 +312,7 @@ const channels = [
     date: "2025-11-12",
     time: "8:30 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866486.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=203086f34e92c5b20df8a34f656b6415",
-    server2: "https://embednow.top/embed/nba/11-11-2025/tor-bkn",
+    server2: "https://honotvph.42web.io/masports.php?id=nba1",
   },
   {
     category: "Basketball",
