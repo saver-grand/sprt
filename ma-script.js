@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Denver Nuggets vs. Sacramento Kings",
     date: "2025-11-12",
     time: "12:00 AM",
-    server1: "https://streams.honortvph.totalh.net/stream/sports/nba6/master.m3u8?u=masports&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866507.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=44249d909dbbaeab9589ea32a8e5ccbe",
     server2: "https://embednow.top/embed/nba/11-11-2025/den-sac"
   }
 ];
