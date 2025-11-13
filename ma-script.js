@@ -307,6 +307,14 @@ const channels = [
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
     {
+            category: "Hockey",
+    title: "🏑 Ice Hockey- Providence vs Merrimack",
+    date: "2025-11-16",
+    time: "7:00am",
+    server1: "",
+    server2: "https://embednow.top/embed/providence-vs-merrimack"
+  },
+    {
     category: "Basketball",
     title: "🏀 NBA - Toronto Raptors vs. Cleveland Cavaliers",
     date: "2025-11-14",
