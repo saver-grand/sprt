@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Houston Rockets",
     date: "2025-11-13",
     time: "9:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866056.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e95f80af904751f123eb19073820a8b5",
     server2: "https://embednow.top/embed/nba/11-12-2025/was-hou",
   },
   {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Portland Trail Blazers vs. New Orleans Pelicans",
     date: "2025-11-13",
     time: "9:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866377.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=077444c159fb66db937ae67fbd46731d",
     server2: "https://embednow.top/embed/nba/11-12-2025/por-nop",
   },
   {
