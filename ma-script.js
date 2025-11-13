@@ -307,16 +307,6 @@ const channels = [
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
     {
-        
-https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8
-
-https://gg.poocloud.in/nba_phoenixsuns/index.m3u8
-
-https://gg.poocloud.in/nba_utahjazz/index.m3u8
-
-
-
-
     category: "Basketball",
     title: "🏀 NBA - Toronto Raptors vs. Cleveland Cavaliers",
     date: "2025-11-14",
