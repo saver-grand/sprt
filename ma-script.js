@@ -306,101 +306,39 @@ const channels = [
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
-  {
+    {
+        
+https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8
+
+https://gg.poocloud.in/nba_phoenixsuns/index.m3u8
+
+https://gg.poocloud.in/nba_utahjazz/index.m3u8
+
+
+
+
     category: "Basketball",
-    title: "🏀 NBA - Milwaukee Bucks vs. Charlotte Hornets",
-    date: "2025-11-13",
+    title: "🏀 NBA - Toronto Raptors vs. Cleveland Cavaliers",
+    date: "2025-11-14",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866832.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=798bfc589356589e58e726ccdcca16b9",
-    server2: "https://embednow.top/embed/nba/11-12-2025/mil-cha",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Chicago Bulls vs. Detroit Pistons",
-    date: "2025-11-13",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866723.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=10cf3e9ca1fa0b666682434e00998115",
-    server2: "https://embednow.top/embed/nba/11-12-2025/chi-det",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Orlando Magic vs. New York Knicks",
-    date: "2025-11-13",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867052.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2dd1467fd8dcfe02766fbd9a97730cc9",
-    server2: "https://embednow.top/embed/nba/11-12-2025/orl-nyk",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Memphis Grizzlies vs. Boston Celtics",
-    date: "2025-11-13",
-    time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866942.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=60066db891379d7be6048992e311d56b",
-    server2: "https://embednow.top/embed/nba/11-12-2025/mem-bos",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Cleveland Cavaliers vs. Miami Heat",
-    date: "2025-11-13",
-    time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866164.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c058a0e92be5ae50a8b4589f4a199d89",
-    server2: "https://embednow.top/embed/nba/11-12-2025/cle-mia",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Washington Wizards vs. Houston Rockets",
-    date: "2025-11-13",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866056.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e95f80af904751f123eb19073820a8b5",
-    server2: "https://embednow.top/embed/nba/11-12-2025/was-hou",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Portland Trail Blazers vs. New Orleans Pelicans",
-    date: "2025-11-13",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866377.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=077444c159fb66db937ae67fbd46731d",
-    server2: "https://embednow.top/embed/nba/11-12-2025/por-nop",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Golden State Warriors vs. San Antonio Spurs",
-    date: "2025-11-13",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866271.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=6c3bef27f84a122337ff8b0dbcd12370",
-    server2: "https://embednow.top/embed/nba/11-12-2025/gsw-sas",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Phoenix Suns vs. Dallas Mavericks",
-    date: "2025-11-13",
-    time: "9:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866592.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=458e781a4f6268fb024bfee4d437c7e2",
-    server2: "https://embednow.top/embed/nba/11-12-2025/phx-dal",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Los Angeles Lakers vs. Oklahoma City Thunder",
-    date: "2025-11-13",
-    time: "10:30 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866484.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1b1da58dc4416f2d4fe4085a863c6478",
-    server2: "https://embednow.top/embed/nba/11-12-2025/lal-okc",
+    server2: "https://embednow.top/embed/nba/11-13-2025/tor-cle",
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Atlanta Hawks vs. Sacramento Kings",
-    date: "2025-11-13",
-    time: "11:00 AM",
+    title: "🏀 NBA - Indiana Pacers vs. Phoenix Suns",
+    date: "2025-11-14",
+    time: "10:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866810.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9dcc31cc71042d40ab058fc7d1e265b4",
-    server2: "https://embednow.top/embed/nba/11-12-2025/atl-sac",
+    server2: "https://embednow.top/embed/nba/11-13-2025/ind-phx",
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Denver Nuggets vs. LA Clippers",
-    date: "2025-11-13",
-    time: "11:30 AM",
+    title: "🏀 NBA - Atlanta Hawks vs. Utah Jazz",
+    date: "2025-11-14",
+    time: "10:00 AM",
     server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866700.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fecccaa70bb9580af12358b45b94892c",
-    server2: "https://embednow.top/embed/nba/11-12-2025/den-lac",
+    server2: "https://embednow.top/embed/nba/11-13-2025/atl-uta",
   }
 ];
 
