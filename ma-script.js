@@ -311,7 +311,7 @@ const channels = [
     title: "🏀 NBA - Milwaukee Bucks vs. Charlotte Hornets",
     date: "2025-11-13",
     time: "8:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866832.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=798bfc589356589e58e726ccdcca16b9",
     server2: "https://ppvs.su/live/nba/11-12-2025/mil-cha",
   },
   {
@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Chicago Bulls vs. Detroit Pistons",
     date: "2025-11-13",
     time: "8:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866723.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=10cf3e9ca1fa0b666682434e00998115",
     server2: "https://ppvs.su/live/nba/11-12-2025/chi-det",
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Orlando Magic vs. New York Knicks",
     date: "2025-11-13",
     time: "8:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867052.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2dd1467fd8dcfe02766fbd9a97730cc9",
     server2: "https://ppvs.su/live/nba/11-12-2025/orl-nyk",
   },
   {
