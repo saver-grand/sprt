@@ -399,7 +399,7 @@ const channels = [
     title: "🏀 NBA - Denver Nuggets vs. LA Clippers",
     date: "2025-11-13",
     time: "11:30 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866700.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fecccaa70bb9580af12358b45b94892c",
     server2: "https://embednow.top/embed/nba/11-12-2025/den-lac",
   }
 ];
