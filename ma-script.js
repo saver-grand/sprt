@@ -391,7 +391,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. Sacramento Kings",
     date: "2025-11-13",
     time: "11:00 AM",
-    server1: "https://honotvph.42web.io/masports.php?id=nba12",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866810.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9dcc31cc71042d40ab058fc7d1e265b4",
     server2: "https://embednow.top/embed/nba/11-12-2025/atl-sac",
   },
   {
