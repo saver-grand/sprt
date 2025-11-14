@@ -296,7 +296,7 @@ const channels = [
     date: "2025-11-03",
     time: "24/7",
     server1: "",
-    server2: "https://honortvph.totalh.net/watch.html?ch=wwe"
+    server2: "https://embednow.top/embed/tna/impact/25-11-13"
   },
   {    
     category: "F1",
