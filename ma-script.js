@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Toronto Raptors vs. Cleveland Cavaliers",
     date: "2025-11-14",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866484.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1b1da58dc4416f2d4fe4085a863c6478",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867028.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=35e17d418910da109372b3999b5f51c2",
     server2: "https://embednow.top/embed/nba/11-13-2025/tor-cle",
   },
   {
