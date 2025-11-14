@@ -1,3 +1,36 @@
+
+const chatBtn = document.getElementById("chat-btn");
+const chatWindow = document.getElementById("chat-window");
+const chatClose = document.getElementById("chat-close");
+const chatBody = document.getElementById("chat-body");
+const chatSend = document.getElementById("chat-send");
+const chatText = document.getElementById("chat-text");
+
+chatBtn.onclick = () => {
+  chatWindow.style.display = "block";
+};
+
+chatClose.onclick = () => {
+  chatWindow.style.display = "none";
+};
+
+chatSend.onclick = () => {
+  const text = chatText.value.trim();
+  if (!text) return;
+
+  chatBody.innerHTML += `<p><b>You:</b> ${text}</p>`;
+  chatText.value = "";
+
+  chatBody.scrollTop = chatBody.scrollHeight;
+
+  // Simple auto-reply
+  setTimeout(() => {
+    chatBody.innerHTML += `<p><b>Bot:</b> I received: "${text}"</p>`;
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }, 500);
+};
+
+
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
