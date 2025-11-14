@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Indiana Pacers vs. Phoenix Suns",
     date: "2025-11-14",
     time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866810.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9dcc31cc71042d40ab058fc7d1e265b4",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866919.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ba911cc5b38097545b0186f56c833ed4",
     server2: "https://embednow.top/embed/nba/11-13-2025/ind-phx",
   },
   {
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. Utah Jazz",
     date: "2025-11-14",
     time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866700.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fecccaa70bb9580af12358b45b94892c",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866142.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d73664912e134d143fe267d618c3c9e6",
     server2: "https://embednow.top/embed/nba/11-13-2025/atl-uta",
   }
 ];
