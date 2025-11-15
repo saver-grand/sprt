@@ -318,7 +318,7 @@ const channels = [
        category: "Boxing",
     title: "🥊 boxing- Eubank Jr. vs. Benn 2",
     date: "2025-11-16",
-    time: "12:00 AM",
+    time: "1:00 AM",
     server1: "",
     server2: "https://embednow.top/embed/eubank-jr.-vs.-benn-2"
   },
