@@ -315,6 +315,14 @@ const channels = [
     server2: "https://embednow.top/embed/providence-vs-merrimack"
   },
 {
+                category: "Boxing",
+    title: "🥊 boxing- Eubank Jr. vs. Benn 2",
+    date: "2025-11-15",
+    time: "12:00am",
+    server1: "",
+    server2: "https://embednow.top/embed/providence-vs-merrimack"
+  },
+{
   category: "Basketball",
   title: "🏀 NBA - Memphis Grizzlies vs. Cleveland Cavaliers",
   date: "2025-11-16",
