@@ -315,9 +315,9 @@ const channels = [
     server2: "https://embednow.top/embed/providence-vs-merrimack"
   },
 {
-                category: "Boxing",
+       category: "Boxing",
     title: "🥊 boxing- Eubank Jr. vs. Benn 2",
-    date: "2025-11-15",
+    date: "2025-11-16",
     time: "12:00am",
     server1: "",
     server2: "https://embednow.top/embed/eubank-jr.-vs.-benn-2"
