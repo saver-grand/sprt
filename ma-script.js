@@ -314,78 +314,46 @@ const channels = [
     server1: "",
     server2: "https://embednow.top/embed/providence-vs-merrimack"
   },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Miami Heat vs. New York Knicks",
-    date: "2025-11-15",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867135.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=90ecea6043960f80521af0af2e53d5f4",
-    server2: "https://streamcenter.pro/embed/ch65.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Brooklyn Nets vs. Orlando Magic",
-    date: "2025-11-15",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866355.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=41d4897675388e05eafd0661d3520dd4",
-    server2: "https://streamcenter.pro/embed/ch66.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Philadelphia 76ers vs. Detroit Pistons",
-    date: "2025-11-15",
-    time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866248.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=78164899643d43fa1969ef2b54b835bb",
-    server2: "https://streamcenter.pro/embed/ch67.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Portland Trail Blazers vs. Houston Rockets",
-    date: "2025-11-15",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866569.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d4c284b0b40a7f2f3fb7799834f3982d",
-    server2: "https://streamcenter.pro/embed/ch68.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Charlotte Hornets vs. Milwaukee Bucks",
-    date: "2025-11-15",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866461.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d99db8b48b710174b0316ae3d182fa",
-    server2: "https://streamcenter.pro/embed/ch69.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Sacramento Kings vs. Minnesota Timberwolves",
-    date: "2025-11-15",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866785.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=96eef69e1f367e6f97fc5609b949fbf9",
-    server2: "https://streamcenter.pro/embed/ch70.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Los Angeles Lakers vs. New Orleans Pelicans",
-    date: "2025-11-15",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866676.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d3af13c3ccaef6ba5bedd89e891aef57",
-    server2: "https://streamcenter.pro/embed/ch71.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - LA Clippers vs. Dallas Mavericks",
-    date: "2025-11-15",
-    time: "9:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867003.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=079956923bd4e75acf834623da5e3b7e",
-    server2: "https://streamcenter.pro/embed/ch72.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Golden State Warriors vs. San Antonio Spurs",
-    date: "2025-11-15",
-    time: "10:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866894.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fd13cbd4f10aca88afc3122164904e8f",
-    server2: "https://streamcenter.pro/embed/ch73.php"
-  }
+{
+  category: "Basketball",
+  title: "🏀 NBA - Memphis Grizzlies vs. Cleveland Cavaliers",
+  date: "2025-11-16",
+  time: "6:00 AM",
+  server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
+  server2: "https://streamcenter.pro/embed/ch65.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Oklahoma City Thunder vs. Charlotte Hornets",
+  date: "2025-11-16",
+  time: "8:00 AM",
+  server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
+  server2: "https://streamcenter.pro/embed/ch66.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Toronto Raptors vs. Indiana Pacers",
+  date: "2025-11-16",
+  time: "8:00 AM",
+  server1: "https://gg.poocloud.in/nba_indianapacers/index.m3u8",
+  server2: "https://streamcenter.pro/embed/ch67.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Los Angeles Lakers vs. Milwaukee Bucks",
+  date: "2025-11-16",
+  time: "9:00 AM",
+  server1: "https://gg.poocloud.in/nba_milwaukeebucks/index.m3u8",
+  server2: "https://streamcenter.pro/embed/ch68.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Denver Nuggets vs. Minnesota Timberwolves",
+  date: "2025-11-16",
+  time: "9:00 AM",
+  server1: "https://gg.poocloud.in/nba_minnesotatimberwolves/index.m3u8",
+  server2: "https://streamcenter.pro/embed/ch69.php"
+}
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
