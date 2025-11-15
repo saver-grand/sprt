@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Miami Heat vs. New York Knicks",
     date: "2025-11-15",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_newyorkknicks/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867135.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=90ecea6043960f80521af0af2e53d5f4",
     server2: "https://streamcenter.pro/embed/ch65.php"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Brooklyn Nets vs. Orlando Magic",
     date: "2025-11-15",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866355.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=41d4897675388e05eafd0661d3520dd4",
     server2: "https://streamcenter.pro/embed/ch66.php"
   },
   {
