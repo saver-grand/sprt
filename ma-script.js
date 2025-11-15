@@ -320,7 +320,7 @@ const channels = [
     date: "2025-11-15",
     time: "12:00am",
     server1: "",
-    server2: "https://embednow.top/embed/providence-vs-merrimack"
+    server2: "https://embednow.top/embed/eubank-jr.-vs.-benn-2"
   },
 {
   category: "Basketball",
