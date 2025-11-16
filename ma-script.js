@@ -335,7 +335,7 @@ const channels = [
   title: "🏀 NBA - Brooklyn Nets vs. Washington Wizards",
   date: "2025-11-17",
   time: "7:00 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3866846.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=51f3f8f13a8d8f881fb888341a37f958",
   server2: "https://streamcenter.pro/embed/ch67.php"
 },
 {
