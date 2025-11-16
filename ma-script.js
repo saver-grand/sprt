@@ -319,7 +319,7 @@ const channels = [
   title: "🏀 NBA - LA Clippers vs. Boston Celtics",
   date: "2025-11-17",
   time: "4:30 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866628.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=248e65f2575c0f6dd49bb0ccf165e728",
   server2: "https://streamcenter.pro/embed/ch65.php"
 },
 {
