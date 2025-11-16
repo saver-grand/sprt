@@ -335,7 +335,7 @@ const channels = [
   title: "🏀 NBA - Oklahoma City Thunder vs. Charlotte Hornets",
   date: "2025-11-16",
   time: "8:00 AM",
-  server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867111.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=eb4345f2c115bd27b4b8270b0c74c049",
   server2: "https://streamcenter.pro/embed/ch66.php"
 },
 {
@@ -343,7 +343,7 @@ const channels = [
   title: "🏀 NBA - Toronto Raptors vs. Indiana Pacers",
   date: "2025-11-16",
   time: "8:00 AM",
-  server1: "https://gg.poocloud.in/nba_indianapacers/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866332.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=babe2d1213bd35abd40f5f50f7524fde",
   server2: "https://streamcenter.pro/embed/ch67.php"
 },
 {
