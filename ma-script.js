@@ -315,17 +315,9 @@ const channels = [
     server2: "https://embednow.top/embed/providence-vs-merrimack"
   },
 {
-       category: "Boxing",
-    title: "🥊 boxing- Eubank Jr. vs. Benn 2",
-    date: "2025-11-16",
-    time: "1:00 AM",
-    server1: "",
-    server2: "https://embednow.top/embed/eubank-jr.-vs.-benn-2"
-  },
-{
   category: "Basketball",
   title: "🏀 NBA - LA Clippers vs. Boston Celtics",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "4:30 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch65.php"
@@ -333,7 +325,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Sacramento Kings vs. San Antonio Spurs",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "5:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch66.php"
@@ -341,7 +333,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Brooklyn Nets vs. Washington Wizards",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "7:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch67.php"
@@ -349,7 +341,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Orlando Magic vs. Houston Rockets",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "8:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch68.php"
@@ -357,7 +349,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Golden State Warriors vs. New Orleans Pelicans",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "8:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch69.php"
@@ -365,7 +357,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Portland Trail Blazers vs. Dallas Mavericks",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "8:30 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch70.php"
@@ -373,7 +365,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Atlanta Hawks vs. Phoenix Suns",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "9:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch71.php"
@@ -381,7 +373,7 @@ const channels = [
 {
   category: "Basketball",
   title: "🏀 NBA - Chicago Bulls vs. Utah Jazz",
-  date: "2025-11-16",
+  date: "2025-11-17",
   time: "9:00 AM",
   server1: "",
   server2: "https://streamcenter.pro/embed/ch72.php"
