@@ -351,7 +351,7 @@ const channels = [
   title: "🏀 NBA - Los Angeles Lakers vs. Milwaukee Bucks",
   date: "2025-11-16",
   time: "9:00 AM",
-  server1: "https://gg.poocloud.in/nba_milwaukeebucks/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866225.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=27c4c87e0f0b845806ed97c2b8c5f95e",
   server2: "https://streamcenter.pro/embed/ch68.php"
 },
 {
@@ -359,7 +359,7 @@ const channels = [
   title: "🏀 NBA - Denver Nuggets vs. Minnesota Timberwolves",
   date: "2025-11-16",
   time: "9:00 AM",
-  server1: "https://gg.poocloud.in/nba_minnesotatimberwolves/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866737.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b7848ae8e8aa7e28eb36b3e754a5e567",
   server2: "https://streamcenter.pro/embed/ch69.php"
 }
 ];
