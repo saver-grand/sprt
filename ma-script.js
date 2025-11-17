@@ -316,66 +316,66 @@ const channels = [
   },
 {
   category: "Basketball",
-  title: "🏀 NBA - LA Clippers vs. Boston Celtics",
-  date: "2025-11-17",
-  time: "4:30 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866628.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=248e65f2575c0f6dd49bb0ccf165e728",
+  title: "🏀 NBA - Milwaukee Bucks vs. Cleveland Cavaliers",
+  date: "2025-11-18",
+  time: "8:00 AM",
+  server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch65.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Sacramento Kings vs. San Antonio Spurs",
-  date: "2025-11-17",
-  time: "5:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866957.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=184216dbaf5db12794814d93cda87123",
+  title: "🏀 NBA - Indiana Pacers vs. Detroit Pistons",
+  date: "2025-11-18",
+  time: "8:00 AM",
+  server1: "https://gg.poocloud.in/nba_detroitpistons/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch66.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Brooklyn Nets vs. Washington Wizards",
-  date: "2025-11-17",
-  time: "7:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3866846.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=51f3f8f13a8d8f881fb888341a37f958",
+  title: "🏀 NBA - LA Clippers vs. Philadelphia 76ers",
+  date: "2025-11-18",
+  time: "8:00 AM",
+  server1: "https://gg.poocloud.in/nba_philadelphia76ers/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch67.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Orlando Magic vs. Houston Rockets",
-  date: "2025-11-17",
-  time: "8:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3866072.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=da7a66d5f7748f9cb73e14efdc36c73e",
+  title: "🏀 NBA - New York Knicks vs. Miami Heat",
+  date: "2025-11-18",
+  time: "8:30 AM",
+  server1: "https://gg.poocloud.in/nba_miamiheat/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch68.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Golden State Warriors vs. New Orleans Pelicans",
-  date: "2025-11-17",
-  time: "8:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3867067.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ff64e8cbb59cf1fafd818f2d1560995f",
+  title: "🏀 NBA - Charlotte Hornets vs. Toronto Raptors",
+  date: "2025-11-18",
+  time: "8:30 AM",
+  server1: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch69.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Portland Trail Blazers vs. Dallas Mavericks",
-  date: "2025-11-17",
-  time: "8:30 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3866287.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8313707291e1cc716acc9e177ae38694",
+  title: "🏀 NBA - Dallas Mavericks vs. Minnesota Timberwolves",
+  date: "2025-11-18",
+  time: "9:00 AM",
+  server1: "https://gg.poocloud.in/nba_minnesotatimberwolves/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch70.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Atlanta Hawks vs. Phoenix Suns",
-  date: "2025-11-17",
+  title: "🏀 NBA - Oklahoma City Thunder vs. New Orleans Pelicans",
+  date: "2025-11-18",
   time: "9:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866180.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c8473a04efd56ed4964b414a3f4f4507",
+  server1: "https://gg.poocloud.in/nba_neworleanspelicans/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch71.php"
 },
 {
   category: "Basketball",
-  title: "🏀 NBA - Chicago Bulls vs. Utah Jazz",
-  date: "2025-11-17",
-  time: "9:00 AM",
-  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866502.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f84f52a224036f703a60cf44e2944a94",
+  title: "🏀 NBA - Chicago Bulls vs. Denver Nuggets",
+  date: "2025-11-18",
+  time: "10:00 AM",
+  server1: "https://gg.poocloud.in/nba_denvernuggets/index.m3u8",
   server2: "https://streamcenter.pro/embed/ch72.php"
 }
 ];
