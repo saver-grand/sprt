@@ -359,7 +359,7 @@ const channels = [
   title: "🏀 NBA - Portland Trail Blazers vs. Dallas Mavericks",
   date: "2025-11-17",
   time: "8:30 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/sd-2-3866287.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8313707291e1cc716acc9e177ae38694",
   server2: "https://streamcenter.pro/embed/ch70.php"
 },
 {
