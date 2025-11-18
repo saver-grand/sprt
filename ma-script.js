@@ -359,7 +359,7 @@ const channels = [
   title: "🏀 NBA - Dallas Mavericks vs. Minnesota Timberwolves",
   date: "2025-11-18",
   time: "9:00 AM",
-  server1: "https://gg.poocloud.in/nba_minnesotatimberwolves/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866052.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ac25f6485800c7f7a57905df18b4facd",
   server2: "https://streamcenter.pro/embed/ch70.php"
 },
 {
@@ -367,7 +367,7 @@ const channels = [
   title: "🏀 NBA - Oklahoma City Thunder vs. New Orleans Pelicans",
   date: "2025-11-18",
   time: "9:00 AM",
-  server1: "https://gg.poocloud.in/nba_neworleanspelicans/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867047.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=103d1255143c10b461221244563a5242",
   server2: "https://streamcenter.pro/embed/ch71.php"
 },
 {
