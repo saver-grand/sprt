@@ -375,7 +375,7 @@ const channels = [
   title: "🏀 NBA - Chicago Bulls vs. Denver Nuggets",
   date: "2025-11-18",
   time: "10:00 AM",
-  server1: "https://gg.poocloud.in/nba_denvernuggets/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866267.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0eb82500668cfab36514b1777852808d",
   server2: "https://streamcenter.xyz/embed/ch72.php"
 }
 ];
