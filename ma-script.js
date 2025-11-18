@@ -320,7 +320,7 @@ const channels = [
   date: "2025-11-18",
   time: "8:00 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866394.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b51430f1cc27e1aa6938ef03d39dbe43",
-  server2: "https://streamcenter.pro/embed/ch65.php"
+  server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
   category: "Basketball",
@@ -328,7 +328,7 @@ const channels = [
   date: "2025-11-18",
   time: "8:00 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866718.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=97824fd1e91e65fc339c5c5fd38d9711",
-  server2: "https://streamcenter.pro/embed/ch66.php"
+  server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
   category: "Basketball",
@@ -336,7 +336,7 @@ const channels = [
   date: "2025-11-18",
   time: "8:00 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866609.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=19bef34f0e0cbedb7e87691de57fcec3",
-  server2: "https://streamcenter.pro/embed/ch67.php"
+  server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
   category: "Basketball",
@@ -344,7 +344,7 @@ const channels = [
   date: "2025-11-18",
   time: "8:30 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866937.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=cf262cafdd665d48cef74b85a6bbc845",
-  server2: "https://streamcenter.pro/embed/ch68.php"
+  server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
   category: "Basketball",
@@ -352,7 +352,7 @@ const channels = [
   date: "2025-11-18",
   time: "8:30 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866827.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ee7d95324f7c7b422f94e1fa4e057635",
-  server2: "https://streamcenter.pro/embed/ch69.php"
+  server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
   category: "Basketball",
@@ -360,7 +360,7 @@ const channels = [
   date: "2025-11-18",
   time: "9:00 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866052.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ac25f6485800c7f7a57905df18b4facd",
-  server2: "https://streamcenter.pro/embed/ch70.php"
+  server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
   category: "Basketball",
@@ -368,7 +368,7 @@ const channels = [
   date: "2025-11-18",
   time: "9:00 AM",
   server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867047.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=103d1255143c10b461221244563a5242",
-  server2: "https://streamcenter.pro/embed/ch71.php"
+  server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
   category: "Basketball",
@@ -376,7 +376,7 @@ const channels = [
   date: "2025-11-18",
   time: "10:00 AM",
   server1: "https://gg.poocloud.in/nba_denvernuggets/index.m3u8",
-  server2: "https://streamcenter.pro/embed/ch72.php"
+  server2: "https://streamcenter.xyz/embed/ch72.php"
 }
 ];
 
