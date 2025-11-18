@@ -312,7 +312,7 @@ const channels = [
     date: "2025-11-16",
     time: "7:00 AM",
     server1: "",
-    server2: "https://embednow.top/embed/providence-vs-merrimack"
+    server2: "honotvph.42web.io/masports.php?channel=nba1"
   },
 {
   category: "Basketball",
