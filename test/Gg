@@ -1,10 +1,7 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-logo="" group-title="Premium", Premium 38
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
-#EXTVLCOPT:http-origin=https://epicplayplay.cfd
-#EXTVLCOPT:http-referrer=https://epicplayplay.cfd/
-https://zekonew.newkso.ru/zeko/premium38/mono.m3u8
+https://honortvph.totalh.net/proxy.php?url=https://gg.poocloud.in/nba_clevelandcavaliers/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Premium", Premium 35
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
