@@ -272,7 +272,7 @@ const channels = [
     date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
-    server2: "https://honortvph.totalh.net/?ch=nba1"
+    server2: "https://honotvph.42web.io/masports.php?channel=nba1"
   },
   {
     category: "Live TV",
