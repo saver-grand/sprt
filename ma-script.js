@@ -351,7 +351,7 @@ const channels = [
   title: "🏀 NBA - Charlotte Hornets vs. Toronto Raptors",
   date: "2025-11-18",
   time: "8:30 AM",
-  server1: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866937.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=cf262cafdd665d48cef74b85a6bbc845",
   server2: "https://streamcenter.pro/embed/ch69.php"
 },
 {
