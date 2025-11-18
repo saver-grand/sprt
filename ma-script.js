@@ -319,7 +319,7 @@ const channels = [
   title: "🏀 NBA - Milwaukee Bucks vs. Cleveland Cavaliers",
   date: "2025-11-18",
   time: "8:00 AM",
-  server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866394.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b51430f1cc27e1aa6938ef03d39dbe43",
   server2: "https://streamcenter.pro/embed/ch65.php"
 },
 {
@@ -327,7 +327,7 @@ const channels = [
   title: "🏀 NBA - Indiana Pacers vs. Detroit Pistons",
   date: "2025-11-18",
   time: "8:00 AM",
-  server1: "https://gg.poocloud.in/nba_detroitpistons/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866718.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=97824fd1e91e65fc339c5c5fd38d9711",
   server2: "https://streamcenter.pro/embed/ch66.php"
 },
 {
@@ -335,7 +335,7 @@ const channels = [
   title: "🏀 NBA - LA Clippers vs. Philadelphia 76ers",
   date: "2025-11-18",
   time: "8:00 AM",
-  server1: "https://gg.poocloud.in/nba_philadelphia76ers/index.m3u8",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866609.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=19bef34f0e0cbedb7e87691de57fcec3",
   server2: "https://streamcenter.pro/embed/ch67.php"
 },
 {
