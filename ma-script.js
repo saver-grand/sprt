@@ -343,7 +343,7 @@ const channels = [
   title: "🏀 NBA - Memphis Grizzlies vs. San Antonio Spurs",
   date: "2025-11-19",
   time: "9:00 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866373.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=f010752b950874702868e4b1280194ef",
   server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
