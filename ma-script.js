@@ -319,7 +319,7 @@ const channels = [
   title: "🏀 NBA - Golden State Warriors vs. Orlando Magic",
   date: "2025-11-19",
   time: "8:00 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866160.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3588bd8651c7e3f73cbbb7c4949607d3",
   server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
