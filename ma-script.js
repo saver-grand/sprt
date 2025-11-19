@@ -320,7 +320,7 @@ const channels = [
     date: "2025-11-20",
     time: "8:00 AM",
     server1: "https://nba.honotvph.42web.io/nba1/index.m3u8",
-    server2: "https://embedsports.top/nba1"
+    server2: "https://streamcenter.xyz/embed/ch65.php"
   },
   {
     category: "Basketball",
@@ -328,7 +328,7 @@ const channels = [
     date: "2025-11-20",
     time: "8:00 AM",
     server1: "https://nba.honotvph.42web.io/nba2/index.m3u8",
-    server2: "https://embedsports.top/nba2"
+    server2: "https://streamcenter.xyz/embed/ch66.php"
   },
   {
     category: "Basketball",
@@ -336,7 +336,7 @@ const channels = [
     date: "2025-11-20",
     time: "8:00 AM",
     server1: "https://nba.honotvph.42web.io/nba3/index.m3u8",
-    server2: "https://embedsports.top/nba3"
+    server2: "https://streamcenter.xyz/embed/ch67.php"
   },
   {
     category: "Basketball",
@@ -344,7 +344,7 @@ const channels = [
     date: "2025-11-20",
     time: "8:30 AM",
     server1: "https://nba.honotvph.42web.io/nba4/index.m3u8",
-    server2: "https://embedsports.top/nba4"
+    server2: "https://streamcenter.xyz/embed/ch68.php"
   },
   {
     category: "Basketball",
@@ -352,7 +352,7 @@ const channels = [
     date: "2025-11-20",
     time: "9:00 AM",
     server1: "https://nba.honotvph.42web.io/nba5/index.m3u8",
-    server2: "https://embedsports.top/nba5"
+    server2: "https://streamcenter.xyz/embed/ch69.php"
   },
   {
     category: "Basketball",
@@ -360,7 +360,7 @@ const channels = [
     date: "2025-11-20",
     time: "9:00 AM",
     server1: "https://nba.honotvph.42web.io/nba6/index.m3u8",
-    server2: "https://embedsports.top/nba6"
+    server2: "https://streamcenter.xyz/embed/ch70.php"
   },
   {
     category: "Basketball",
@@ -368,7 +368,7 @@ const channels = [
     date: "2025-11-20",
     time: "9:00 AM",
     server1: "https://nba.honotvph.42web.io/nba7/index.m3u8",
-    server2: "https://embedsports.top/nba7"
+    server2: "https://streamcenter.xyz/embed/ch71.php"
   },
   {
     category: "Basketball",
@@ -376,7 +376,7 @@ const channels = [
     date: "2025-11-20",
     time: "10:30 AM",
     server1: "https://nba.honotvph.42web.io/nba8/index.m3u8",
-    server2: "https://embedsports.top/nba8"
+    server2: "https://streamcenter.xyz/embed/ch72.php"
   },
   {
     category: "Basketball",
@@ -384,7 +384,7 @@ const channels = [
     date: "2025-11-20",
     time: "11:00 AM",
     server1: "https://nba.honotvph.42web.io/nba9/index.m3u8",
-    server2: "https://embedsports.top/nba9"
+    server2: "https://streamcenter.xyz/embed/ch73.php"
   }
 ];
 
