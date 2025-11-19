@@ -351,7 +351,7 @@ const channels = [
   title: "🏀 NBA - Utah Jazz vs. Los Angeles Lakers",
   date: "2025-11-19",
   time: "11:30 AM",
-  server1: "",
+  server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866588.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=3d22acab15add1e189d10e8bc5d8301c",
   server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
