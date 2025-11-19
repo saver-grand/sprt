@@ -358,7 +358,7 @@ const channels = [
   category: "Basketball",
   title: "🏀 NBA - Phoenix Suns vs. Portland Trail Blazers",
   date: "2025-11-19",
-  time: "12:00 AM",
+  time: "12:00 PM",
   server1: "",
   server2: "https://streamcenter.xyz/embed/ch70.php"
 }
