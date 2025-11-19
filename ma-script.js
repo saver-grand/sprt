@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Houston Rockets vs. Cleveland Cavaliers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba1/index.m3u8",
     server2: "https://embedsports.top/nba1"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Charlotte Hornets vs. Indiana Pacers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_indianapacers/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba2/index.m3u8",
     server2: "https://embedsports.top/nba2"
   },
   {
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Toronto Raptors vs. Philadelphia 76ers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_philadelphia76ers/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba3/index.m3u8",
     server2: "https://embedsports.top/nba3"
   },
   {
@@ -343,7 +343,7 @@ const channels = [
     title: "🏀 NBA - Golden State Warriors vs. Miami Heat",
     date: "2025-11-20",
     time: "8:30 AM",
-    server1: "https://gg.poocloud.in/nba_miamiheat/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba4/index.m3u8",
     server2: "https://embedsports.top/nba4"
   },
   {
@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Minnesota Timberwolves",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_minnesotatimberwolves/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba5/index.m3u8",
     server2: "https://embedsports.top/nba5"
   },
   {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Denver Nuggets vs. New Orleans Pelicans",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_neworleanspelicans/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba6/index.m3u8",
     server2: "https://embedsports.top/nba6"
   },
   {
@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Sacramento Kings vs. Oklahoma City Thunder",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_oklahomacitythunder/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba7/index.m3u8",
     server2: "https://embedsports.top/nba7"
   },
   {
@@ -375,7 +375,7 @@ const channels = [
     title: "🏀 NBA - New York Knicks vs. Dallas Mavericks",
     date: "2025-11-20",
     time: "10:30 AM",
-    server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba8/index.m3u8",
     server2: "https://embedsports.top/nba8"
   },
   {
@@ -383,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Chicago Bulls vs. Portland Trail Blazers",
     date: "2025-11-20",
     time: "11:00 AM",
-    server1: "https://gg.poocloud.in/nba_portlandtrailblazers/index.m3u8",
+    server1: "https://nba.honotvph.42web.io/nba9/index.m3u8",
     server2: "https://embedsports.top/nba9"
   }
 ];
