@@ -313,14 +313,22 @@ const channels = [
     time: "7:00 AM",
     server1: "",
     server2: "http://honotvph.42web.io/masports.php?channel=nba1"
+        },
+{
+    category: "Basketball",
+    title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
+    date: "2025-11-21",
+    time: "8:00 AM",
+    server1: "",
+    server2: "https://shorten.is/anba1"
   },
-  {
+{
     category: "Basketball",
     title: "🏀 NBA - LA Clippers vs. Orlando Magic",
     date: "2025-11-21",
     time: "8:00 AM",
     server1: "",
-    server2: "https://shorten.is/anba1"
+    server2: "https://streamcenter.xyz/embed/ch65.php"
   },
   {
     category: "Basketball",
