@@ -5,25 +5,25 @@ const channels = [
   title: "LA Clippers vs. Orlando Magic",
   date: "2025-11-21",
   time: "08:00",
-  url: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8"
+  url: "https://streams.honotvph.42web.io/stream/live/nba1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
 },
 {
   title: "Sacramento Kings vs. Memphis Grizzlies",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://gg.poocloud.in/nba_memphisgrizzlies/index.m3u8"
+  url: "https://streams.honotvph.42web.io/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
 },
 {
   title: "Philadelphia 76ers vs. Milwaukee Bucks",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://gg.poocloud.in/nba_milwaukeebucks/index.m3u8"
+  url: "https://streams.honotvph.42web.io/stream/live/nba3/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
 },
 {
   title: "Atlanta Hawks vs. San Antonio Spurs",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://gg.poocloud.in/nba_sanantoniospurs/index.m3u8"
+  url: "https://streams.honotvph.42web.io/stream/live/nba4/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
   }
 ];
 
