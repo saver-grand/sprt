@@ -383,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Chicago Bulls vs. Portland Trail Blazers",
     date: "2025-11-20",
     time: "11:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba9/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866564.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=54a8b562508e1fba81c178f015c9f204",
     server2: "https://streamcenter.xyz/embed/ch73.php"
   }
 ];
