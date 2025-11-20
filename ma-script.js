@@ -317,7 +317,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
-    date: "2025-11-21",
+    date: "2025-11-28",
     time: "8:00 AM",
     server1: "",
     server2: "https://shorten.is/anba1"
