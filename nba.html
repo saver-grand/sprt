@@ -57,6 +57,23 @@
   </div>
 
  <script>
+   document.addEventListener("DOMContentLoaded", () => {
+    // Auto-select NBA category on load
+    const defaultCategory = "Basketball";
+
+    // Highlight the NBA button
+    document.querySelectorAll(".category-btn").forEach(btn => {
+        if (btn.dataset.cat === defaultCategory) {
+            btn.classList.add("active");
+        } else {
+            btn.classList.remove("active");
+        }
+    });
+
+    // Auto-load NBA channels
+    loadChannels(defaultCategory);
+});
+   
 document.addEventListener("DOMContentLoaded", () => {
     const defaultCategory = "Basketball";
     document.querySelectorAll(".category-btn").forEach(btn => {
