@@ -56,7 +56,16 @@
     ⏳ Loading Stream...
   </div>
 
- 
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const defaultCategory = "Basketball";
+    document.querySelectorAll(".category-btn").forEach(btn => {
+        if (btn.dataset.cat === defaultCategory) btn.classList.add("active");
+        else btn.classList.remove("active");
+    });
+    loadChannels(defaultCategory);
+});
+</script>
 
 
 </body>
