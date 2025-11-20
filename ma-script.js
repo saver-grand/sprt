@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Houston Rockets vs. Cleveland Cavaliers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba1/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866805.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e09aefdc4a962b84815d34068974d087",
     server2: "https://streamcenter.xyz/embed/ch65.php"
   },
   {
@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Charlotte Hornets vs. Indiana Pacers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba2/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867130.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=7141c2eb224ad5db0d7f191b0afb307c",
     server2: "https://streamcenter.xyz/embed/ch66.php"
   },
   {
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Toronto Raptors vs. Philadelphia 76ers",
     date: "2025-11-20",
     time: "8:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba3/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866243.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=63ddf140daea438012f3d01381d9888c",
     server2: "https://streamcenter.xyz/embed/ch67.php"
   },
   {
@@ -343,7 +343,7 @@ const channels = [
     title: "🏀 NBA - Golden State Warriors vs. Miami Heat",
     date: "2025-11-20",
     time: "8:30 AM",
-    server1: "https://nba.honotvph.42web.io/nba4/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867023.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=cf2ad7b45203e785c4f3942e902e2d24",
     server2: "https://streamcenter.xyz/embed/ch68.php"
   },
   {
@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Minnesota Timberwolves",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba5/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866456.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8d73fef4c1278f682958393dfcfea26e",
     server2: "https://streamcenter.xyz/embed/ch69.php"
   },
   {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Denver Nuggets vs. New Orleans Pelicans",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba6/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866137.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=639b8e8f5730cae2fc4bd4f1eee4732d",
     server2: "https://streamcenter.xyz/embed/ch70.php"
   },
   {
@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Sacramento Kings vs. Oklahoma City Thunder",
     date: "2025-11-20",
     time: "9:00 AM",
-    server1: "https://nba.honotvph.42web.io/nba7/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866350.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e4dea8edade04cefcdef92e07ad959de",
     server2: "https://streamcenter.xyz/embed/ch71.php"
   },
   {
