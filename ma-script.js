@@ -316,76 +316,37 @@ const channels = [
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Houston Rockets vs. Cleveland Cavaliers",
-    date: "2025-11-20",
+    title: "🏀 NBA - LA Clippers vs. Orlando Magic",
+    date: "2025-11-21",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866805.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e09aefdc4a962b84815d34068974d087",
-    server2: "https://streamcenter.xyz/embed/ch65.php"
+    server1: "",
+    server2: "https://shorten.is/anba1"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Charlotte Hornets vs. Indiana Pacers",
-    date: "2025-11-20",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867130.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=7141c2eb224ad5db0d7f191b0afb307c",
+    title: "🏀 NBA - Sacramento Kings vs. Memphis Grizzlies",
+    date: "2025-11-21",
+    time: "9:00 AM",
+    server1: "",
     server2: "https://streamcenter.xyz/embed/ch66.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Toronto Raptors vs. Philadelphia 76ers",
-    date: "2025-11-20",
-    time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866243.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=63ddf140daea438012f3d01381d9888c",
+    title: "🏀 NBA - Philadelphia 76ers vs. Milwaukee Bucks",
+    date: "2025-11-21",
+    time: "9:00 AM",
+    server1: "",
     server2: "https://streamcenter.xyz/embed/ch67.php"
   },
   {
     category: "Basketball",
-    title: "🏀 NBA - Golden State Warriors vs. Miami Heat",
-    date: "2025-11-20",
-    time: "8:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867023.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=cf2ad7b45203e785c4f3942e902e2d24",
+    title: "🏀 NBA - Atlanta Hawks vs. San Antonio Spurs",
+    date: "2025-11-21",
+    time: "9:00 AM",
+    server1: "",
     server2: "https://streamcenter.xyz/embed/ch68.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Washington Wizards vs. Minnesota Timberwolves",
-    date: "2025-11-20",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866456.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8d73fef4c1278f682958393dfcfea26e",
-    server2: "https://streamcenter.xyz/embed/ch69.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Denver Nuggets vs. New Orleans Pelicans",
-    date: "2025-11-20",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866137.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=639b8e8f5730cae2fc4bd4f1eee4732d",
-    server2: "https://streamcenter.xyz/embed/ch70.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Sacramento Kings vs. Oklahoma City Thunder",
-    date: "2025-11-20",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866350.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e4dea8edade04cefcdef92e07ad959de",
-    server2: "https://streamcenter.xyz/embed/ch71.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - New York Knicks vs. Dallas Mavericks",
-    date: "2025-11-20",
-    time: "10:30 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866671.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a9ef49766367f4c406b631e04b13f79d",
-    server2: "https://streamcenter.xyz/embed/ch72.php"
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Chicago Bulls vs. Portland Trail Blazers",
-    date: "2025-11-20",
-    time: "11:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866564.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=54a8b562508e1fba81c178f015c9f204",
-    server2: "https://streamcenter.xyz/embed/ch73.php"
   }
+]
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
