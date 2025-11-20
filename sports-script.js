@@ -1,35 +1,29 @@
 let hls;
 
 const channels = [
-  {
-    title: "Philadelphia 76ers vs. Washington Wizards",
-    date: "2025-10-27",
-    time: "07:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3866981.m3u8"
-  },
-  {
-    title: "Charlotte Hornets vs. Miami Heat",
-    date: "2025-10-27",
-    time: "07:00",
-    url: "https://e1.thetvapp.to/hls/NBA13/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "New York Knicks vs. Milwaukee Bucks",
-    date: "2025-10-27",
-    time: "08:00",
-    url: "https://e2.thetvapp.to/hls/NBA08/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "Sacramento Kings vs. Oklahoma City Thunder",
-    date: "2025-10-27",
-    time: "08:00",
-    url: "https://e1.thetvapp.to/hls/NBA22/tracks-v1a1/mono.m3u8"
-  },
-  {
-    title: "LA Clippers vs. Golden State Warriors",
-    date: "2025-10-27",
-    time: "08:00",
-    url: "https://nami.videobss.com/live/hd-en-2-3866311.m3u8"
+{
+  title: "LA Clippers vs. Orlando Magic",
+  date: "2025-11-21",
+  time: "08:00",
+  url: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8"
+},
+{
+  title: "Sacramento Kings vs. Memphis Grizzlies",
+  date: "2025-11-21",
+  time: "09:00",
+  url: "https://gg.poocloud.in/nba_memphisgrizzlies/index.m3u8"
+},
+{
+  title: "Philadelphia 76ers vs. Milwaukee Bucks",
+  date: "2025-11-21",
+  time: "09:00",
+  url: "https://gg.poocloud.in/nba_milwaukeebucks/index.m3u8"
+},
+{
+  title: "Atlanta Hawks vs. San Antonio Spurs",
+  date: "2025-11-21",
+  time: "09:00",
+  url: "https://gg.poocloud.in/nba_sanantoniospurs/index.m3u8"
   }
 ];
 
