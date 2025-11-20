@@ -327,7 +327,7 @@ const channels = [
     title: "🏀 NBA - LA Clippers vs. Orlando Magic",
     date: "2025-11-21",
     time: "8:00 AM",
-    server1: "",
+    server1: "https://streams.honotvph.42web.io/stream/live/nba1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.xyz/embed/ch65.php"
   },
   {
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Sacramento Kings vs. Memphis Grizzlies",
     date: "2025-11-21",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://streams.honotvph.42web.io/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.xyz/embed/ch66.php"
   },
   {
@@ -343,7 +343,7 @@ const channels = [
     title: "🏀 NBA - Philadelphia 76ers vs. Milwaukee Bucks",
     date: "2025-11-21",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://streams.honotvph.42web.io/stream/live/nba3/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.xyz/embed/ch67.php"
   },
   {
@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. San Antonio Spurs",
     date: "2025-11-21",
     time: "9:00 AM",
-    server1: "",
+    server1: "https://streams.honotvph.42web.io/stream/live/nba4/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://streamcenter.xyz/embed/ch68.php"
   }
 ];
