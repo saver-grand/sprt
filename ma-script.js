@@ -346,7 +346,6 @@ const channels = [
     server1: "",
     server2: "https://streamcenter.xyz/embed/ch68.php"
   }
-]
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
