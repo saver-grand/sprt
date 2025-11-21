@@ -1,4 +1,23 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="DAZN" tvg-logo="https://i.ibb.co/3kJG4tH/dazn.png" group-title="",𝗗𝗔𝗭𝗡
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"DWcSvyqE7cyT0AGpYT9v7A","kid":"z7XitzvvTzyHjyWrhqdFHw"}],"type":"temporary"}
+https://dck-ac-live.cdn.indazn.com/dash/dazn-linear-581/stream.mpd
+
+#EXTINF:-1 tvg-id="DAZN" tvg-logo="https://i.ibb.co/3kJG4tH/dazn.png" group-title="",𝗗𝗔𝗭𝗡
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"DWcSvyqE7cyT0AGpYT9v7A","kid":"z7XitzvvTzyHjyWrhqdFHw"}],"type":"temporary"}
+https://dck-ac-live.cdn.indazn.com/dash/dazn-linear-582/stream.mpd
+
+#EXTINF:-1 tvg-id="DAZN" tvg-logo="https://i.ibb.co/3kJG4tH/dazn.png" group-title="",𝗗𝗔𝗭𝗡
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"DWcSvyqE7cyT0AGpYT9v7A","kid":"z7XitzvvTzyHjyWrhqdFHw"}],"type":"temporary"}
+https://dck-ac-live.cdn.indazn.com/dash/dazn-linear-583/stream.mpd
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png" group-title="🏀 NBA LEAGUE PASS", NBA🏀- LA Clippers vs. Phoenix Suns 10:00am
 #EXTVLCOPT:http-origin=https://watchlive.top
 #EXTVLCOPT:http-referrer=https://watchlive.top/
