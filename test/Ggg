@@ -6,6 +6,15 @@
 https://gg.poocloud.in/f1/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Premium", Premium 38
 https://honortvph.totalh.net/proxy.php?url=https://gg.poocloud.in/nba_clevelandcavaliers/tracks-v1a1/mono.ts.m3u8
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=6c0738883f8f4f7eb21d06e6c36d3771:51d5418d5e5c1a73affe5c554195b795
+#EXTINF:-1 tvg-id="tfccanada" tvg-name="TFC CANADA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Cfo9k6CeS3CkU0fvi4PZifrkt9s8bMmBAA&usqp=CAU" group-title="🇵🇭 PHILIPPINES CHANNEL",ANC
+https://live-faws.akamaized.net/out/v1/89ea8db23cb24a91bfa5d0795f8d759e/index.mpd
+
+
+
+
+
 
 #EXTINF:-1 tvg-logo="" group-title="Premium", Premium 35
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
