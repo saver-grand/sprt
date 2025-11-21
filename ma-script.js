@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - Sacramento Kings vs. Memphis Grizzlies",
     date: "2025-11-21",
     time: "9:00 AM",
-    server1: "https://streams.honotvph.42web.io/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://cdn5.apkfiles.top/live/cdn5/playlist.m3u8",
     server2: "https://streamcenter.xyz/embed/ch66.php"
   },
   {
