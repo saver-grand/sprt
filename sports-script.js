@@ -11,19 +11,19 @@ const channels = [
   title: "Sacramento Kings vs. Memphis Grizzlies",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://streams.honotvph.42web.io/stream/live/nba2/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866479.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ca5eafad3a225999ebc9e07616c6304c"
 },
 {
   title: "Philadelphia 76ers vs. Milwaukee Bucks",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://streams.honotvph.42web.io/stream/live/nba3/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866803.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c3309b7d482ea88fca7e17c01923c5f8"
 },
 {
   title: "Atlanta Hawks vs. San Antonio Spurs",
   date: "2025-11-21",
   time: "09:00",
-  url: "https://streams.honotvph.42web.io/stream/live/nba4/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866694.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9ab014201584c1713ed96a9e97dad6e4"
   }
 ];
 
