@@ -5,7 +5,7 @@ const channels = [
   title: "LA Clippers vs. Orlando Magic",
   date: "2025-11-21",
   time: "08:00",
-  url: "https://streams.honotvph.42web.io/stream/live/nba1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866587.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1ffe73d285c304bc8bcef03c4f4ce465"
 },
 {
   title: "Sacramento Kings vs. Memphis Grizzlies",
