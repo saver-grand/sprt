@@ -324,36 +324,76 @@ const channels = [
   },
 {
     category: "Basketball",
-    title: "🏀 NBA - LA Clippers vs. Orlando Magic",
-    date: "2025-11-21",
+    title: "🏀 NBA - Indiana Pacers vs. Cleveland Cavaliers",
+    date: "2025-11-22",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866587.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1ffe73d285c304bc8bcef03c4f4ce465",
+    server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
     server2: "https://streamcenter.xyz/embed/ch65.php"
-  },
-  {
+},
+{
     category: "Basketball",
-    title: "🏀 NBA - Sacramento Kings vs. Memphis Grizzlies",
-    date: "2025-11-21",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866479.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ca5eafad3a225999ebc9e07616c6304c",
+    title: "🏀 NBA - Brooklyn Nets vs. Boston Celtics",
+    date: "2025-11-22",
+    time: "8:30 AM",
+    server1: "https://gg.poocloud.in/nba_bostonceltics/index.m3u8",
     server2: "https://streamcenter.xyz/embed/ch66.php"
-  },
-  {
+},
+{
     category: "Basketball",
-    title: "🏀 NBA - Philadelphia 76ers vs. Milwaukee Bucks",
-    date: "2025-11-21",
-    time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866803.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c3309b7d482ea88fca7e17c01923c5f8",
+    title: "🏀 NBA - Washington Wizards vs. Toronto Raptors",
+    date: "2025-11-22",
+    time: "8:30 AM",
+    server1: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8",
     server2: "https://streamcenter.xyz/embed/ch67.php"
-  },
-  {
+},
+{
     category: "Basketball",
-    title: "🏀 NBA - Atlanta Hawks vs. San Antonio Spurs",
-    date: "2025-11-21",
+    title: "🏀 NBA - Miami Heat vs. Chicago Bulls",
+    date: "2025-11-22",
     time: "9:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866694.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9ab014201584c1713ed96a9e97dad6e4",
+    server1: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8",
     server2: "https://streamcenter.xyz/embed/ch68.php"
-  }
+},
+{
+    category: "Basketball",
+    title: "🏀 NBA - New Orleans Pelicans vs. Dallas Mavericks",
+    date: "2025-11-22",
+    time: "9:30 AM",
+    server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
+    server2: "https://streamcenter.xyz/embed/ch69.php"
+},
+{
+    category: "Basketball",
+    title: "🏀 NBA - Minnesota Timberwolves vs. Phoenix Suns",
+    date: "2025-11-22",
+    time: "10:00 AM",
+    server1: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8",
+    server2: "https://streamcenter.xyz/embed/ch70.php"
+},
+{
+    category: "Basketball",
+    title: "🏀 NBA - Denver Nuggets vs. Houston Rockets",
+    date: "2025-11-22",
+    time: "10:30 AM",
+    server1: "https://gg.poocloud.in/nba_houstonrockets/index.m3u8",
+    server2: "https://streamcenter.xyz/embed/ch71.php"
+},
+{
+    category: "Basketball",
+    title: "🏀 NBA - Oklahoma City Thunder vs. Utah Jazz",
+    date: "2025-11-22",
+    time: "11:00 AM",
+    server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
+    server2: "https://streamcenter.xyz/embed/ch72.php"
+},
+{
+    category: "Basketball",
+    title: "🏀 NBA - Portland Trail Blazers vs. Golden State Warriors",
+    date: "2025-11-22",
+    time: "11:00 AM",
+    server1: "https://gg.poocloud.in/nba_goldenstatewarriors/index.m3u8",
+    server2: "https://streamcenter.xyz/embed/ch73.php"
+}
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
