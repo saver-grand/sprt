@@ -2,29 +2,59 @@ let hls;
 
 const channels = [
 {
-  title: "LA Clippers vs. Orlando Magic",
-  date: "2025-11-21",
+  title: "Indiana Pacers vs. Cleveland Cavaliers",
+  date: "2025-11-22",
   time: "08:00",
-  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866587.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1ffe73d285c304bc8bcef03c4f4ce465"
+  url: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8"
 },
 {
-  title: "Sacramento Kings vs. Memphis Grizzlies",
-  date: "2025-11-21",
-  time: "09:00",
-  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866479.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ca5eafad3a225999ebc9e07616c6304c"
+  title: "Brooklyn Nets vs. Boston Celtics",
+  date: "2025-11-22",
+  time: "08:30",
+  url: "https://gg.poocloud.in/nba_bostonceltics/index.m3u8"
 },
 {
-  title: "Philadelphia 76ers vs. Milwaukee Bucks",
-  date: "2025-11-21",
-  time: "09:00",
-  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866803.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=c3309b7d482ea88fca7e17c01923c5f8"
+  title: "Washington Wizards vs. Toronto Raptors",
+  date: "2025-11-22",
+  time: "08:30",
+  url: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8"
 },
 {
-  title: "Atlanta Hawks vs. San Antonio Spurs",
-  date: "2025-11-21",
+  title: "Miami Heat vs. Chicago Bulls",
+  date: "2025-11-22",
   time: "09:00",
-  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866694.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=9ab014201584c1713ed96a9e97dad6e4"
-  }
+  url: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8"
+},
+{
+  title: "New Orleans Pelicans vs. Dallas Mavericks",
+  date: "2025-11-22",
+  time: "09:30",
+  url: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8"
+},
+{
+  title: "Minnesota Timberwolves vs. Phoenix Suns",
+  date: "2025-11-22",
+  time: "10:00",
+  url: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8"
+},
+{
+  title: "Denver Nuggets vs. Houston Rockets",
+  date: "2025-11-22",
+  time: "10:30",
+  url: "https://gg.poocloud.in/nba_houstonrockets/index.m3u8"
+},
+{
+  title: "Oklahoma City Thunder vs. Utah Jazz",
+  date: "2025-11-22",
+  time: "11:00",
+  url: "https://gg.poocloud.in/nba_utahjazz/index.m3u8"
+},
+{
+  title: "Portland Trail Blazers vs. Golden State Warriors",
+  date: "2025-11-22",
+  time: "11:00",
+  url: "https://gg.poocloud.in/nba_goldenstatewarriors/index.m3u8"
+}
 ];
 
 
