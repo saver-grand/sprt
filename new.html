@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MASPORTS — Home</title>
+
+  <!-- HLS.js -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <style>
+    :root{
+      --bg:#0b0b0b; --card:#121212; --accent:#00ff99; --muted:#9aa5a1; --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);color:#e6fff0;padding:1rem;display:flex;flex-direction:column;align-items:center}
+    header{width:100%;max-width:1100px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    h1{margin:0;color:var(--accent);text-shadow:0 0 8px rgba(0,255,153,0.12)}
+    .category-bar{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0;width:100%;max-width:1100px}
+    .category-btn{background:var(--card);border-radius:10px;padding:8px 12px;border:none;color:#e6fff0;cursor:pointer}
+    .category-btn.active{box-shadow:0 0 12px rgba(0,255,153,0.12);transform:translateY(-1px)}
+    #searchBar{width:100%;max-width:1100px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:#0f0f0f;color:#e6fff0}
+    .card{width:100%;max-width:1100px;background:linear-gradient(180deg,var(--card),#0f0f0f);border-radius:14px;padding:12px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+    .channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .channel-box{background:var(--glass);padding:12px;border-radius:12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;transition:transform .14s,box-shadow .14s}
+    .channel-box:hover{transform:translateY(-6px);box-shadow:0 8px 40px rgba(0,255,153,0.06)}
+    .channel-img{width:84px;height:84px;border-radius:8px;object-fit:cover;background:#0b0b0b}
+    .meta{font-size:13px;color:var(--muted)}
+    .small{font-size:12px;color:var(--muted)}
+    .countdown{margin-top:6px;font-weight:600}
+    /* overlay player */
+    #videoOverlay{position:fixed;inset:0;background:rgba(0,0,0,0.92);display:none;align-items:center;justify-content:center;z-index:9999;padding:18px}
+    .player-panel{width:100%;max-width:1100px;background:#060606;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px;align-items:stretch}
+    video,iframe{width:100%;height:62vh;border-radius:10px;background:#000}
+    .player-controls{display:flex;gap:8px;justify-content:space-between;align-items:center}
+    .btn{background:var(--accent);color:#000;border:none;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
+    .server-list{display:flex;gap:8px;flex-wrap:wrap}
+    .server-item{background:#101010;padding:8px 12px;border-radius:8px;color:var(--muted);cursor:pointer}
+    @media(max-width:720px){
+      video,iframe{height:48vh}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>MASPORTS</h1>
+  <div style="font-size:0.95rem;color:var(--muted)">Live sports & channels — Asia/Manila</div>
+</header>
+
+<div class="category-bar" id="categoryBar">
+  <button class="category-btn active" data-cat="all">🏅 All</button>
+  <button class="category-btn" data-cat="Live TV">📺 Live TV</button>
+  <button class="category-btn" data-cat="Basketball">🏀 Basketball</button>
+  <button class="category-btn" data-cat="UFC/MMA">🥋 UFC</button>
+  <button class="category-btn" data-cat="WWE">🤼‍♂️ WWE</button>
+  <button class="category-btn" data-cat="F1">🏎️ F1</button>
+  <!-- add more buttons as needed -->
+</div>
+
+<input id="searchBar" placeholder="🔍 Search channels or matches..." />
+
+<div class="card" id="channelCard">
+  <div id="channelList" class="channel-grid"></div>
+</div>
+
+<!-- PLAYER OVERLAY (for Live TV and fallback) -->
+<div id="videoOverlay">
+  <div class="player-panel">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div id="playerTitle" style="font-weight:800"></div>
+      <div>
+        <button class="btn" id="backToList">← Channels</button>
+      </div>
+    </div>
+
+    <video id="videoPlayer" controls playsinline></video>
+    <iframe id="iframePlayer" style="display:none;border:none" allowfullscreen></iframe>
+
+    <div class="player-controls">
+      <div class="server-list">
+        <div class="server-item" id="server1Btn">Server 1</div>
+        <div class="server-item" id="server2Btn">Server 2</div>
+      </div>
+      <div style="color:var(--muted)" id="liveStatus">—</div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===================== CHANNEL DATA =====================
+  Note: non-Live-TV channels include a `page` property (filename).
+  Live TV channels do NOT have `page` and will open the inline overlay.
+=========================================================*/
+const channels = [
+  // Live TV (stay on same page)
+  { category: "Live TV", title: "📺 ABC East", date: "2025-11-03", time: "24/7", server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8", server2: "https://honotvph.42web.io/masports.php?channel=nba1" },
+  { category: "Live TV", title: "🏈 ACC Network", date: "2025-11-03", time: "24/7", server1: "https://fl1.moveonjoy.com/ACC_NETWORK/index.m3u8", server2: "" },
+  // Non-Live-TV — link to individual pages (example pages created below)
+  { category: "WWE", title: "🤼 AEW: Saturday Night Collision", date: "2025-11-23", time: "8:00 AM", server1: "", server2: "https://watchlive.top/embed/aew/collision/25-11-22", page: "aew-collision.html", description: "AEW weekly collision - English stream" },
+  { category: "F1", title: "🏎️ Las Vegas Grand Prix - Race", date: "2025-11-23", time: "11:00 AM", server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8", server2: "https://watchlive.top/embed/f1/2025/las-vegas/race", page: "f1-las-vegas.html" },
+  { category: "UFC/MMA", title: "UFC- Fight Night: Tsarukyan vs. Hooker", date: "2025-11-22", time: "11:00 PM", server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793", server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker", page: "ufc-tsarukyan.html" },
+
+  // Basketball (example separate pages)
+  { category: "Basketball", title: "🏀 NBA - LA Clippers vs. Charlotte Hornets", date: "2025-11-23", time: "2:00 AM", server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214173.m3u8", server2: "https://streamcenter.xyz/embed/ch65.php", page: "nba1.html" },
+  { category: "Basketball", title: "🏀 NBA - New York Knicks vs. Orlando Magic", date: "2025-11-23", time: "6:00 AM", server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8", server2: "https://streamcenter.xyz/embed/ch66.php", page: "nba2.html" },
+  { category: "Basketball", title: "🏀 NBA - Atlanta Hawks vs. New Orleans Pelicans", date: "2025-11-23", time: "8:00 AM", server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8", server2: "https://streamcenter.xyz/embed/ch67.php", page: "nba3.html" },
+  { category: "Basketball", title: "🏀 NBA - Washington Wizards vs. Chicago Bulls", date: "2025-11-23", time: "9:00 AM", server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8", server2: "https://streamcenter.xyz/embed/ch68.php", page: "nba4.html" },
+  { category: "Basketball", title: "🏀 NBA - Memphis Grizzlies vs. Dallas Mavericks", date: "2025-11-23", time: "9:30 AM", server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8", server2: "https://streamcenter.xyz/embed/ch70.php", page: "nba5.html" }
+];
+
+const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+
+/* ---------- Render channels ---------- */
+const container = document.getElementById('channelList');
+function render(list){
+  if(!list.length){ container.innerHTML = '<div style="padding:24px;color:#ff8888">No matches</div>'; return; }
+  container.innerHTML = list.map((ch, idx) => {
+    // if page exists -> link to page; otherwise it's Live TV inline
+    if(ch.page){
+      return `<a class="channel-box" href="${ch.page}" title="${escapeHtml(ch.title)}" style="text-decoration:none;color:inherit">
+        <img class="channel-img" src="${logos}" alt="" />
+        <div style="font-weight:800;margin-top:6px">${ch.title}</div>
+        <div class="small meta">${ch.category} · ${ch.date} · ${ch.time}</div>
+      </a>`;
+    } else {
+      // Live TV: call overlay with server choices
+      return `<div class="channel-box" data-live-index="${idx}" onclick='openLive(${idx})'>
+        <img class="channel-img" src="${logos}" alt="" />
+        <div style="font-weight:800;margin-top:6px">${ch.title}</div>
+        <div class="small meta">${ch.category} · ${ch.date} · ${ch.time}</div>
+        <div class="countdown" id="timer-${idx}">Loading…</div>
+      </div>`;
+    }
+  }).join('');
+}
+
+/* ---------- Filtering & Category ---------- */
+let activeCategory = 'all';
+document.querySelectorAll('.category-btn').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.category-btn').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  activeCategory = b.dataset.cat;
+  filterChannels();
+}));
+
+document.getElementById('searchBar').addEventListener('input', filterChannels);
+function filterChannels(){
+  const q = document.getElementById('searchBar').value.toLowerCase();
+  const filtered = channels.filter(c => (activeCategory==='all' || c.category===activeCategory) && c.title.toLowerCase().includes(q));
+  render(filtered);
+}
+
+/* ---------- Countdown (Asia/Manila) ---------- */
+function parseTime(date, time){
+  // handle 24/7 or "24/7" => no countdown
+  if(!time || time.trim().toLowerCase()==='24/7') return null;
+  // time like "8:00 AM"
+  const parts = time.split(' ');
+  if(parts.length<2) return null;
+  const [t, period] = parts;
+  const [hh, mm] = t.split(':').map(Number);
+  let hours = hh;
+  if(period.toUpperCase()==='PM' && hours<12) hours+=12;
+  if(period.toUpperCase()==='AM' && hours===12) hours=0;
+  // build ISO with +08:00
+  return new Date(`${date}T${String(hours).padStart(2,'0')}:${String(mm||0).padStart(2,'0')}:00+08:00`);
+}
+function startCountdown() {
+  setInterval(()=>{
+    const nowPH = new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Manila'}));
+    channels.forEach((ch, idx)=>{
+      const el = document.getElementById(`timer-${idx}`);
+      if(!el) return;
+      const target = parseTime(ch.date, ch.time);
+      if(!target){ el.textContent = (ch.time||'24/7'); el.style.color='#9aa5a1'; return; }
+      const diff = target - nowPH;
+      if(diff<=0){ el.textContent = '🟢 LIVE NOW'; el.style.color='#7bff9c'; }
+      else {
+        const h = Math.floor(diff/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+        el.textContent = `⏳ ${h}h ${m}m ${s}s`;
+        el.style.color='#ffcc66';
+      }
+    });
+  },1000);
+}
+
+/* ---------- Live overlay handling (for Live TV channels only) ---------- */
+const videoOverlay = document.getElementById('videoOverlay');
+const videoPlayer = document.getElementById('videoPlayer');
+const iframePlayer = document.getElementById('iframePlayer');
+const playerTitle = document.getElementById('playerTitle');
+const liveStatus = document.getElementById('liveStatus');
+
+let activeChannel = null;
+let hls = null;
+
+function openLive(idx){
+  activeChannel = channels[idx];
+  playerTitle.textContent = activeChannel.title;
+  videoOverlay.style.display = 'flex';
+  // show server buttons
+  document.getElementById('server1Btn').style.display = activeChannel.server1 ? 'inline-block' : 'none';
+  document.getElementById('server2Btn').style.display = activeChannel.server2 ? 'inline-block' : 'none';
+  // default to server1 if present
+  if(activeChannel.server1){
+    playChannel(activeChannel.server1);
+  } else if(activeChannel.server2){
+    playIframe(activeChannel.server2);
+  } else {
+    liveStatus.textContent = 'No stream available';
+  }
+}
+
+function closeOverlay(){
+  videoOverlay.style.display = 'none';
+  if(hls){ try{ hls.destroy() }catch(e){}; hls=null; }
+  videoPlayer.pause(); videoPlayer.src=''; iframePlayer.src=''; iframePlayer.style.display='none'; videoPlayer.style.display='block';
+}
+document.getElementById('backToList').addEventListener('click', closeOverlay);
+
+document.getElementById('server1Btn').addEventListener('click', ()=> {
+  if(!activeChannel) return;
+  if(activeChannel.server1 && activeChannel.server1.startsWith('http')) playChannel(activeChannel.server1);
+});
+document.getElementById('server2Btn').addEventListener('click', ()=> {
+  if(!activeChannel) return;
+  if(activeChannel.server2 && activeChannel.server2.startsWith('http')) playIframe(activeChannel.server2);
+});
+
+/* play HLS url in <video> */
+function playChannel(url){
+  iframePlayer.style.display='none'; videoPlayer.style.display='block';
+  if(hls){ try{ hls.destroy(); }catch(e){}; hls=null; }
+  if(Hls.isSupported()){
+    hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(videoPlayer);
+    hls.on(Hls.Events.MANIFEST_PARSED, ()=> videoPlayer.play().catch(()=>{}));
+    hls.on(Hls.Events.ERROR, (ev, data)=> {
+      console.warn('HLS error', data);
+      liveStatus.textContent = 'Stream error — trying iframe fallback';
+    });
+  } else {
+    videoPlayer.src = url;
+    videoPlayer.play().catch(()=>{});
+  }
+  liveStatus.textContent = 'Playing (Server 1)';
+}
+
+/* play remote embed via iframe */
+function playIframe(url){
+  iframePlayer.style.display='block'; videoPlayer.style.display='none';
+  iframePlayer.src = url;
+  liveStatus.textContent = 'Playing (Server 2)';
+}
+
+/* ---------- Utilities ---------- */
+function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+/* ---------- Init ---------- */
+render(channels);
+startCountdown();
+
+</script>
+</body>
+</html>
