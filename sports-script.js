@@ -11,13 +11,13 @@ const channels = [
   title: "Brooklyn Nets vs. Boston Celtics",
   date: "2025-11-22",
   time: "08:30",
-  url: "https://gg.poocloud.in/nba_bostonceltics/index.m3u8"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866912.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2b20ee713a7af01dc7a9e0f33de86a3f"
 },
-{
+{ 
   title: "Washington Wizards vs. Toronto Raptors",
   date: "2025-11-22",
   time: "08:30",
-  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866912.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2b20ee713a7af01dc7a9e0f33de86a3f"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866135.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e66fc0ceb694c13fb90112c9fc050ff3"
 },
 {
   title: "Miami Heat vs. Chicago Bulls",
