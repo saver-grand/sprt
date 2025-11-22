@@ -321,6 +321,14 @@ const channels = [
     time: "1:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://watchlive.top/embed/oktagon-80-english"
+                  },
+    {
+            category: "UFC/MMA",
+    title: "UFC- Ring IV: Night Of Champions - Benavidez vs. Yarde",
+    date: "2025-11-23",
+    time: "3:00 AM",
+    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server2: "https://watchlive.top/embed/ring-iv-night-of-champions---benavidez-vs-yarde"
         },
 {
     category: "Basketball",
