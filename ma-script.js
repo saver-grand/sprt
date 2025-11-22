@@ -307,12 +307,12 @@ const channels = [
     server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
   },
     {
-            category: "Hockey",
-    title: "🏑 Ice Hockey- Providence vs Merrimack",
-    date: "2025-11-16",
-    time: "7:00 AM",
-    server1: "",
-    server2: "http://honotvph.42web.io/masports.php?channel=nba1"
+            category: "UFC",
+    title: "UFC- Fight Night: Tsarukyan vs. Hooker",
+    date: "2025-11-21",
+    time: "11:00 AM",
+    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
         },
 {
     category: "Basketball",
