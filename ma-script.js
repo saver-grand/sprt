@@ -318,7 +318,7 @@ const channels = [
             category: "UFC/MMA",
     title: "OKTAGON 80",
     date: "2025-11-23",
-    time: "12:00 AM",
+    time: "1:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://watchlive.top/embed/oktagon-80-english"
         },
@@ -335,7 +335,7 @@ const channels = [
     title: "🏀 NBA - LA Clippers vs. Charlotte Hornets",
     date: "2025-11-23",
     time: "2:00 AM",
-    server1: "https://gg.poocloud.in/nba_charlottehornets/index.m3u8",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214173.m3u8",
     server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
@@ -343,7 +343,7 @@ const channels = [
     title: "🏀 NBA - New York Knicks vs. Orlando Magic",
     date: "2025-11-23",
     time: "6:00 AM",
-    server1: "https://gg.poocloud.in/nba_orlandomagic/index.m3u8",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8",
     server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. New Orleans Pelicans",
     date: "2025-11-23",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_neworleanspelicans/index.m3u8",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Chicago Bulls",
     date: "2025-11-23",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_chicagobulls/index.m3u8",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",
     server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Detroit Pistons vs. Milwaukee Bucks",
     date: "2025-11-23",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_milwaukeebucks/index.m3u8",
+    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214176.m3u8",
     server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
