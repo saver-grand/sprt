@@ -35,7 +35,7 @@ const channels = [
   title: "Minnesota Timberwolves vs. Phoenix Suns",
   date: "2025-11-22",
   time: "10:00",
-  url: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866241.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=e3183d428067fa6e88b4d23b44bc3286"
 },
 {
   title: "Denver Nuggets vs. Houston Rockets",
