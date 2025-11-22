@@ -307,7 +307,7 @@ const channels = [
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
   },
     {
-            category: "UFC",
+            category: "UFC/MMA",
     title: "UFC- Fight Night: Tsarukyan vs. Hooker",
     date: "2025-11-23",
     time: "2:00 AM",
@@ -315,7 +315,7 @@ const channels = [
     server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
           },
     {
-            category: "UFC",
+            category: "UFC/MMA",
     title: "OKTAGON 80",
     date: "2025-11-23",
     time: "6:00 AM",
