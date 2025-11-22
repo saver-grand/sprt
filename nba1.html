@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA — LA Clippers vs Charlotte Hornets</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    :root{--bg:#070707;--card:#0f0f0f;--accent:#00ff99;--muted:#9aa5a1}
+    body{margin:0;font-family:Inter,Arial;background:var(--bg);color:#e6fff0;display:flex;flex-direction:column;align-items:center;padding:1rem}
+    .wrap{width:100%;max-width:1000px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    h1{margin:0;color:var(--accent)}
+    .card{background:linear-gradient(180deg,var(--card),#090909);padding:14px;border-radius:12px}
+    .meta{color:var(--muted);margin-top:6px}
+    video{width:100%;height:60vh;border-radius:10px;background:#000}
+    .controls{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:10px}
+    .btn{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#000;font-weight:700;cursor:pointer}
+    .server-list{display:flex;gap:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🏀 LA Clippers vs Charlotte Hornets</h1>
+      <a href="index.html" style="color:var(--muted);text-decoration:none">← Back to list</a>
+    </header>
+
+    <div class="card">
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div style="width:96px;height:96px;border-radius:8px;background:#0b0b0b;display:flex;align-items:center;justify-content:center;font-size:28px">🏀</div>
+        <div>
+          <div style="font-weight:800">NBA — Regular Season</div>
+          <div class="meta">Date: 2025-11-23 · Time: 2:00 AM (Asia/Manila)</div>
+          <div class="meta">Channel: s.rocketdns / streamcenter</div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <video id="videoPlayer" controls playsinline></video>
+        <iframe id="iframePlayer" style="display:none;width:100%;height:60vh;border:none;margin-top:10px" allowfullscreen></iframe>
+      </div>
+
+      <div class="controls">
+        <div class="server-list">
+          <button class="btn" id="server1">Play Server 1 (HLS)</button>
+          <button class="btn" id="server2">Open Server 2 (Embed)</button>
+        </div>
+        <div id="status" style="color:var(--muted)">Ready</div>
+      </div>
+
+      <p style="color:var(--muted);margin-top:10px">Note: If HLS fails in your browser, try the embed (Server 2).</p>
+    </div>
+  </div>
+
+<script>
+const server1 = "https://s.rocketdns.info:443/live/xmltv/02a162774b/214173.m3u8";
+const server2 = "https://streamcenter.xyz/embed/ch65.php";
+
+const video = document.getElementById('videoPlayer');
+const iframe = document.getElementById('iframePlayer');
+const status = document.getElementById('status');
+let hls;
+
+document.getElementById('server1').addEventListener('click', ()=> {
+  iframe.style.display='none'; video.style.display='block';
+  if(hls){ try{ hls.destroy(); }catch(e){} hls=null; }
+  if(Hls.isSupported()){
+    hls = new Hls();
+    hls.loadSource(server1);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, ()=> video.play().catch(()=>{}));
+    hls.on(Hls.Events.ERROR, (ev,data)=> { status.textContent='HLS error — try Server 2'; });
+    status.textContent='Playing (Server 1)';
+  } else {
+    video.src = server1; video.play().catch(()=>{}); status.textContent='Playing (native)';
+  }
+});
+
+document.getElementById('server2').addEventListener('click', ()=> {
+  iframe.style.display='block'; video.style.display='none';
+  iframe.src = server2;
+  status.textContent='Playing (Server 2 embed)';
+});
+
+</script>
+</body>
+</html>
