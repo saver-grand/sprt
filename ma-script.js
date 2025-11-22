@@ -292,35 +292,43 @@ const channels = [
         },
   {
       category: "WWE",
-    title: "🤼 WWE",
-    date: "2025-11-03",
-    time: "24/7",
+    title: "🤼 AEW: Saturday Night Collision",
+    date: "2025-11-23",
+    time: "8:00 AM",
     server1: "",
-    server2: "https://embednow.top/embed/tna/impact/25-11-13"
+    server2: "https://watchlive.top/embed/aew/collision/25-11-22"
   },
   {    
     category: "F1",
-    title: "🏎️ F1- Sky Sports F1",
-    date: "2025-11-03",
-    time: "24/7",
+    title: "🏎️ Las Vegas Grand Prix - Race",
+    date: "2025-11-23",
+    time: "11:00 AM",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
-    server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
+    server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
   },
     {
             category: "UFC",
     title: "UFC- Fight Night: Tsarukyan vs. Hooker",
-    date: "2025-11-21",
-    time: "11:00 AM",
+    date: "2025-11-23",
+    time: "2:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
+          },
+    {
+            category: "UFC",
+    title: "OKTAGON 80",
+    date: "2025-11-23",
+    time: "6:00 AM",
+    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server2: "https://watchlive.top/embed/oktagon-80-english"
         },
 {
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
     date: "2025-11-28",
     time: "8:00 AM",
-    server1: "",
-    server2: "https://shorten.is/anba1"
+    server1: "https://streams.honotvph.42web.io/stream/live/pba/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server2: ""
   },
 {
     category: "Basketball",
