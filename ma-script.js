@@ -309,8 +309,8 @@ const channels = [
     {
             category: "UFC/MMA",
     title: "UFC- Fight Night: Tsarukyan vs. Hooker",
-    date: "2025-11-23",
-    time: "2:00 AM",
+    date: "2025-11-22",
+    time: "11:00 PM",
     server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
           },
@@ -318,7 +318,7 @@ const channels = [
             category: "UFC/MMA",
     title: "OKTAGON 80",
     date: "2025-11-23",
-    time: "6:00 AM",
+    time: "12:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
     server2: "https://watchlive.top/embed/oktagon-80-english"
         },
