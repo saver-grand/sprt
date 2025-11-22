@@ -5,7 +5,7 @@ const channels = [
   title: "Indiana Pacers vs. Cleveland Cavaliers",
   date: "2025-11-22",
   time: "08:00",
-  url: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867021.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=fbb4b50518abc0f6bff1bdf7882fa32d"
 },
 {
   title: "Brooklyn Nets vs. Boston Celtics",
