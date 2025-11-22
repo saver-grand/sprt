@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>MASPORTS</title>
 
-  <!-- ✅ Monetag Verification -->
-  <meta name="monetag" content="f6122dcf0ae0344432a93322d9615e30">
+
 
   <!-- ✅ CSS -->
   <link rel="stylesheet" href="ma-style.css">
@@ -62,9 +61,6 @@
     <button class="server-btn" id="server1Btn">
       <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png" alt="Server 1"/> Server 1
     </button>
-    <button class="server-btn" id="server2Btn">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Emblem_of_Television.svg" alt="Server 2"/> Server 2
-    </button>
   </div>
 
   <!-- Loading Spinner -->
@@ -72,51 +68,7 @@
     ⏳ Loading Stream...
   </div>
 
-  <!-- ✅ Safe Monetag Ads: Load After User Interaction -->
-  <script>
-    let monetagLoaded = false;
-    document.addEventListener("click", () => {
-      if (!monetagLoaded) {
-        monetagLoaded = true;
-        console.log("✅ Loading Monetag Ads safely...");
 
-        // Popunder
-        (function(s){
-          s.dataset.zone='10131170';
-          s.src='https://al5sm.com/tag.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-
-        // Vignette
-        (function(s){
-          s.dataset.zone='10131172';
-          s.src='https://groleegni.net/vignette.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-
-        // Tag Ad
-        (function(s){
-          s.dataset.zone='10131174';
-          s.src='https://forfrogadiertor.com/tag.min.js';
-          document.body.appendChild(s);
-        })(document.createElement('script'));
-      }
-    });
-  </script>
-
-  <!-- ✅ Fallback Monetag Banner -->
-  <noscript>
-    <a href="https://al5sm.com/" target="_blank">
-      <img src="https://i.imgur.com/8T3YF0Z.jpeg" alt="Watch Ad" style="width:100%;border-radius:12px;">
-    </a>
-  </noscript>
-
-  <!-- ✅ Performance Debug Log -->
-  <script>
-    window.addEventListener('load', () => {
-      console.log("✅ MASPORTS (Monetag Edition) loaded in", performance.now().toFixed(1), "ms");
-    });
-  </script>
 
 </body>
 </html>
