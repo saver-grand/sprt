@@ -41,7 +41,7 @@ const channels = [
   title: "Denver Nuggets vs. Houston Rockets",
   date: "2025-11-22",
   time: "10:30",
-  url: "https://gg.poocloud.in/nba_houstonrockets/index.m3u8"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866562.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=30ce24f90893f1ccdd8faa6fe93f9708"
 },
 {
   title: "Oklahoma City Thunder vs. Utah Jazz",
