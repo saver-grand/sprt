@@ -383,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Oklahoma City Thunder vs. Utah Jazz",
     date: "2025-11-22",
     time: "11:00 AM",
-    server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866778.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0c8b9d60e2fb824dfdeba716e46da8f6",
     server2: "https://streamcenter.xyz/embed/ch72.php"
 },
 {
@@ -391,7 +391,7 @@ const channels = [
     title: "🏀 NBA - Portland Trail Blazers vs. Golden State Warriors",
     date: "2025-11-22",
     time: "11:00 AM",
-    server1: "https://gg.poocloud.in/nba_goldenstatewarriors/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866454.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d0b977e24e46e363d072697c1ca71219",
     server2: "https://streamcenter.xyz/embed/ch73.php"
 }
 ];
