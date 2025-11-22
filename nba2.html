@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>NBA — New York Knicks vs Orlando Magic</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    :root{--bg:#080808;--card:#0f0f0f;--accent:#00ff99;--muted:#9aa5a1}
+    body{background:var(--bg);color:#e6fff0;margin:0;padding:1rem;font-family:Inter,Arial}
+    .wrap{max-width:1000px;margin:0 auto}
+    .card{background:linear-gradient(180deg,#0f0f0f,#070707);padding:14px;border-radius:12px}
+    h1{color:var(--accent)}
+    video{width:100%;height:60vh;border-radius:10px;background:#000}
+    .btn{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#000;font-weight:700;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <h1>🏀 New York Knicks vs Orlando Magic</h1>
+      <a href="index.html" style="color:#9aa5a1;text-decoration:none">← Back</a>
+    </header>
+
+    <div class="card">
+      <div style="margin-bottom:10px;color:#9aa5a1">Date: 2025-11-23 · Time: 6:00 AM</div>
+
+      <video id="video" controls playsinline></video>
+      <iframe id="embed" style="display:none;width:100%;height:60vh;border:none;margin-top:10px" allowfullscreen></iframe>
+
+      <div style="display:flex;gap:8px;margin-top:12px;align-items:center">
+        <button id="s1" class="btn">Server 1</button>
+        <button id="s2" class="btn">Server 2</button>
+        <div id="st" style="margin-left:auto;color:#9aa5a1">Ready</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+const s1 = "https://s.rocketdns.info:443/live/xmltv/02a162774b/214171.m3u8";
+const s2 = "https://streamcenter.xyz/embed/ch66.php";
+const video = document.getElementById('video'), embed=document.getElementById('embed'), st=document.getElementById('st');
+let hls;
+document.getElementById('s1').addEventListener('click', ()=> {
+  embed.style.display='none'; video.style.display='block';
+  if(hls){ try{ hls.destroy(); }catch(e){}; hls=null; }
+  if(Hls.isSupported()){ hls = new Hls(); hls.loadSource(s1); hls.attachMedia(video); hls.on(Hls.Events.MANIFEST_PARSED, ()=>video.play().catch(()=>{})); st.textContent='Playing (S1)'; }
+  else { video.src=s1; video.play().catch(()=>{}); st.textContent='Playing (native)'; }
+});
+document.getElementById('s2').addEventListener('click', ()=> { embed.style.display='block'; video.style.display='none'; embed.src=s2; st.textContent='Playing (Embed)'; });
+</script>
+</body>
+</html>
