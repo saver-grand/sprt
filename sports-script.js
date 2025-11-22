@@ -29,7 +29,7 @@ const channels = [
   title: "New Orleans Pelicans vs. Dallas Mavericks",
   date: "2025-11-22",
   time: "09:30",
-  url: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8"
+  url: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866348.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=32e867ddeebae4eb7ff609a7d80a3ae4"
 },
 {
   title: "Minnesota Timberwolves vs. Phoenix Suns",
