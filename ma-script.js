@@ -391,7 +391,7 @@ const channels = [
     title: "🏀 NBA - Sacramento Kings vs. Denver Nuggets",
     date: "2025-11-23",
     time: "11:00 AM",
-    server1: "https://gg.poocloud.in/nba_denvernuggets/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866220.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=8952ff1371b8192dd1605a16f4f338be",
     server2: "https://streamcenter.xyz/embed/ch71.php"
 
 }
