@@ -383,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Memphis Grizzlies vs. Dallas Mavericks",
     date: "2025-11-23",
     time: "9:30 AM",
-    server1: "https://gg.poocloud.in/nba_dallasmavericks/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866327.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2f38ae393c9c0b8095beb37fd7eeac5b",
     server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
