@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Atlanta Hawks vs. New Orleans Pelicans",
     date: "2025-11-23",
     time: "8:00 AM",
-    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214174.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866887.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=41aa04a2e35deb1d0a7b2a98f1ad01a5",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
