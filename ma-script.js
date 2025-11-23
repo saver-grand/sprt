@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Washington Wizards vs. Chicago Bulls",
     date: "2025-11-23",
     time: "9:00 AM",
-    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214175.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866112.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=cc656e7ed7442ef8b8a6e6d6ac1f9355",
     server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
@@ -375,7 +375,7 @@ const channels = [
     title: "🏀 NBA - Detroit Pistons vs. Milwaukee Bucks",
     date: "2025-11-23",
     time: "9:00 AM",
-    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/214176.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867106.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=bf2d8bc5b19a858a60c30bfd48b8b059",
     server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
