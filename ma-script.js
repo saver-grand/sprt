@@ -344,7 +344,7 @@ const channels = [
     date: "2025-11-24",
     time: "2:00 AM",
     server1: "https://gg.poocloud.in/nba_philadelphia76ers/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch01.php"
+    server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
     category: "Basketball",
@@ -352,7 +352,7 @@ const channels = [
     date: "2025-11-24",
     time: "7:00 AM",
     server1: "https://gg.poocloud.in/nba_atlantahawks/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch02.php"
+    server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
     category: "Basketball",
@@ -360,7 +360,7 @@ const channels = [
     date: "2025-11-24",
     time: "7:00 AM",
     server1: "https://gg.poocloud.in/nba_bostonceltics/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch03.php"
+    server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
     category: "Basketball",
@@ -368,7 +368,7 @@ const channels = [
     date: "2025-11-24",
     time: "7:00 AM",
     server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch04.php"
+    server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
     category: "Basketball",
@@ -376,7 +376,7 @@ const channels = [
     date: "2025-11-24",
     time: "7:00 AM",
     server1: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch05.php"
+    server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
     category: "Basketball",
@@ -384,7 +384,7 @@ const channels = [
     date: "2025-11-24",
     time: "8:00 AM",
     server1: "https://gg.poocloud.in/nba_oklahomacitythunder/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch06.php"
+    server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
     category: "Basketball",
@@ -392,7 +392,7 @@ const channels = [
     date: "2025-11-24",
     time: "9:00 AM",
     server1: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch07.php"
+    server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
     category: "Basketball",
@@ -400,7 +400,7 @@ const channels = [
     date: "2025-11-24",
     time: "9:00 AM",
     server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
-    server2: "https://streamcenter.xyz/embed/ch08.php"
+    server2: "https://streamcenter.xyz/embed/ch72.php"
 }
 ];
 
