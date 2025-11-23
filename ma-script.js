@@ -351,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Charlotte Hornets vs. Atlanta Hawks",
     date: "2025-11-24",
     time: "7:00 AM",
-    server1: "https://gg.poocloud.in/nba_atlantahawks/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866433.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ae5c72cc9832f6b49c2cceb558438e6d",
     server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
@@ -359,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Orlando Magic vs. Boston Celtics",
     date: "2025-11-24",
     time: "7:00 AM",
-    server1: "https://gg.poocloud.in/nba_bostonceltics/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866757.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a2c2ccfab54c473ecd5c2439dc4bcfc5",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
@@ -367,7 +367,7 @@ const channels = [
     title: "🏀 NBA - LA Clippers vs. Cleveland Cavaliers",
     date: "2025-11-24",
     time: "7:00 AM",
-    server1: "https://gg.poocloud.in/nba_clevelandcavaliers/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866648.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0675757388d879a2e9d8437a8685aaad",
     server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
@@ -375,7 +375,7 @@ const channels = [
     title: "🏀 NBA - Brooklyn Nets vs. Toronto Raptors",
     date: "2025-11-24",
     time: "7:00 AM",
-    server1: "https://gg.poocloud.in/nba_torontoraptors/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866976.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=b77b2e0956424d39950c03876701024c",
     server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
