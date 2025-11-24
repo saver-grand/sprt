@@ -1,0 +1,80 @@
+<?php
+// fast-player.php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Loading JW Player</title>
+<script src="https://ssl.p.jwpcdn.com/player/v/8.38.10/jwplayer.js"></script>
+<script>
+    jwplayer.key = "QybHxeEatECB7VWGt/y7fw69lOha2N4x3Es4kNK1RhDAmYzB";
+</script>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        overflow: hidden;
+    }
+    #player-bet {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<div id="player-bet"></div>
+<script>
+<?php
+// Optionally, you can dynamically set the stream URL from PHP
+$streamUrl = "https://streams.honotvph.42web.io/stream/live/gma/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793";
+echo "const streamUrl = '$streamUrl';\n";
+?>
+
+function loadPlayer() {
+    const player = jwplayer("player-bet").setup({
+        file: streamUrl,
+        width: "100%",
+        height: "100%",
+        autostart: true,
+        mute: false,
+        controls: true,
+        repeat: true,
+        primary: "html5",
+        preload: "auto"
+    });
+
+    // Handle error by fully reloading the player
+    player.on('error', () => {
+        console.warn("Stream error detected. Reloading...");
+        setTimeout(() => {
+            jwplayer("player-bet").remove();
+            loadPlayer();
+        }, 2000);
+    });
+
+    // Handle idle (stopped) state by reloading
+    player.on('idle', () => {
+        console.warn("Stream stopped. Reloading...");
+        setTimeout(() => {
+            jwplayer("player-bet").remove();
+            loadPlayer();
+        }, 2000);
+    });
+
+    // Ensure volume is on when ready
+    player.on('ready', () => {
+        player.setVolume(100);
+        player.play();
+    });
+}
+
+// Initial load
+loadPlayer();
+</script>
+</body>
+</html>
