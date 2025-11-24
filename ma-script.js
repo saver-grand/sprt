@@ -317,7 +317,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Detroit Pistons vs. Indiana Pacers",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:00 AM",
     server1: "https://masports.dpdns.org/app/nba1.html",
     server2: "https://streamcenter.xyz/embed/ch65.php"
@@ -341,7 +341,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Dallas Mavericks vs. Miami Heat",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:30 AM",
     server1: "https://masports.dpdns.org/app/nba4.html",
     server2: "https://streamcenter.xyz/embed/ch68.php"
@@ -365,7 +365,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Chicago Bulls vs. New Orleans Pelicans",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
     server1: "https://masports.dpdns.org/app/nba7.html",
     server2: "https://streamcenter.xyz/embed/ch71.php"
