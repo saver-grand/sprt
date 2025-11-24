@@ -391,7 +391,7 @@ const channels = [
     title: "🏀 NBA - San Antonio Spurs vs. Phoenix Suns",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba7.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866091.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=08b73a011e7f6c9ef3507c130d41e58f",
     server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
@@ -399,7 +399,7 @@ const channels = [
     title: "🏀 NBA - Los Angeles Lakers vs. Utah Jazz",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba8.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867086.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=a2a4c7e58612a89efbd1b459364831eb",
     server2: "https://streamcenter.xyz/embed/ch72.php"
 }
 ];
