@@ -325,7 +325,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Cleveland Cavaliers vs. Toronto Raptors",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:00 AM",
     server1: "https://masports.dpdns.org/app/nba2.html",
     server2: "https://streamcenter.xyz/embed/ch66.php"
@@ -333,7 +333,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - New York Knicks vs. Brooklyn Nets",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:30 AM",
     server1: "https://masports.dpdns.org/app/nba3.html",
     server2: "https://streamcenter.xyz/embed/ch67.php"
@@ -349,7 +349,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Denver Nuggets vs. Memphis Grizzlies",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
     server1: "https://masports.dpdns.org/app/nba5.html",
     server2: "https://streamcenter.xyz/embed/ch69.php"
@@ -357,7 +357,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Portland Trail Blazers vs. Milwaukee Bucks",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
     server1: "https://masports.dpdns.org/app/nba6.html",
     server2: "https://streamcenter.xyz/embed/ch70.php"
@@ -373,7 +373,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Houston Rockets vs. Phoenix Suns",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "10:30 AM",
     server1: "https://masports.dpdns.org/app/nba8.html",
     server2: "https://streamcenter.xyz/embed/ch72.php"
@@ -381,7 +381,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Utah Jazz vs. Golden State Warriors",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "11:00 AM",
     server1: "https://masports.dpdns.org/app/nba9.html",
     server2: "https://streamcenter.xyz/embed/ch73.php"
@@ -389,7 +389,7 @@ const channels = [
 {
     category: "Basketball",
     title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "11:00 AM",
     server1: "https://masports.dpdns.org/app/nba10.html",
     server2: "https://streamcenter.xyz/embed/ch74.php"
