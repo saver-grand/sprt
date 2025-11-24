@@ -502,7 +502,15 @@ function showServerSelect(ch) {
 
 document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
-  playChannel(selectedURLs.server1);
+
+  // =========== SPECIAL RULE ===========
+  // LIVE TV uses HLS player
+  // ALL OTHER CATEGORIES → USE EMBED IFRAME
+  if (selectedURLs.category === "Live TV") {
+    playChannel(selectedURLs.server1);  // keep using HLS video player
+  } else {
+    playIframe(selectedURLs.server1);   // use EMBED style for server1
+  }
 };
 
 document.getElementById("server2Btn").onclick = () => {
