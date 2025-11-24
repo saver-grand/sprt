@@ -307,30 +307,6 @@ const channels = [
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
   },
     {
-            category: "UFC/MMA",
-    title: "UFC- Fight Night: Tsarukyan vs. Hooker",
-    date: "2025-11-22",
-    time: "11:00 PM",
-    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
-          },
-    {
-            category: "UFC/MMA",
-    title: "OKTAGON 80",
-    date: "2025-11-23",
-    time: "1:00 AM",
-    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://watchlive.top/embed/oktagon-80-english"
-                  },
-    {
-            category: "UFC/MMA",
-    title: "UFC- Ring IV: Night Of Champions - Benavidez vs. Yarde",
-    date: "2025-11-23",
-    time: "3:00 AM",
-    server1: "https://masports.dpdns.org/app/nba1.html",
-    server2: "https://watchlive.top/embed/ring-iv-night-of-champions---benavidez-vs-yarde"
-        },
-{
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
     date: "2025-11-28",
@@ -343,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Detroit Pistons vs. Indiana Pacers",
     date: "2025-11-24",
     time: "8:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba1.m3u8",
+    server1: "https://honortvph.totalh.net/nba1.php",
     server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
@@ -351,7 +327,7 @@ const channels = [
     title: "🏀 NBA - Cleveland Cavaliers vs. Toronto Raptors",
     date: "2025-11-24",
     time: "8:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba2.m3u8",
+    server1: "https://honortvph.totalh.net/nba2.php",
     server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
@@ -359,7 +335,7 @@ const channels = [
     title: "🏀 NBA - New York Knicks vs. Brooklyn Nets",
     date: "2025-11-24",
     time: "8:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba3.m3u8",
+    server1: "https://honortvph.totalh.net/nba3.php",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
@@ -367,7 +343,7 @@ const channels = [
     title: "🏀 NBA - Dallas Mavericks vs. Miami Heat",
     date: "2025-11-24",
     time: "8:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba4.m3u8",
+    server1: "https://honortvph.totalh.net/nba4.php",
     server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
@@ -375,7 +351,7 @@ const channels = [
     title: "🏀 NBA - Denver Nuggets vs. Memphis Grizzlies",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba5.m3u8",
+    server1: "https://honortvph.totalh.net/nba5.php",
     server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
@@ -383,7 +359,7 @@ const channels = [
     title: "🏀 NBA - Portland Trail Blazers vs. Milwaukee Bucks",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba6.m3u8",
+    server1: "https://honortvph.totalh.net/nba6.php",
     server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
@@ -391,7 +367,7 @@ const channels = [
     title: "🏀 NBA - Chicago Bulls vs. New Orleans Pelicans",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba7.m3u8",
+    server1: "https://honortvph.totalh.net/nba7.php",
     server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
@@ -399,7 +375,7 @@ const channels = [
     title: "🏀 NBA - Houston Rockets vs. Phoenix Suns",
     date: "2025-11-24",
     time: "10:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba8.m3u8",
+    server1: "https://honortvph.totalh.net/nba8.php",
     server2: "https://streamcenter.xyz/embed/ch72.php"
 },
 {
@@ -407,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Utah Jazz vs. Golden State Warriors",
     date: "2025-11-24",
     time: "11:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba9.m3u8",
+    server1: "https://honortvph.totalh.net/nba9.php",
     server2: "https://streamcenter.xyz/embed/ch73.php"
 },
 {
@@ -415,7 +391,7 @@ const channels = [
     title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
     date: "2025-11-24",
     time: "11:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba10.m3u8",
+    server1: "https://honortvph.totalh.net/nba10.php",
     server2: "https://streamcenter.xyz/embed/ch74.php"
 }
 ];
