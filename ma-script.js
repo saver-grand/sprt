@@ -336,7 +336,7 @@ const channels = [
     date: "2025-11-28",
     time: "8:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/pba/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: ""
+    server2: "https://masports.dpdns.org/app/nba1.html"
   },
 {
     category: "Basketball",
