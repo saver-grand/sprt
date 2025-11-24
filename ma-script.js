@@ -425,8 +425,7 @@ const logos = "https://i.imgur.com/y7rtkDI.jpeg";
 // ====================== RENDER CHANNELS ============================
 function renderChannels(list) {
   const container = document.getElementById("channelList");
-  if(!container) return;
-  if(list.length === 0){
+  if (list.length === 0) {
     container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
     return;
   }
@@ -443,51 +442,52 @@ function renderChannels(list) {
 }
 
 // ====================== COUNTDOWN ============================
-function startCountdown(list){
-  function parseTime(date, time){
-    if(time==="24/7") return new Date();
+function startCountdown(list) {
+  function parseTime(date, time) {
     const [t, period] = time.split(" ");
     let [hours, minutes] = t.split(":").map(Number);
-    if(period.toUpperCase() === "PM" && hours<12) hours+=12;
-    if(period.toUpperCase() === "AM" && hours===12) hours=0;
-    return new Date(`${date}T${String(hours).padStart(2,"0")}:${String(minutes).padStart(2,"0")}:00+08:00`);
+    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+    return new Date(`${date}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00+08:00`);
   }
-  function update(){
-    const nowPH = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Manila"}));
-    list.forEach((ch,i)=>{
-      const target = parseTime(ch.date,ch.time);
+
+  function update() {
+    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+    list.forEach((ch, i) => {
+      const target = parseTime(ch.date, ch.time);
       const diff = target - nowPH;
       const el = document.getElementById(`timer-${i}`);
-      if(!el) return;
-      if(diff <=0){
+      if (!el) return;
+      if (diff <= 0) {
         el.textContent = "🟢 LIVE NOW";
         el.style.color = "limegreen";
       } else {
-        const h=Math.floor(diff/3600000);
-        const m=Math.floor((diff%3600000)/60000);
-        const s=Math.floor((diff%60000)/1000);
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
         el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
         el.style.color = "#ffcc66";
       }
     });
   }
+
   update();
-  setInterval(update,1000);
+  setInterval(update, 1000);
 }
 
-// ====================== SEARCH & CATEGORY ============================
-function filterChannels(){
-  const search = document.getElementById("searchBar")?.value.toLowerCase() || "";
-  renderChannels(channels.filter(c=>
-    (activeCategory==="all" || c.category===activeCategory) &&
+// ====================== CATEGORY + SEARCH ============================
+function filterChannels() {
+  const search = document.getElementById("searchBar").value.toLowerCase();
+  renderChannels(channels.filter(c =>
+    (activeCategory === "all" || c.category === activeCategory) &&
     c.title.toLowerCase().includes(search)
   ));
 }
 
-document.getElementById("searchBar")?.addEventListener("input", filterChannels);
-document.querySelectorAll(".category-btn").forEach(btn=>{
-  btn.addEventListener("click", ()=>{
-    document.querySelectorAll(".category-btn").forEach(b=>b.classList.remove("active"));
+document.getElementById("searchBar").addEventListener("input", filterChannels);
+document.querySelectorAll(".category-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     activeCategory = btn.getAttribute("data-cat");
     filterChannels();
@@ -495,75 +495,73 @@ document.querySelectorAll(".category-btn").forEach(btn=>{
 });
 
 // ====================== SERVER SELECTION ============================
-function showServerSelect(ch){
+function showServerSelect(ch) {
   selectedURLs = ch;
-  const ss = document.getElementById("serverSelect");
-  if(ss) ss.style.display = "flex";
+  document.getElementById("serverSelect").style.display = "flex";
 }
 
-document.getElementById("server1Btn")?.addEventListener("click", ()=>{
+document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
-  if(selectedURLs.category==="Live TV"){
-    playChannel(selectedURLs.server1);
-  } else {
-    playIframe(selectedURLs.server1);
-  }
-});
 
-document.getElementById("server2Btn")?.addEventListener("click", ()=>{
+  // =========== SPECIAL RULE ===========
+  // LIVE TV uses HLS player
+  // ALL OTHER CATEGORIES → USE EMBED IFRAME
+  if (selectedURLs.category === "Live TV") {
+    playChannel(selectedURLs.server1);  // keep using HLS video player
+  } else {
+    playIframe(selectedURLs.server1);   // use EMBED style for server1
+  }
+};
+
+document.getElementById("server2Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
   playIframe(selectedURLs.server2);
-});
+};
 
 // ====================== PLAYER CONTROL ============================
-function playChannel(url){
-  const container = document.getElementById("videoContainer"),
-        video = document.getElementById("videoPlayer"),
-        iframe = document.getElementById("iframePlayer");
+function playChannel(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
 
-  container.style.display = "flex";
-  video.style.display = "block";
-  iframe.style.display = "none";
-  document.getElementById("channelCard")?.style.display = "none";
+  c.style.display = "flex";
+  i.style.display = "none";
+  v.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
 
-  if(hls) hls.destroy();
-  if(Hls.isSupported()){
+  if (hls) hls.destroy();
+  if (Hls.isSupported()) {
     hls = new Hls();
     hls.loadSource(url);
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED, ()=>video.play());
+    hls.attachMedia(v);
+    hls.on(Hls.Events.MANIFEST_PARSED, () => v.play());
   } else {
-    video.src = url;
-    video.play();
+    v.src = url;
   }
 }
 
-function playIframe(url){
-  const container = document.getElementById("videoContainer"),
-        video = document.getElementById("videoPlayer"),
-        iframe = document.getElementById("iframePlayer");
+function playIframe(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
 
-  container.style.display = "flex";
-  video.style.display = "none";
-  iframe.style.display = "block";
-  iframe.src = url;
-  document.getElementById("channelCard")?.style.display = "none";
+  c.style.display = "flex";
+  v.style.display = "none";
+  i.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+  i.src = url;
 }
 
-function closeVideo(){
-  const container = document.getElementById("videoContainer"),
-        video = document.getElementById("videoPlayer"),
-        iframe = document.getElementById("iframePlayer");
-
-  container.style.display = "none";
-  document.getElementById("channelCard")?.style.display = "block";
-  video.pause();
-  iframe.src = "";
+function closeVideo() {
+  document.getElementById("videoContainer").style.display = "none";
+  document.getElementById("channelCard").style.display = "block";
+  document.getElementById("videoPlayer").pause();
+  document.getElementById("iframePlayer").src = "";
 }
 
-function toggleList(){
+function toggleList() {
   const c = document.getElementById("channelCard");
-  if(c) c.style.display = c.style.display==="none"?"block":"none";
+  c.style.display = c.style.display === "none" ? "block" : "none";
 }
 
 // ====================== INIT ============================
