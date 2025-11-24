@@ -312,7 +312,7 @@ const channels = [
     date: "2025-11-23",
     time: "9:00 AM",
     server1: "https://masports.dpdns.org/app/nfl1.html",
-    server2: ""
+    server2: "https://streamcenter.xyz/embed/ch30.php"
   },
     {
     category: "Basketball",
