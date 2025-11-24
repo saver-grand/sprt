@@ -391,7 +391,7 @@ const channels = [
     title: "🏀 NBA - San Antonio Spurs vs. Phoenix Suns",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_phoenixsuns/index.m3u8",
+    server1: "https://play.streameast247.com/playlist/stream_nba7.m3u8",
     server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
@@ -399,7 +399,7 @@ const channels = [
     title: "🏀 NBA - Los Angeles Lakers vs. Utah Jazz",
     date: "2025-11-24",
     time: "9:00 AM",
-    server1: "https://gg.poocloud.in/nba_utahjazz/index.m3u8",
+    server1: "https://play.streameast247.com/playlist/stream_nba8.m3u8",
     server2: "https://streamcenter.xyz/embed/ch72.php"
 }
 ];
