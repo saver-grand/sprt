@@ -383,7 +383,7 @@ const channels = [
     title: "🏀 NBA - Portland Trail Blazers vs. Oklahoma City Thunder",
     date: "2025-11-24",
     time: "8:00 AM",
-    server1: "https://gg.poocloud.in/nba_oklahomacitythunder/index.m3u8",
+    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866867.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=0bd02c71430c6ab8f322268820dc29c2",
     server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
