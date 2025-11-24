@@ -309,8 +309,8 @@ const channels = [
   {    
     category: "NFL",
     title: "San Francisco 49ers VS Carolina Panthers",
-    date: "2025-11-23",
-    time: "9:00 AM",
+    date: "2025-11-25",
+    time: "9:15 AM",
     server1: "https://masports.dpdns.org/app/nfl1.html",
     server2: "https://streamcenter.xyz/embed/ch30.php"
   },
