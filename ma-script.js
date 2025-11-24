@@ -319,7 +319,7 @@ const channels = [
     title: "🏀 NBA - Detroit Pistons vs. Indiana Pacers",
     date: "2025-11-24",
     time: "8:00 AM",
-    server1: "https://honortvph.totalh.net/nba1.php",
+    server1: "https://masports.dpdns.org/app/nba1.php",
     server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
