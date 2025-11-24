@@ -305,6 +305,14 @@ const channels = [
     time: "11:00 AM",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
+        },
+  {    
+    category: "NFL",
+    title: "San Francisco 49ers VS Carolina Panthers",
+    date: "2025-11-23",
+    time: "9:00 AM",
+    server1: "https://masports.dpdns.org/app/nfl1.html",
+    server2: ""
   },
     {
     category: "Basketball",
