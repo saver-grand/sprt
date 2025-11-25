@@ -301,25 +301,17 @@ const channels = [
   {    
     category: "F1",
     title: "🏎️ Las Vegas Grand Prix - Race",
-    date: "2025-11-23",
+    date: "2025-11-26",
     time: "11:00 AM",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
         },
   {    
-    category: "NFL",
-    title: "San Francisco 49ers VS Carolina Panthers",
-    date: "2025-11-25",
-    time: "9:15 AM",
-    server1: "https://masports.dpdns.org/app/nfl1.html",
-    server2: "https://streamcenter.xyz/embed/ch30.php"
-  },
-    {
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
     date: "2025-11-28",
     time: "8:00 AM",
-    server1: "https://streams.honotvph.42web.io/stream/live/pba/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
+    server1: "https://masports.dpdns.org/app/pba1.html",
     server2: ""
   },
     {
