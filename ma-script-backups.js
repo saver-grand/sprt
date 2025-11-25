@@ -305,117 +305,101 @@ const channels = [
     time: "11:00 AM",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
+        },
+  {    
+    category: "NFL",
+    title: "San Francisco 49ers VS Carolina Panthers",
+    date: "2025-11-25",
+    time: "9:15 AM",
+    server1: "https://masports.dpdns.org/app/nfl1.html",
+    server2: "https://streamcenter.xyz/embed/ch30.php"
   },
     {
-            category: "UFC/MMA",
-    title: "UFC- Fight Night: Tsarukyan vs. Hooker",
-    date: "2025-11-22",
-    time: "11:00 PM",
-    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://watchlive.top/embed/ufc-fight-night-tsarukyan-vs.-hooker"
-          },
-    {
-            category: "UFC/MMA",
-    title: "OKTAGON 80",
-    date: "2025-11-23",
-    time: "1:00 AM",
-    server1: "https://streams.honotvph.42web.io/stream/live/tntsports1/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://watchlive.top/embed/oktagon-80-english"
-                  },
-    {
-            category: "UFC/MMA",
-    title: "UFC- Ring IV: Night Of Champions - Benavidez vs. Yarde",
-    date: "2025-11-23",
-    time: "3:00 AM",
-    server1: "https://masports.dpdns.org/app/nba1.html",
-    server2: "https://watchlive.top/embed/ring-iv-night-of-champions---benavidez-vs-yarde"
-        },
-{
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
     date: "2025-11-28",
     time: "8:00 AM",
     server1: "https://streams.honotvph.42web.io/stream/live/pba/master.m3u8?u=honortv&p=b69f5a41f79712041caed2b676cb8c40148bce33eddb3472c786c97a557c0793",
-    server2: "https://masports.dpdns.org/app/nba1.html"
+    server2: ""
   },
 {
     category: "Basketball",
     title: "🏀 NBA - Detroit Pistons vs. Indiana Pacers",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba1.m3u8",
+    server1: "https://masports.dpdns.org/app/nba1.html",
     server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Cleveland Cavaliers vs. Toronto Raptors",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba2.m3u8",
+    server1: "https://masports.dpdns.org/app/nba2.html",
     server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - New York Knicks vs. Brooklyn Nets",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba3.m3u8",
+    server1: "https://masports.dpdns.org/app/nba3.html",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Dallas Mavericks vs. Miami Heat",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "8:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba4.m3u8",
+    server1: "https://masports.dpdns.org/app/nba4.html",
     server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Denver Nuggets vs. Memphis Grizzlies",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba5.m3u8",
+    server1: "https://masports.dpdns.org/app/nba5.html",
     server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Portland Trail Blazers vs. Milwaukee Bucks",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba6.m3u8",
+    server1: "https://masports.dpdns.org/app/nba6.html",
     server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Chicago Bulls vs. New Orleans Pelicans",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "9:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba7.m3u8",
+    server1: "https://masports.dpdns.org/app/nba7.html",
     server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Houston Rockets vs. Phoenix Suns",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "10:30 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba8.m3u8",
+    server1: "https://masports.dpdns.org/app/nba8.html",
     server2: "https://streamcenter.xyz/embed/ch72.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Utah Jazz vs. Golden State Warriors",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "11:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba9.m3u8",
+    server1: "https://masports.dpdns.org/app/nba9.html",
     server2: "https://streamcenter.xyz/embed/ch73.php"
 },
 {
     category: "Basketball",
     title: "🏀 NBA - Minnesota Timberwolves vs. Sacramento Kings",
-    date: "2025-11-24",
+    date: "2025-11-25",
     time: "11:00 AM",
-    server1: "https://play.streameast247.com/playlist/stream_nba10.m3u8",
+    server1: "https://masports.dpdns.org/app/nba10.html",
     server2: "https://streamcenter.xyz/embed/ch74.php"
 }
 ];
