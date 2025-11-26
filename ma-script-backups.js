@@ -314,29 +314,77 @@ const channels = [
     server1: "https://masports.dpdns.org/app/pba1.html",
     server2: ""
   },
-    {
-    category: "Basketball",
-    title: "🏀 NBA - Atlanta Hawks vs. Washington Wizards",
-    date: "2025-11-26",
-    time: "8:00 AM",
-    server1: "https://masports.dpdns.org/app/nba1.html",
-    server2: "https://streamcenter.xyz/embed/ch65.php"
+{
+  category: "Basketball",
+  title: "🏀 NBA - Detroit Pistons vs. Boston Celtics",
+  date: "2025-11-27",
+  time: "6:00 AM",
+  server1: ""https://masports.dpdns.org/app/nba1.html",
+  server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
-    category: "Basketball",
-    title: "🏀 NBA - Orlando Magic vs. Philadelphia 76ers",
-    date: "2025-11-26",
-    time: "9:00 AM",
-    server1: "https://masports.dpdns.org/app/nba2.html",
-    server2: "https://streamcenter.xyz/embed/ch66.php"
+  category: "Basketball",
+  title: "🏀 NBA - New York Knicks vs. Charlotte Hornets",
+  date: "2025-11-27",
+  time: "8:00 AM",
+  server1: "https://masports.dpdns.org/app/nba2.html",
+  server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
-    category: "Basketball",
-    title: "🏀 NBA - LA Clippers vs. Los Angeles Lakers",
-    date: "2025-11-26",
-    time: "12:00 PM",
-    server1: "https://masports.dpdns.org/app/nba3.html",
-    server2: "https://streamcenter.xyz/embed/ch67.php"
+  category: "Basketball",
+  title: "🏀 NBA - Milwaukee Bucks vs. Miami Heat",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba3.html",
+  server2: "https://streamcenter.xyz/embed/ch67.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Indiana Pacers vs. Toronto Raptors",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba4.html",
+  server2: "https://streamcenter.xyz/embed/ch68.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Minnesota Timberwolves vs. Oklahoma City Thunder",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba5.html",
+  server2: "https://streamcenter.xyz/embed/ch69.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Memphis Grizzlies vs. New Orleans Pelicans",
+  date: "2025-11-27",
+  time: "9:00 AM",
+  server1: "https://masports.dpdns.org/app/nba6.html",
+  server2: "https://streamcenter.xyz/embed/ch70.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Houston Rockets vs. Golden State Warriors",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba7.html",
+  server2: "https://streamcenter.xyz/embed/ch71.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - San Antonio Spurs vs. Portland Trail Blazers",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba8.html",
+  server2: "https://streamcenter.xyz/embed/ch72.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Phoenix Suns vs. Sacramento Kings",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba9.html",
+  server2: "https://streamcenter.xyz/embed/ch73.php"
 }
 ];
 
