@@ -334,7 +334,7 @@ const channels = [
     category: "Basketball",
     title: "🏀 NBA - LA Clippers vs. Los Angeles Lakers",
     date: "2025-11-26",
-    time: "12:30 AM",
+    time: "12:00 PM",
     server1: "https://masports.dpdns.org/app/nba3.html",
     server2: "https://streamcenter.xyz/embed/ch67.php"
 }
