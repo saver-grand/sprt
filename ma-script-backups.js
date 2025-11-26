@@ -319,7 +319,7 @@ const channels = [
   title: "🏀 NBA - Detroit Pistons vs. Boston Celtics",
   date: "2025-11-27",
   time: "6:00 AM",
-  server1: ""https://masports.dpdns.org/app/nba1.html",
+  server1: "https://masports.dpdns.org/app/nba1.html",
   server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
