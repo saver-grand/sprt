@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaka Player – Auto Unmute</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.12.5/shaka-player.compiled.js"></script>
+
+<style>
+    html, body {
+        margin: 0; padding: 0;
+        width: 100%; height: 100%;
+        background: black;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: black;
+    }
+
+    #unmute-btn {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,0.4);
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+</style>
+</head>
+
+<body>
+
+<video id="video" autoplay playsinline muted controls></video>
+<div id="unmute-btn">🔊 TAP TO UNMUTE</div>
+
+<script>
+async function initPlayer() {
+    shaka.polyfill.installAll();
+
+    const video = document.getElementById('video');
+    const unmuteBtn = document.getElementById('unmute-btn');
+    const player = new shaka.Player(video);
+
+    // DRM ClearKey
+    player.configure({
+        drm: {
+            clearKeys: {
+                "1917f4caf2364e6d9b1507326a85ead6":
+                "a1340a251a5aa63a9b0ea5d9d7f67595"
+            }
+        }
+    });
+
+    // Load stream
+    try {
+        await player.load("https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cnn_rptv_prod_hd/default/index.mpd");
+        console.log("Player Loaded");
+        video.play();
+    } catch (err) {
+        console.error(err);
+    }
+
+    // Auto-Unmute on tap
+    unmuteBtn.addEventListener("click", () => {
+        video.muted = false;
+        video.volume = 1.0;
+        video.play();
+        unmuteBtn.style.display = "none";
+    });
+
+    // If browser allows autoplay-with-sound, remove the button
+    video.onplay = () => {
+        if (!video.muted) {
+            unmuteBtn.style.display = "none";
+        }
+    };
+}
+
+document.addEventListener("DOMContentLoaded", initPlayer);
+</script>
+
+</body>
+</html>
