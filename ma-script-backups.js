@@ -292,7 +292,7 @@ const channels = [
         },
   {
       category: "WWE",
-    title: "🤼 AEW: Saturday Night Collision",
+    title: "🤼 WWE EVENT",
     date: "2025-11-23",
     time: "8:00 AM",
     server1: "https://masports.dpdns.org/app/wwe.html",
