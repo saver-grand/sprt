@@ -295,7 +295,7 @@ const channels = [
     title: "🤼 AEW: Saturday Night Collision",
     date: "2025-11-23",
     time: "8:00 AM",
-    server1: "",
+    server1: "https://masports.dpdns.org/app/wwe.html",
     server2: "https://watchlive.top/embed/aew/collision/25-11-22"
   },
   {    
@@ -303,10 +303,34 @@ const channels = [
     title: "🏎️ Las Vegas Grand Prix - Race",
     date: "2025-11-26",
     time: "11:00 AM",
-    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
+    server1: "https://masports.dpdns.org/app/f1.html",
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
         },
   {    
+        category: "NFL",
+    title: "NFL- Detroit Lions VS Green Bay Packers",
+    date: "2025-11-28",
+    time: "3:00 AM",
+    server1: "https://masports.dpdns.org/app/nfl1.html",
+    server2: "https://streamcenter.xyz/embed/ch31.php"
+        },
+  {  
+    category: "NFL",
+    title: "NFL- Dallas Cowboys VSKansas City Chiefs",
+    date: "2025-11-26",
+    time: "6:00 AM",
+    server1: "https://masports.dpdns.org/app/nfl2.html",
+    server2: "https://streamcenter.xyz/embed/ch32.php"
+        },
+  {         
+    category: "NFL",
+    title: "Baltimore Ravens VS Cincinnati Bengals",
+    date: "2025-11-26",
+    time: "10:00 AM",
+    server1: "https://masports.dpdns.org/app/nfl3.html",
+    server2: "https://streamcenter.xyz/embed/ch33.php"
+        },
+  {           
     category: "Basketball",
     title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
     date: "2025-11-28",
