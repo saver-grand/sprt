@@ -1,6 +1,3 @@
-
-
-
 let hls, selectedURLs = {}, activeCategory = "all";
 
 // ====================== CHANNEL LIST ============================
@@ -11,7 +8,7 @@ const channels = [
     date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8",
-    server2: ""
+    server2: "https://honotvph.42web.io/masports.php?channel=nba1"
   },
   {
     category: "Live TV",
@@ -275,7 +272,7 @@ const channels = [
     date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
-    server2: ""
+    server2: "https://honotvph.42web.io/masports.php?channel=nba1"
   },
   {
     category: "Live TV",
@@ -295,52 +292,100 @@ const channels = [
         },
   {
       category: "WWE",
-    title: "🤼 WWE",
-    date: "2025-11-03",
-    time: "24/7",
+    title: "🤼 AEW: Saturday Night Collision",
+    date: "2025-11-23",
+    time: "8:00 AM",
     server1: "",
-    server2: "https://embednow.top/embed/tna/impact/25-11-13"
+    server2: "https://watchlive.top/embed/aew/collision/25-11-22"
   },
   {    
     category: "F1",
-    title: "🏎️ F1- Sky Sports F1",
-    date: "2025-11-03",
-    time: "24/7",
+    title: "🏎️ Las Vegas Grand Prix - Race",
+    date: "2025-11-26",
+    time: "11:00 AM",
     server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
-    server2: "http://honortvph.totalh.net/emblem.php?ch=f1"
-  },
-    {
-            category: "Hockey",
-    title: "🏑 Ice Hockey- Providence vs Merrimack",
-    date: "2025-11-16",
-    time: "7:00am",
-    server1: "",
-    server2: "https://embednow.top/embed/providence-vs-merrimack"
-  },
-    {
+    server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
+        },
+  {    
     category: "Basketball",
-    title: "🏀 NBA - Toronto Raptors vs. Cleveland Cavaliers",
-    date: "2025-11-14",
+    title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
+    date: "2025-11-28",
     time: "8:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3867028.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=35e17d418910da109372b3999b5f51c2",
-    server2: "https://embednow.top/embed/nba/11-13-2025/tor-cle",
+    server1: "https://masports.dpdns.org/app/pba1.html",
+    server2: ""
   },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Indiana Pacers vs. Phoenix Suns",
-    date: "2025-11-14",
-    time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866919.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=ba911cc5b38097545b0186f56c833ed4",
-    server2: "https://embednow.top/embed/nba/11-13-2025/ind-phx",
-  },
-  {
-    category: "Basketball",
-    title: "🏀 NBA - Atlanta Hawks vs. Utah Jazz",
-    date: "2025-11-14",
-    time: "10:00 AM",
-    server1: "https://e22cd317d72ce9c3afea3614629c9397.livehwc4.com/nami.videobss.com/live/hd-en-2-3866142.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=d73664912e134d143fe267d618c3c9e6",
-    server2: "https://embednow.top/embed/nba/11-13-2025/atl-uta",
-  }
+{
+  category: "Basketball",
+  title: "🏀 NBA - Detroit Pistons vs. Boston Celtics",
+  date: "2025-11-27",
+  time: "6:00 AM",
+  server1: "https://masports.dpdns.org/app/nba1.html",
+  server2: "https://streamcenter.xyz/embed/ch65.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - New York Knicks vs. Charlotte Hornets",
+  date: "2025-11-27",
+  time: "8:00 AM",
+  server1: "https://masports.dpdns.org/app/nba2.html",
+  server2: "https://streamcenter.xyz/embed/ch66.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Milwaukee Bucks vs. Miami Heat",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba3.html",
+  server2: "https://streamcenter.xyz/embed/ch67.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Indiana Pacers vs. Toronto Raptors",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba4.html",
+  server2: "https://streamcenter.xyz/embed/ch68.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Minnesota Timberwolves vs. Oklahoma City Thunder",
+  date: "2025-11-27",
+  time: "8:30 AM",
+  server1: "https://masports.dpdns.org/app/nba5.html",
+  server2: "https://streamcenter.xyz/embed/ch69.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Memphis Grizzlies vs. New Orleans Pelicans",
+  date: "2025-11-27",
+  time: "9:00 AM",
+  server1: "https://masports.dpdns.org/app/nba6.html",
+  server2: "https://streamcenter.xyz/embed/ch70.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Houston Rockets vs. Golden State Warriors",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba7.html",
+  server2: "https://streamcenter.xyz/embed/ch71.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - San Antonio Spurs vs. Portland Trail Blazers",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba8.html",
+  server2: "https://streamcenter.xyz/embed/ch72.php"
+},
+{
+  category: "Basketball",
+  title: "🏀 NBA - Phoenix Suns vs. Sacramento Kings",
+  date: "2025-11-27",
+  time: "11:00 AM",
+  server1: "https://masports.dpdns.org/app/nba9.html",
+  server2: "https://streamcenter.xyz/embed/ch73.php"
+}
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
@@ -425,7 +470,15 @@ function showServerSelect(ch) {
 
 document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
-  playChannel(selectedURLs.server1);
+
+  // =========== SPECIAL RULE ===========
+  // LIVE TV uses HLS player
+  // ALL OTHER CATEGORIES → USE EMBED IFRAME
+  if (selectedURLs.category === "Live TV") {
+    playChannel(selectedURLs.server1);  // keep using HLS video player
+  } else {
+    playIframe(selectedURLs.server1);   // use EMBED style for server1
+  }
 };
 
 document.getElementById("server2Btn").onclick = () => {
@@ -477,6 +530,23 @@ function closeVideo() {
 function toggleList() {
   const c = document.getElementById("channelCard");
   c.style.display = c.style.display === "none" ? "block" : "none";
+}
+
+function playIframe(url) {
+  const c = document.getElementById("videoContainer"),
+        v = document.getElementById("videoPlayer"),
+        i = document.getElementById("iframePlayer");
+
+  c.style.display = "flex";
+  v.style.display = "none";
+  i.style.display = "block";
+  document.getElementById("channelCard").style.display = "none";
+
+  // FULLSCREEN FIX
+  i.style.width = "100%";
+  i.style.height = "100%";
+
+  i.src = url;
 }
 
 // ====================== INIT ============================
