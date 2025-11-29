@@ -8,7 +8,7 @@ const channels = [
     date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8",
-    server2: "https://honotvph.42web.io/masports.php?channel=nba1"
+    server2: "https://embednow.top/embed/laliga/2025-11-29/mll-osa"
   },
   {
     category: "Live TV",
