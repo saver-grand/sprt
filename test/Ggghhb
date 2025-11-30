@@ -35,8 +35,8 @@ https://live-faws.akamaized.net/out/v1/89ea8db23cb24a91bfa5d0795f8d759e/index.mp
 
 
 
-#EXTINF:-1 tvg-logo="" group-title="Premium", Premium 35
+#EXTINF:-1 tvg-logo="" group-title="Premium", SKY SPORTS F1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0
-#EXTVLCOPT:http-origin=https://epicplayplay.cfd
-#EXTVLCOPT:http-referrer=https://epicplayplay.cfd/
-https://zekonew.newkso.ru/zeko/premium35/mono.m3u8
+#EXTVLCOPT:http-origin=https://stellarthread.com
+#EXTVLCOPT:http-referrer=https://stellarthread.com/
+https://d5.merichunidya.com:1686/hls/skysfor1.m3u8
