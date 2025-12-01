@@ -6,7 +6,7 @@ const channels = [
     {
     category: "Live TV",
     title: "📺 ABC East",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8",
     server2: "https://honotvph.42web.io/masports.php?channel=nba1"
@@ -14,7 +14,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏈 ACC Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ACC_NETWORK/index.m3u8",
     server2: ""
@@ -22,7 +22,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🐾 Animal Planet",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/Animal_Planet/index.m3u8",
     server2: ""
@@ -30,7 +30,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎬 AMC Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/AMC_NETWORK/index.m3u8",
     server2: ""
@@ -38,7 +38,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎖️ American Heroes Channel",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/American_Heroes_Channel/index.m3u8",
     server2: ""
@@ -46,7 +46,7 @@ const channels = [
   {
     category: "Live TV",
     title: "💃 Bravo",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BRAVO/index.m3u8",
     server2: ""
@@ -54,7 +54,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🔥 TNT",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/TNT/index.m3u8",
     server2: ""
@@ -62,7 +62,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🌍 BBC America",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BBC_AMERICA/index.m3u8",
     server2: ""
@@ -70,7 +70,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🌍 BBC World News",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BBC_WORLD_NEWS/index.m3u8",
     server2: ""
@@ -78,7 +78,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏆 BeIN Sports",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
     server2: ""
@@ -86,7 +86,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎶 BET East",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BET_EAST/index.m3u8",
     server2: ""
@@ -94,7 +94,7 @@ const channels = [
   {
     category: "Live TV",
     title: "💃 BET Her",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BET_HER/index.m3u8",
     server2: ""
@@ -102,7 +102,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎤 BET Soul",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BET_SOUL/index.m3u8",
     server2: ""
@@ -110,7 +110,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎧 BET Jams",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BET_Jams/index.m3u8",
     server2: ""
@@ -118,7 +118,7 @@ const channels = [
   {
     category: "Live TV",
     title: "💼 Bloomberg TV",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BLOOMBERG/index.m3u8",
     server2: ""
@@ -126,7 +126,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🐰 Boomerang",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/BOOMERANG/index.m3u8",
     server2: ""
@@ -134,7 +134,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏛️ C-SPAN",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/C-SPAN/index.m3u8",
     server2: ""
@@ -142,7 +142,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏈 CBS Sports Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8",
     server2: ""
@@ -150,7 +150,7 @@ const channels = [
   {
     category: "Live TV",
     title: "📺 CBS East",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/CBSEAST/index.m3u8",
     server2: ""
@@ -158,7 +158,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎸 CMT (Country Music Television)",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/CMT/index.m3u8",
     server2: ""
@@ -166,7 +166,7 @@ const channels = [
   {
     category: "Live TV",
     title: "😂 Comedy Central",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/Comedy_Central/index.m3u8",
     server2: ""
@@ -174,7 +174,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🍳 Cooking Channel",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/COOKING_CHANNEL/index.m3u8",
     server2: ""
@@ -182,7 +182,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🦋 Discovery Family Channel",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/DISCOVERY_FAMILY_CHANNEL/index.m3u8",
     server2: ""
@@ -190,7 +190,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎬 E! Entertainment Television",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/E_ENTERTAINMENT_TELEVISION/index.m3u8",
     server2: ""
@@ -198,7 +198,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🍔 Food Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/FOOD_NETWORK/index.m3u8",
     server2: ""
@@ -206,7 +206,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🕵️ Investigation Discovery",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/INVESTIGATION_DISCOVERY/index.m3u8",
     server2: ""
@@ -214,7 +214,7 @@ const channels = [
   {
     category: "Live TV",
     title: "📡 ION TV",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ION_TV/index.m3u8",
     server2: ""
@@ -222,7 +222,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎥 Lifetime Movie Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8",
     server2: ""
@@ -230,7 +230,7 @@ const channels = [
   {
     category: "Live TV",
     title: "📺 Me TV",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/ME_TV/index.m3u8",
     server2: ""
@@ -238,7 +238,7 @@ const channels = [
   {
     category: "Live TV",
     title: "⚾ MLB Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8",
     server2: ""
@@ -246,7 +246,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏎️ Motor Trend",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/MOTOR_TREND/index.m3u8",
     server2: ""
@@ -254,7 +254,7 @@ const channels = [
   {
     category: "Live TV",
     title: "📰 MSNBC",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/MSNBC/index.m3u8",
     server2: ""
@@ -262,7 +262,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🗞️ News Nation",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/NEWS_NATION/index.m3u8",
     server2: ""
@@ -270,7 +270,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🏈 NFL Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
     server2: "https://honotvph.42web.io/masports.php?channel=nba1"
@@ -278,7 +278,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🤼 WWE Network",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://fl3.moveonjoy.com/WWE/index.m3u8",
     server2: ""
@@ -286,7 +286,7 @@ const channels = [
   {
     category: "Live TV",
     title: "🎬 Movie Sphere",
-    date: "",
+    date: "2025-11-03",
     time: "24/7",
     server1: "https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8",
     server2: ""
@@ -397,80 +397,96 @@ const channels = [
 }
 ];
 
+// → Logo
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
+
 
 // ====================== RENDER CHANNELS ============================
 function renderChannels(list) {
   const container = document.getElementById("channelList");
+
   if (!list.length) {
     container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
     return;
   }
 
-  container.innerHTML = list.map((ch, i) => `
-    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
-      <img src="${logos}" alt="logo">
-      <h3>${ch.title}</h3>
-      <small>🏷️ ${ch.category}</small><br>
-      <small>📅 ${ch.date} - ${ch.time}</small>
-      <div id="timer-${i}" class="countdown">Loading…</div>
-    </div>
-  `).join("");
+  container.innerHTML = list
+    .map((ch, i) => `
+      <div class="channel-box" data-index="${i}" onclick='showServerSelect(${JSON.stringify(ch)})'>
+        <img src="${logos}" alt="logo">
+        <h3>${ch.title}</h3>
+        <small>🏷️ ${ch.category}</small><br>
+        <small>📅 ${ch.date} - ${ch.time}</small>
+        <div id="timer-${i}" class="countdown">Loading…</div>
+      </div>
+    `)
+    .join("");
 
-  startCountdown(list);
+  startCountdown(list); // Start countdown for THIS list only
 }
 
-// ====================== COUNTDOWN FIX – NO BLINKING ============================
-function startCountdown(list) {
-  if (countdownInterval) clearInterval(countdownInterval);
 
+// ====================== COUNTDOWN FIX — ZERO BLINKING ============================
+function startCountdown(list) {
+  // STOP ALL OLD TIMERS ⛔
+  if (countdownInterval !== null) {
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+  }
+
+  // CONVERT TIME TO MANILA TIME (STABLE)
   function parsePH(date, time) {
     const [raw, mer] = time.split(" ");
     let [h, m] = raw.split(":").map(Number);
+
     if (mer === "PM" && h < 12) h += 12;
     if (mer === "AM" && h === 12) h = 0;
 
     const iso = `${date}T${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:00+08:00`;
-    return new Date(iso).getTime(); // stable Manila timestamp
+    return new Date(iso).getTime();
   }
 
+  // NEW CLEAN TIMER 🟢
   countdownInterval = setInterval(() => {
     const now = Date.now();
 
-    list.forEach((ch, i) => {
-      const el = document.getElementById(`timer-${i}`);
+    list.forEach((ch, localIndex) => {
+      const el = document.getElementById(`timer-${localIndex}`);
       if (!el) return;
 
       const start = parsePH(ch.date, ch.time);
-      const liveEnd = start + 3 * 60 * 60 * 1000; // 3 hours
+      const end = start + 3 * 60 * 60 * 1000;
 
-      if (now >= start && now <= liveEnd) {
+      if (now >= start && now <= end) {
         el.textContent = "🟢 LIVE NOW";
         el.style.color = "limegreen";
         return;
       }
 
-      if (now > liveEnd) {
+      if (now > end) {
         el.textContent = "🔴 EVENT ENDED";
         el.style.color = "#ff4444";
         return;
       }
 
       const diff = start - now;
+
       const h = Math.floor(diff / 3600000);
       const m = Math.floor((diff % 3600000) / 60000);
       const s = Math.floor((diff % 60000) / 1000);
 
-      el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
+      el.textContent = `⏳ ${h}h ${m}m ${s}s`;
       el.style.color = "#ffcc66";
     });
 
   }, 1000);
 }
 
+
 // ====================== CATEGORY + SEARCH ============================
 function filterChannels() {
   const search = document.getElementById("searchBar").value.toLowerCase();
+
   const filtered = channels.filter(c =>
     (activeCategory === "all" || c.category === activeCategory) &&
     c.title.toLowerCase().includes(search)
@@ -485,10 +501,12 @@ document.querySelectorAll(".category-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
+
     activeCategory = btn.getAttribute("data-cat");
     filterChannels();
   });
 });
+
 
 // ====================== SERVER SELECTION ============================
 function showServerSelect(ch) {
@@ -498,7 +516,6 @@ function showServerSelect(ch) {
 
 document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
-
   if (selectedURLs.category === "Live TV") {
     playChannel(selectedURLs.server1);
   } else {
@@ -510,6 +527,7 @@ document.getElementById("server2Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
   playIframe(selectedURLs.server2);
 };
+
 
 // ====================== PLAYER CONTROL ============================
 function playChannel(url) {
@@ -523,6 +541,7 @@ function playChannel(url) {
   document.getElementById("channelCard").style.display = "none";
 
   if (hls) hls.destroy();
+
   if (Hls.isSupported()) {
     hls = new Hls();
     hls.loadSource(url);
@@ -542,12 +561,14 @@ function playIframe(url) {
   v.style.display = "none";
   i.style.display = "block";
   document.getElementById("channelCard").style.display = "none";
+
   i.src = url;
 }
 
 function closeVideo() {
   document.getElementById("videoContainer").style.display = "none";
   document.getElementById("channelCard").style.display = "block";
+
   document.getElementById("videoPlayer").pause();
   document.getElementById("iframePlayer").src = "";
 }
@@ -556,6 +577,7 @@ function toggleList() {
   const c = document.getElementById("channelCard");
   c.style.display = c.style.display === "none" ? "block" : "none";
 }
+
 
 // ====================== INIT ============================
 renderChannels(channels.filter(c => c.category === "Basketball"));
