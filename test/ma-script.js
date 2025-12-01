@@ -1,279 +1,7 @@
-let hls, selectedURLs = {}, activeCategory = "all";
+let hls, selectedURLs = {}, activeCategory = "Basketball"; // DEFAULT CATEGORY
 
 // ====================== CHANNEL LIST ============================
-const channels = [
-    {
-    category: "Live TV",
-    title: "📺 ABC East",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/ABC_EAST/index.m3u8",
-    server2: "https://embednow.top/embed/laliga/2025-11-29/mll-osa"
-  },
-  {
-    category: "Live TV",
-    title: "🏈 ACC Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/ACC_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🐾 Animal Planet",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/Animal_Planet/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎬 AMC Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/AMC_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎖️ American Heroes Channel",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/American_Heroes_Channel/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "💃 Bravo",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BRAVO/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🔥 TNT",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/TNT/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🌍 BBC America",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BBC_AMERICA/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🌍 BBC World News",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BBC_WORLD_NEWS/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🏆 BeIN Sports",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎶 BET East",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BET_EAST/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "💃 BET Her",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BET_HER/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎤 BET Soul",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BET_SOUL/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎧 BET Jams",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BET_Jams/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "💼 Bloomberg TV",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BLOOMBERG/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🐰 Boomerang",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/BOOMERANG/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🏛️ C-SPAN",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/C-SPAN/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🏈 CBS Sports Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/CBS_SPORTS_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "📺 CBS East",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/CBSEAST/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎸 CMT (Country Music Television)",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/CMT/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "😂 Comedy Central",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/Comedy_Central/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🍳 Cooking Channel",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/COOKING_CHANNEL/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🦋 Discovery Family Channel",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/DISCOVERY_FAMILY_CHANNEL/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎬 E! Entertainment Television",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/E_ENTERTAINMENT_TELEVISION/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🍔 Food Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/FOOD_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🕵️ Investigation Discovery",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/INVESTIGATION_DISCOVERY/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "📡 ION TV",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/ION_TV/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🎥 Lifetime Movie Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "📺 Me TV",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/ME_TV/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "⚾ MLB Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/MLB_NETWORK/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🏎️ Motor Trend",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/MOTOR_TREND/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "📰 MSNBC",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/MSNBC/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🗞️ News Nation",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/NEWS_NATION/index.m3u8",
-    server2: ""
-  },
-  {
-    category: "Live TV",
-    title: "🏈 NFL Network",
-    date: "2025-11-03",
-    time: "24/7",
-    server1: "https://fl1.moveonjoy.com/NFL_NETWORK/index.m3u8",
-    server2: "https://honotvph.42web.io/masports.php?channel=nba1"
-  },
+const channels = [ 
   {
     category: "Live TV",
     title: "🤼 WWE Network",
@@ -289,13 +17,13 @@ const channels = [
     time: "24/7",
     server1: "https://samsunguk-moviesphereuk-samsung-uk-s7xaa.amagi.tv/ts-eu-w1-n2/playlist/samsunguk-moviesphereuk-samsung-uk/playlist.m3u8",
     server2: ""
-        },
+  },
   {
-      category: "WWE",
-    title: "🤼 AEW: Saturday Night Collision",
+    category: "WWE",
+    title: "🤼 WWE EVENT",
     date: "2025-11-23",
     time: "8:00 AM",
-    server1: "",
+    server1: "https://masports.dpdns.org/app/wwe.html",
     server2: "https://watchlive.top/embed/aew/collision/25-11-22"
   },
   {    
@@ -303,89 +31,97 @@ const channels = [
     title: "🏎️ Las Vegas Grand Prix - Race",
     date: "2025-11-26",
     time: "11:00 AM",
-    server1: "https://s.rocketdns.info:443/live/xmltv/02a162774b/2189.m3u8",
+    server1: "https://streamcenter.xyz/embed/ch49.php",
     server2: "https://watchlive.top/embed/f1/2025/las-vegas/race"
-        },
-  {    
-    category: "Basketball",
-    title: "🏀 🇵🇭PBA - Gilas Pilipinas vs. Guam",
-    date: "2025-11-28",
-    time: "8:00 AM",
-    server1: "https://masports.dpdns.org/app/pba1.html",
-    server2: ""
   },
-{
-  category: "Basketball",
-  title: "🏀 NBA - Detroit Pistons vs. Boston Celtics",
-  date: "2025-11-27",
-  time: "6:00 AM",
-  server1: "https://masports.dpdns.org/app/nba1.html",
-  server2: "https://streamcenter.xyz/embed/ch65.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - New York Knicks vs. Charlotte Hornets",
-  date: "2025-11-27",
-  time: "8:00 AM",
-  server1: "https://masports.dpdns.org/app/nba2.html",
-  server2: "https://streamcenter.xyz/embed/ch66.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Milwaukee Bucks vs. Miami Heat",
-  date: "2025-11-27",
-  time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba3.html",
-  server2: "https://streamcenter.xyz/embed/ch67.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Indiana Pacers vs. Toronto Raptors",
-  date: "2025-11-27",
-  time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba4.html",
-  server2: "https://streamcenter.xyz/embed/ch68.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Minnesota Timberwolves vs. Oklahoma City Thunder",
-  date: "2025-11-27",
-  time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba5.html",
-  server2: "https://streamcenter.xyz/embed/ch69.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Memphis Grizzlies vs. New Orleans Pelicans",
-  date: "2025-11-27",
-  time: "9:00 AM",
-  server1: "https://masports.dpdns.org/app/nba6.html",
-  server2: "https://streamcenter.xyz/embed/ch70.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Houston Rockets vs. Golden State Warriors",
-  date: "2025-11-27",
-  time: "11:00 AM",
-  server1: "https://masports.dpdns.org/app/nba7.html",
-  server2: "https://streamcenter.xyz/embed/ch71.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - San Antonio Spurs vs. Portland Trail Blazers",
-  date: "2025-11-27",
-  time: "11:00 AM",
-  server1: "https://masports.dpdns.org/app/nba8.html",
-  server2: "https://streamcenter.xyz/embed/ch72.php"
-},
-{
-  category: "Basketball",
-  title: "🏀 NBA - Phoenix Suns vs. Sacramento Kings",
-  date: "2025-11-27",
-  time: "11:00 AM",
-  server1: "https://masports.dpdns.org/app/nba9.html",
-  server2: "https://streamcenter.xyz/embed/ch73.php"
-}
+  {    
+    category: "UFC/MMA",
+    title: "UFC 323: Dvalishvili vs. Yan 2",
+    date: "2025-12-07",
+    time: "7:00 AM",
+    server1: "https://masports.dpdns.org/app/ufc1.html",
+    server2: "https://embednow.top/embed/ufc-323"
+  },
+  {  
+    category: "Basketball",
+    title: "🏀 🇵🇭FIBA - Gilas Pilipinas vs. Guam",
+    date: "2025-12-01",
+    time: "7:00 PM",
+    server1: "https://masports.dpdns.org/app/pba1.html",
+    server2: "https://masports.dpdns.org/app/pba2.html"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Atlanta Hawks vs. Detroit Pistons",
+    date: "2025-12-02",
+    time: "8:00 AM",
+    server1: "https://masports.dpdns.org/app/nba1.html",
+    server2: "https://streamcenter.xyz/embed/ch65.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Cleveland Cavaliers vs. Indiana Pacers",
+    date: "2025-12-02",
+    time: "8:00 AM",
+    server1: "https://masports.dpdns.org/app/nba2.html",
+    server2: "https://streamcenter.xyz/embed/ch66.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Milwaukee Bucks vs. Washington Wizards",
+    date: "2025-12-02",
+    time: "8:00 AM",
+    server1: "https://masports.dpdns.org/app/nba3.html",
+    server2: "https://streamcenter.xyz/embed/ch67.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Charlotte Hornets vs. Brooklyn Nets",
+    date: "2025-12-02",
+    time: "8:30 AM",
+    server1: "https://masports.dpdns.org/app/nba4.html",
+    server2: "https://streamcenter.xyz/embed/ch68.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - LA Clippers vs. Miami Heat",
+    date: "2025-12-02",
+    time: "8:30 AM",
+    server1: "https://masports.dpdns.org/app/nba5.html",
+    server2: "https://streamcenter.xyz/embed/ch69.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Chicago Bulls vs. Orlando Magic",
+    date: "2025-12-02",
+    time: "8:30 AM",
+    server1: "https://masports.dpdns.org/app/nba6.html",
+    server2: "https://streamcenter.xyz/embed/ch70.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Dallas Mavericks vs. Denver Nuggets",
+    date: "2025-12-02",
+    time: "10:00 AM",
+    server1: "https://masports.dpdns.org/app/nba7.html",
+    server2: "https://streamcenter.xyz/embed/ch71.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Houston Rockets vs. Utah Jazz",
+    date: "2025-12-02",
+    time: "10:00 AM",
+    server1: "https://masports.dpdns.org/app/nba8.html",
+    server2: "https://streamcenter.xyz/embed/ch72.php"
+  },
+  {
+    category: "Basketball",
+    title: "🏀 NBA - Phoenix Suns vs. Los Angeles Lakers",
+    date: "2025-12-02",
+    time: "11:00 AM",
+    server1: "https://masports.dpdns.org/app/nba9.html",
+    server2: "https://streamcenter.xyz/embed/ch73.php"
+  }
 ];
 
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
@@ -471,13 +207,12 @@ function showServerSelect(ch) {
 document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
 
-  // =========== SPECIAL RULE ===========
-  // LIVE TV uses HLS player
-  // ALL OTHER CATEGORIES → USE EMBED IFRAME
+  // LIVE TV = HLS Player
+  // OTHERS = EMBED IFRAME
   if (selectedURLs.category === "Live TV") {
-    playChannel(selectedURLs.server1);  // keep using HLS video player
+    playChannel(selectedURLs.server1);
   } else {
-    playIframe(selectedURLs.server1);   // use EMBED style for server1
+    playIframe(selectedURLs.server1);
   }
 };
 
@@ -532,22 +267,9 @@ function toggleList() {
   c.style.display = c.style.display === "none" ? "block" : "none";
 }
 
-function playIframe(url) {
-  const c = document.getElementById("videoContainer"),
-        v = document.getElementById("videoPlayer"),
-        i = document.getElementById("iframePlayer");
-
-  c.style.display = "flex";
-  v.style.display = "none";
-  i.style.display = "block";
-  document.getElementById("channelCard").style.display = "none";
-
-  // FULLSCREEN FIX
-  i.style.width = "100%";
-  i.style.height = "100%";
-
-  i.src = url;
-}
-
 // ====================== INIT ============================
-renderChannels(channels);
+// DEFAULT CATEGORY = BASKETBALL
+renderChannels(channels.filter(c => c.category === "Basketball"));
+
+// highlight button
+document.querySelector(`[data-cat="Basketball"]`).classList.add("active");
