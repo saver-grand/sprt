@@ -1,5 +1,4 @@
-let hls, selectedURLs = {}, activeCategory = "Basketball";
-let countdownInterval = null;
+let hls, selectedURLs = {}, activeCategory = "Basketball"; // DEFAULT CATEGORY
 
 // ====================== CHANNEL LIST ============================
 const channels = [ 
@@ -328,7 +327,7 @@ const channels = [
   title: "🏀 NBA - Atlanta Hawks vs. Detroit Pistons",
   date: "2025-12-02",
   time: "8:00 AM",
-  server1: "https://masports.dpdns.org/app/nba1.html",
+  server1: "https://ballcontrol.click/nbaa1.php",
   server2: "https://streamcenter.xyz/embed/ch65.php"
 },
 {
@@ -336,7 +335,7 @@ const channels = [
   title: "🏀 NBA - Cleveland Cavaliers vs. Indiana Pacers",
   date: "2025-12-02",
   time: "8:00 AM",
-  server1: "https://masports.dpdns.org/app/nba2.html",
+  server1: "https://ballcontrol.click/nbaa2.php",
   server2: "https://streamcenter.xyz/embed/ch66.php"
 },
 {
@@ -344,7 +343,7 @@ const channels = [
   title: "🏀 NBA - Milwaukee Bucks vs. Washington Wizards",
   date: "2025-12-02",
   time: "8:00 AM",
-  server1: "https://masports.dpdns.org/app/nba3.html",
+  server1: "https://ballcontrol.click/nbaa3.php",
   server2: "https://streamcenter.xyz/embed/ch67.php"
 },
 {
@@ -352,7 +351,7 @@ const channels = [
   title: "🏀 NBA - Charlotte Hornets vs. Brooklyn Nets",
   date: "2025-12-02",
   time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba4.html",
+  server1: "https://ballcontrol.click/nbaa4.php",
   server2: "https://streamcenter.xyz/embed/ch68.php"
 },
 {
@@ -360,7 +359,7 @@ const channels = [
   title: "🏀 NBA - LA Clippers vs. Miami Heat",
   date: "2025-12-02",
   time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba5.html",
+  server1: "https://ballcontrol.click/nbaa5.php",
   server2: "https://streamcenter.xyz/embed/ch69.php"
 },
 {
@@ -368,7 +367,7 @@ const channels = [
   title: "🏀 NBA - Chicago Bulls vs. Orlando Magic",
   date: "2025-12-02",
   time: "8:30 AM",
-  server1: "https://masports.dpdns.org/app/nba6.html",
+  server1: "https://ballcontrol.click/nbaa6.php",
   server2: "https://streamcenter.xyz/embed/ch70.php"
 },
 {
@@ -376,7 +375,7 @@ const channels = [
   title: "🏀 NBA - Dallas Mavericks vs. Denver Nuggets",
   date: "2025-12-02",
   time: "10:00 AM",
-  server1: "https://masports.dpdns.org/app/nba7.html",
+  server1: "https://ballcontrol.click/nbaa7.php",
   server2: "https://streamcenter.xyz/embed/ch71.php"
 },
 {
@@ -384,7 +383,7 @@ const channels = [
   title: "🏀 NBA - Houston Rockets vs. Utah Jazz",
   date: "2025-12-02",
   time: "10:00 AM",
-  server1: "https://masports.dpdns.org/app/nba8.html",
+  server1: "https://ballcontrol.click/nbaa8.php",
   server2: "https://streamcenter.xyz/embed/ch72.php"
 },
 {
@@ -392,121 +391,84 @@ const channels = [
   title: "🏀 NBA - Phoenix Suns vs. Los Angeles Lakers",
   date: "2025-12-02",
   time: "11:00 AM",
-  server1: "https://masports.dpdns.org/app/nba9.html",
+  server1: "https://ballcontrol.click/nbaa9.php",
   server2: "https://streamcenter.xyz/embed/ch73.php"
 }
 ];
 
-// → Logo
 const logos = "https://i.imgur.com/y7rtkDI.jpeg";
-
 
 // ====================== RENDER CHANNELS ============================
 function renderChannels(list) {
   const container = document.getElementById("channelList");
-
-  if (!list.length) {
+  if (list.length === 0) {
     container.innerHTML = "<p style='text-align:center;color:#f55;'>No matches found</p>";
     return;
   }
-
-  container.innerHTML = list
-    .map((ch, i) => `
-      <div class="channel-box" data-index="${i}" onclick='showServerSelect(${JSON.stringify(ch)})'>
-        <img src="${logos}" alt="logo">
-        <h3>${ch.title}</h3>
-        <small>🏷️ ${ch.category}</small><br>
-        <small>📅 ${ch.date} - ${ch.time}</small>
-        <div id="timer-${i}" class="countdown">Loading…</div>
-      </div>
-    `)
-    .join("");
-
-  startCountdown(list); // Start countdown for THIS list only
+  container.innerHTML = list.map((ch, i) => `
+    <div class="channel-box" onclick='showServerSelect(${JSON.stringify(ch)})'>
+      <img src="${logos}" alt="logo">
+      <h3>${ch.title}</h3>
+      <small>🏷️ ${ch.category}</small><br>
+      <small>📅 ${ch.date} - ${ch.time}</small>
+      <div id="timer-${i}" class="countdown">Loading...</div>
+    </div>
+  `).join("");
+  startCountdown(list);
 }
 
-
-// ====================== COUNTDOWN FIX — ZERO BLINKING ============================
+// ====================== COUNTDOWN ============================
 function startCountdown(list) {
-  // STOP ALL OLD TIMERS ⛔
-  if (countdownInterval !== null) {
-    clearInterval(countdownInterval);
-    countdownInterval = null;
+  function parseTime(date, time) {
+    const [t, period] = time.split(" ");
+    let [hours, minutes] = t.split(":").map(Number);
+    if (period.toUpperCase() === "PM" && hours < 12) hours += 12;
+    if (period.toUpperCase() === "AM" && hours === 12) hours = 0;
+    return new Date(`${date}T${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:00+08:00`);
   }
 
-  // CONVERT TIME TO MANILA TIME (STABLE)
-  function parsePH(date, time) {
-    const [raw, mer] = time.split(" ");
-    let [h, m] = raw.split(":").map(Number);
-
-    if (mer === "PM" && h < 12) h += 12;
-    if (mer === "AM" && h === 12) h = 0;
-
-    const iso = `${date}T${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:00+08:00`;
-    return new Date(iso).getTime();
-  }
-
-  // NEW CLEAN TIMER 🟢
-  countdownInterval = setInterval(() => {
-    const now = Date.now();
-
-    list.forEach((ch, localIndex) => {
-      const el = document.getElementById(`timer-${localIndex}`);
+  function update() {
+    const nowPH = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Manila" }));
+    list.forEach((ch, i) => {
+      const target = parseTime(ch.date, ch.time);
+      const diff = target - nowPH;
+      const el = document.getElementById(`timer-${i}`);
       if (!el) return;
-
-      const start = parsePH(ch.date, ch.time);
-      const end = start + 3 * 60 * 60 * 1000;
-
-      if (now >= start && now <= end) {
+      if (diff <= 0) {
         el.textContent = "🟢 LIVE NOW";
         el.style.color = "limegreen";
-        return;
+      } else {
+        const h = Math.floor(diff / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        el.textContent = `⏳ Starts in ${h}h ${m}m ${s}s`;
+        el.style.color = "#ffcc66";
       }
-
-      if (now > end) {
-        el.textContent = "🔴 EVENT ENDED";
-        el.style.color = "#ff4444";
-        return;
-      }
-
-      const diff = start - now;
-
-      const h = Math.floor(diff / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-
-      el.textContent = `⏳ ${h}h ${m}m ${s}s`;
-      el.style.color = "#ffcc66";
     });
+  }
 
-  }, 1000);
+  update();
+  setInterval(update, 1000);
 }
-
 
 // ====================== CATEGORY + SEARCH ============================
 function filterChannels() {
   const search = document.getElementById("searchBar").value.toLowerCase();
-
-  const filtered = channels.filter(c =>
+  renderChannels(channels.filter(c =>
     (activeCategory === "all" || c.category === activeCategory) &&
     c.title.toLowerCase().includes(search)
-  );
-
-  renderChannels(filtered);
+  ));
 }
 
 document.getElementById("searchBar").addEventListener("input", filterChannels);
-
 document.querySelectorAll(".category-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
-
     activeCategory = btn.getAttribute("data-cat");
     filterChannels();
   });
 });
-
 
 // ====================== SERVER SELECTION ============================
 function showServerSelect(ch) {
@@ -516,6 +478,9 @@ function showServerSelect(ch) {
 
 document.getElementById("server1Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
+
+  // LIVE TV = HLS Player
+  // OTHERS = EMBED IFRAME
   if (selectedURLs.category === "Live TV") {
     playChannel(selectedURLs.server1);
   } else {
@@ -527,7 +492,6 @@ document.getElementById("server2Btn").onclick = () => {
   document.getElementById("serverSelect").style.display = "none";
   playIframe(selectedURLs.server2);
 };
-
 
 // ====================== PLAYER CONTROL ============================
 function playChannel(url) {
@@ -541,7 +505,6 @@ function playChannel(url) {
   document.getElementById("channelCard").style.display = "none";
 
   if (hls) hls.destroy();
-
   if (Hls.isSupported()) {
     hls = new Hls();
     hls.loadSource(url);
@@ -561,14 +524,12 @@ function playIframe(url) {
   v.style.display = "none";
   i.style.display = "block";
   document.getElementById("channelCard").style.display = "none";
-
   i.src = url;
 }
 
 function closeVideo() {
   document.getElementById("videoContainer").style.display = "none";
   document.getElementById("channelCard").style.display = "block";
-
   document.getElementById("videoPlayer").pause();
   document.getElementById("iframePlayer").src = "";
 }
@@ -578,7 +539,9 @@ function toggleList() {
   c.style.display = c.style.display === "none" ? "block" : "none";
 }
 
-
 // ====================== INIT ============================
+// DEFAULT CATEGORY = BASKETBALL
 renderChannels(channels.filter(c => c.category === "Basketball"));
+
+// highlight button
 document.querySelector(`[data-cat="Basketball"]`).classList.add("active");
