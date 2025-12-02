@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Embedded Player — NBAA4</title>
+  <style>
+    :root{--bg:#0b0b0f;--panel:#0f1116;--muted:#9aa3b2}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,Arial, sans-serif;background:var(--bg);color:#fff}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+
+    .player-card{width:100%;max-width:1100px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;padding:14px;box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+
+    /* responsive iframe container preserving 16:9 */
+    .iframe-wrap{position:relative;padding-top:56.25%;background:#000;border-radius:8px;overflow:hidden}
+    iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+    .controls{display:flex;gap:8px;align-items:center;margin-top:12px}
+    .btn{background:#111214;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:8px;color:#fff;text-decoration:none;cursor:pointer;font-size:14px}
+    .btn:active{transform:translateY(1px)}
+    .meta{color:var(--muted);font-size:13px;margin-top:8px}
+
+    @media (max-width:640px){.player-card{padding:8px}.controls{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="player-card">
+      <div class="iframe-wrap" id="playerContainer">
+        <!-- Main iframe -->
+        <iframe id="playerFrame"
+          src="https://ballcontrol.click/nbaa4.php"
+          title="NBAA4 Player"
+          loading="lazy"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+          allowfullscreen
+          sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
+        ></iframe>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="openBtn" type="button">Open in new tab</button>
+        <button class="btn" id="fsBtn" type="button">Toggle Fullscreen</button>
+        <a class="btn" id="reloadBtn">Reload iframe</a>
+        <a class="btn" href="https://ballcontrol.click/nbaa4.php" target="_blank" rel="noopener noreferrer">Direct link</a>
+      </div>
+
+      <div class="meta">If the stream doesn't load, try the direct link or open in a new tab. Some browsers block autoplay or cross-origin content — allow it in site settings if needed.</div>
+    </div>
+  </div>
+
+  <script>
+    const frame = document.getElementById('playerFrame');
+    const container = document.getElementById('playerContainer');
+    document.getElementById('openBtn').addEventListener('click', ()=>{
+      window.open(frame.src, '_blank', 'noopener');
+    });
+
+    document.getElementById('reloadBtn').addEventListener('click', (e)=>{
+      e.preventDefault();
+      // soft reload to preserve layout
+      const cur = frame.src;
+      frame.src = '';
+      setTimeout(()=>frame.src = cur, 60);
+    });
+
+    document.getElementById('fsBtn').addEventListener('click', async ()=>{
+      try{
+        if (!document.fullscreenElement) {
+          await container.requestFullscreen();
+        } else {
+          await document.exitFullscreen();
+        }
+      } catch(err){
+        console.warn('Fullscreen failed', err);
+        // fallback: open in new tab
+        window.open(frame.src, '_blank', 'noopener');
+      }
+    });
+
+    // Optional: message bridge to pass click-to-play events to iframe (if same-origin)
+    // window.addEventListener('message',(ev)=>console.log('msg from iframe',ev));
+
+    // Prevent embedding issues: show friendly message if frame blocked by browser
+    frame.addEventListener('load', ()=>{
+      // Could add health checks by postingMessage if site supports it
+      console.log('iframe loaded');
+    });
+  </script>
+</body>
+</html>
