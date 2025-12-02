@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBAA4 — Fullscreen Video</title>
+  <style>
+    html,body {margin:0;padding:0;height:100%;background:#000;overflow:hidden;}
+    #fullPlayer {position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;}
+  </style>
+</head>
+<body>
+
+  <!-- FULLSCREEN VIDEO PLAYER -->
+  <iframe
+    id="fullPlayer"
+    src="https://ballcontrol.click/nbaa4.php?autoplay=1&muted=0"
+    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+    allowfullscreen
+    sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
+  ></iframe>
+
+  <script>
+    const frame = document.getElementById('fullPlayer');
+
+    // Auto request fullscreen on load (browsers may block until user interaction)
+    frame.addEventListener('load', async () => {
+      try {
+        if (!document.fullscreenElement) {
+          await frame.requestFullscreen();
+        }
+      } catch(e) {
+        console.warn('Fullscreen requires a tap/click');
+      }
+    });
+
+    // On click, try forcing fullscreen
+    document.body.addEventListener('click', async () => {
+      try {
+        if (!document.fullscreenElement) await frame.requestFullscreen();
+        frame.contentWindow?.postMessage({action:'unmute'}, '*');
+      } catch(e){}
+    });
+  </script>
+
+</body>
+</html>
+
