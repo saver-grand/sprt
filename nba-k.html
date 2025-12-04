@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>MASPORTS</title>
+
+
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="ma-style.css">
+
+  <!-- ✅ Video / App Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
+  <script src="ma-script.js" defer></script>
+
+  <!-- ✅ Security: Prevent embedding in other sites -->
+  <script>
+    if (window.top !== window.self) {
+      window.top.location = window.self.location;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>MASPORTS</h1>
+
+  <!-- Category Bar -->
+  <div class="category-bar" id="categoryBar">
+    <button class="category-btn active" data-cat="all">🏅 All</button>
+    <button class="category-btn" data-cat="Basketball">🏀 Basketball</button>
+  </div>
+
+  <!-- Channel List -->
+  <div class="card" id="channelCard">
+    <input type="text" id="searchBar" placeholder="🔍 Search match..." />
+    <div id="channelList" class="channel-grid"></div>
+  </div>
+
+  <!-- Video Container -->
+  <div id="videoContainer" style="display:none;">
+    <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
+    <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
+    <video id="videoPlayer" controls autoplay playsinline></video>
+    <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
+  </div>
+
+  <!-- Server Selector -->
+  <div id="serverSelect" style="display:none;">
+    <h2>🎥 Choose Server</h2>
+    <button class="server-btn" id="server1Btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png" alt="Server 1"/> Server 1
+    </button>   
+  </div>
+
+  <!-- Loading Spinner -->
+  <div id="loadingSpinner" style="display:none; text-align:center; font-size:1.2em; margin-top:1rem;">
+    ⏳ Loading Stream...
+  </div>
+
+
+
+ 
+
+</body>
+</html>
