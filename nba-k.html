@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>MASPORTS</title>
 
-
-  <!-- ✅ CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="ma-style.css">
 
-  <!-- ✅ Video / App Scripts -->
+  <!-- Video / App Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
   <script src="ma-script.js" defer></script>
 
-  <!-- ✅ Security: Prevent embedding in other sites -->
+  <!-- Security: Prevent embedding -->
   <script>
     if (window.top !== window.self) {
       window.top.location = window.self.location;
@@ -24,42 +23,44 @@
 <body>
   <h1>MASPORTS</h1>
 
-  <!-- Category Bar -->
+  <!-- ================= CATEGORY BAR ================= -->
   <div class="category-bar" id="categoryBar">
-    <button class="category-btn active" data-cat="all">🏅 All</button>
-    <button class="category-btn" data-cat="Basketball">🏀 Basketball</button>
+
+    <!-- 🔥 DEFAULT CATEGORY CHANGED -->
+    <button class="category-btn" data-cat="all">🏅 All</button>
+    <button class="category-btn active" data-cat="Basketball">🏀 Basketball</button>
+
   </div>
 
-  <!-- Channel List -->
+  <!-- ================= CHANNEL LIST ================= -->
   <div class="card" id="channelCard">
     <input type="text" id="searchBar" placeholder="🔍 Search match..." />
     <div id="channelList" class="channel-grid"></div>
   </div>
 
-  <!-- Video Container -->
+  <!-- ================= VIDEO PLAYER ================= -->
   <div id="videoContainer" style="display:none;">
     <button id="toggleListBtn" onclick="toggleList()">📺 Channels</button>
     <button id="closeBtn" onclick="closeVideo()">✖ Close</button>
+
     <video id="videoPlayer" controls autoplay playsinline></video>
     <iframe id="iframePlayer" style="display:none;" allowfullscreen></iframe>
   </div>
 
-  <!-- Server Selector -->
+  <!-- ================= SERVER SELECT ================= -->
   <div id="serverSelect" style="display:none;">
     <h2>🎥 Choose Server</h2>
+
+    <!-- 🔥 ONLY SERVER 1 AVAILABLE (AUTO) -->
     <button class="server-btn" id="server1Btn">
       <img src="https://cdn-icons-png.flaticon.com/512/3106/3106764.png" alt="Server 1"/> Server 1
-    </button>   
+    </button>
   </div>
 
-  <!-- Loading Spinner -->
+  <!-- ================= LOADING SPINNER ================= -->
   <div id="loadingSpinner" style="display:none; text-align:center; font-size:1.2em; margin-top:1rem;">
     ⏳ Loading Stream...
   </div>
-
-
-
- 
 
 </body>
 </html>
