@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBAA4 — Fullscreen Video</title>
+  <style>
+    html,body {margin:0;padding:0;height:100%;background:#000;overflow:hidden;}
+    #fullPlayer {position:fixed;top:0;left:0;width:100vw;height:100vh;border:0;}
+  </style>
+</head>
+<body>
+
+  <!-- FULLSCREEN VIDEO PLAYER -->
+  <iframe
+    id="fullPlayer"
+    src="https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1764945534/ei/HpoyafbnIIDh1d8P09-B0Qs/ip/110.54.135.120/id/I_x0hxfFPuE.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/tx/51679575/txs/51679575%2C51679576%2C51679577%2C51679578%2C51679579/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AYUSA3AAMwL3mIelPxdR5bOpxEZZFMvUR7vCWUkzX44jutH3an6Y9-ZWMIlSVl-SfQpsJ2BruSd6R0rA/spc/wH4QqyZDRw0EgePuzZlGLnnebK_WjglEIxvlUtMJUiqVYk4Kum4bRtYIUFZVCZMqTIaP8g/vprv/1/go/1/rqh/5/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51331020%2C51552689%2C51565115%2C51565681%2C51580968/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Ctx%2Ctxs%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Citag%2Cplaylist_type/sig/AJfQdSswRAIgaF0Zkpw5EF81unRQypcxjiMJXrs7DHEXAvVjPj5ItTMCIFtnIvAHSHQKAyqd9a4CiPXWnChjNK9TqxBNDFoBRbm6/file/index.m3u8"
+    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+    allowfullscreen
+    sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
+  ></iframe>
+
+  <script>
+    const frame = document.getElementById('fullPlayer');
+
+    // Auto request fullscreen on load (browsers may block until user interaction)
+    frame.addEventListener('load', async () => {
+      try {
+        if (!document.fullscreenElement) {
+          await frame.requestFullscreen();
+        }
+      } catch(e) {
+        console.warn('Fullscreen requires a tap/click');
+      }
+    });
+
+    // On click, try forcing fullscreen
+    document.body.addEventListener('click', async () => {
+      try {
+        if (!document.fullscreenElement) await frame.requestFullscreen();
+        frame.contentWindow?.postMessage({action:'unmute'}, '*');
+      } catch(e){}
+    });
+  </script>
+
+</body>
+</html>
